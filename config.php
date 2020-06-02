@@ -1,14 +1,14 @@
 <?php
 // HTTP
-define('HTTP_SERVER', 'http://localhost:5000/');
+define('HTTP_SERVER', 'http://localhost/jackielingerie/');
 
 // HTTPS
-define('HTTPS_SERVER', 'http://localhost:5000/');
+define('HTTPS_SERVER', 'http://localhost/jackielingerie/');
 
 // DIR
-define('DIR_APPLICATION', '/home/alvin/Documents/JL/public_html/catalog/');
-define('DIR_SYSTEM', '/home/alvin/Documents/JL/public_html/system/');
-define('DIR_IMAGE', '/home/alvin/Documents/JL/public_html/image/');
+define('DIR_APPLICATION', '/Applications/XAMPP/xamppfiles/htdocs/jackielingerie/catalog/');
+define('DIR_SYSTEM', '/Applications/XAMPP/xamppfiles/htdocs/jackielingerie/system/');
+define('DIR_IMAGE', '/Applications/XAMPP/xamppfiles/htdocs/jackielingerie/image/');
 define('DIR_STORAGE', DIR_SYSTEM . 'storage/');
 define('DIR_LANGUAGE', DIR_APPLICATION . 'language/');
 define('DIR_TEMPLATE', DIR_APPLICATION . 'view/theme/');
@@ -24,7 +24,7 @@ define('DIR_UPLOAD', DIR_STORAGE . 'upload/');
 define('DB_DRIVER', 'mysqli');
 define('DB_HOSTNAME', '127.0.0.1');
 define('DB_USERNAME', 'root');
-define('DB_PASSWORD', 'joGz3HRoxYRUvr3jz@ton+3zdeH');
-define('DB_DATABASE', 'jackielingerie');
-define('DB_PORT', '3307');
+define('DB_PASSWORD', '');
+define('DB_DATABASE', 'jackielingerie2');
+define('DB_PORT', '3306');
 define('DB_PREFIX', 'jl_');
