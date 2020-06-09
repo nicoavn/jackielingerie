@@ -9,7 +9,7 @@ define('HTTPS_SERVER', 'http://localhost/jackielingerie/');
 define('DIR_APPLICATION', '/Applications/XAMPP/xamppfiles/htdocs/jackielingerie/catalog/');
 define('DIR_SYSTEM', '/Applications/XAMPP/xamppfiles/htdocs/jackielingerie/system/');
 define('DIR_IMAGE', '/Applications/XAMPP/xamppfiles/htdocs/jackielingerie/image/');
-define('DIR_STORAGE', DIR_SYSTEM . 'storage/');
+define('DIR_STORAGE', '/Applications/XAMPP/xamppfiles/storage/');
 define('DIR_LANGUAGE', DIR_APPLICATION . 'language/');
 define('DIR_TEMPLATE', DIR_APPLICATION . 'view/theme/');
 define('DIR_CONFIG', DIR_SYSTEM . 'config/');

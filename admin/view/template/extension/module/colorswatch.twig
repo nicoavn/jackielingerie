@@ -1,0 +1,236 @@
+
+{{ header }}
+<style>
+    .table thead td span[data-toggle="tooltip"]:after, label.control-label span:after {
+        font-family: FontAwesome;
+        color: #f26125;
+        content: "\f059";
+        margin-left: 4px;
+    }
+
+    .panel-bar {
+        background: #f6f6f6;;
+        height:2px;
+        margin: 10px 0 20px 0;
+
+        -webkit-box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.75);
+        box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.75);
+    }
+</style>
+{{ column_left }}
+<div id="content">
+  <div class="page-header">
+    <div class="container-fluid">
+      <div class="pull-right">
+        <button type="submit" form="form-module" data-toggle="tooltip" title="{{ button_save }}" class="btn btn-primary"><i class="fa fa-save"></i></button>
+        <a href="{{ cancel }}" data-toggle="tooltip" title="{{ button_cancel }}" class="btn btn-default"><i class="fa fa-reply"></i></a></div>
+      <h1>{{ heading_title }}</h1>
+      <ul class="breadcrumb">
+        {% for breadcrumb in breadcrumbs %}
+        <li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  <div class="container-fluid">
+
+    {% if error_warning %}
+    <div class="alert alert-danger alert-dismissible"><i class="fa fa-exclamation-circle"></i> {{ error_warning }}
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+    </div>
+    {% endif %}
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title"><i class="fa fa-pencil"></i> {{ text_edit }}</h3>
+      </div>
+      <div class="panel-body">
+        <form action="{{ action }}" method="post" enctype="multipart/form-data" id="form-module" class="form-horizontal">
+
+
+          <div class="tab-pane">
+            <ul class="nav nav-tabs" id="language">
+              <li><a href="#setting" data-toggle="tab"><i class="fa fa-cog fw"></i> {{ text_setting }}</a></li>
+              <li><a href="#support" data-toggle="tab"><i class="fa fa-question-circle" aria-hidden="true"></i> {{ text_support }}</a></li>
+
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane" id="setting">
+
+                <div class="col-sm-12 panel-bar"></div>
+
+                <div class="form-group">
+                  <label class="col-sm-2 control-label" for="input-product-type">{{ entry_product_type }}</label>
+                  <div class="col-sm-10">
+                      <select name="product_type" id="input-product-type" class="form-control">
+                          {% if cs_setting.product_type == 'image' %}
+                              <option value="image" selected="selected">{{ text_image }}</option>
+                              <option value="color">{{ text_color }}</option>
+                          {% else %}
+                              <option value="image">{{ text_image }}</option>
+                              <option value="color" selected="selected">{{ text_color }}</option>
+                          {% endif %}
+                      </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label" for="input-boxwidth"><span data-toggle="tooltip" title="" data-original-title="{{ title_product_boxwidth }}">{{ entry_product_boxwidth }}</span></label>
+                    <div class="col-sm-10">
+                        <input type="text" name="product_boxwidth" placeholder="{{ placeholder_boxwidth }}" id="input-product-boxwidth" value="{{ cs_setting.product_box_width }}" class="form-control" />
+                        {% if error_width_product %}
+                            <div class="text-danger">{{ error_width_product }}</div>
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-2 control-label" for="input-boxheight"><span data-toggle="tooltip" title="" data-original-title="{{ title_product_boxheight }}">{{ entry_product_boxheight }}</span></label>
+                  <div class="col-sm-10">
+                      <input type="text" name="product_boxheight" placeholder="{{ placeholder_boxheight }}" id="input-product-boxheight" value="{{ cs_setting.product_box_height }}" class="form-control" />
+                      {% if error_height_product %}
+                          <div class="text-danger">{{ error_height_product }}</div>
+                      {% endif %}
+                  </div>
+                </div>
+
+                <div class="col-sm-12 panel-bar"></div>
+
+                <div class="form-group">
+                  <label class="col-sm-2 control-label" for="input-category-type">{{ entry_category_type }}</label>
+                  <div class="col-sm-10">
+                      <select name="category_type" id="input-category-type" class="form-control">
+                          {% if cs_setting.category_type == 'image' %}
+                              <option value="image" selected="selected">{{ text_image }}</option>
+                              <option value="color">{{ text_color }}</option>
+                          {% else %}
+                              <option value="image">{{ text_image }}</option>
+                              <option value="color" selected="selected">{{ text_color }}</option>
+                          {% endif %}
+                      </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-2 control-label" for="input-category-boxwidth"><span data-toggle="tooltip" title="" data-original-title="{{ title_category_boxwidth }}">{{ entry_category_boxwidth }}</span></label>
+                  <div class="col-sm-10">
+                      <input type="text" name="category_boxwidth" placeholder="{{ placeholder_boxwidth }}" id="input-category-boxwidth" value="{{ cs_setting.category_box_width }}" class="form-control" />
+                      {% if error_width_category %}
+                          <div class="text-danger">{{ error_width_category }}</div>
+                      {% endif %}
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-2 control-label" for="input-category-boxheight"><span data-toggle="tooltip" title="" data-original-title="{{ title_category_boxheight }}">{{ entry_category_boxheight }}</span></label>
+                  <div class="col-sm-10">
+                      <input type="text" name="category_boxheight" placeholder="{{ placeholder_boxheight }}" id="input-category-boxheight" value="{{ cs_setting.category_box_height }}" class="form-control" />
+                      {% if error_height_category %}
+                          <div class="text-danger">{{ error_height_category }}</div>
+                      {% endif %}
+                  </div>
+                </div>
+
+                <div class="col-sm-12 panel-bar"></div>
+
+                <div class="form-group">
+                  <label class="col-sm-2 control-label" for="input-related-type">{{ entry_related_type }}</label>
+                  <div class="col-sm-10">
+                      <select name="related_type" id="input-related-type" class="form-control">
+                          {% if cs_setting.related_type == 'image' %}
+                              <option value="image" selected="selected">{{ text_image }}</option>
+                              <option value="color">{{ text_color }}</option>
+                          {% else %}
+                              <option value="image">{{ text_image }}</option>
+                              <option value="color" selected="selected">{{ text_color }}</option>
+                          {% endif %}
+                      </select>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="col-sm-2 control-label" for="input-related-boxwidth"><span data-toggle="tooltip" title="" data-original-title="{{ title_related_boxwidth }}">{{ entry_related_boxwidth }}</span></label>
+                  <div class="col-sm-10">
+                      <input type="text" name="related_boxwidth" placeholder="{{ placeholder_boxwidth }}" id="input-related-boxwidth" value="{{ cs_setting.related_box_width }}" class="form-control" />
+                      {% if error_width_related %}
+                          <div class="text-danger">{{ error_width_related }}</div>
+                      {% endif %}
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-2 control-label" for="input-related-boxheight"><span data-toggle="tooltip" title="" data-original-title="{{ title_related_boxheight }}">{{ entry_related_boxheight }}</span></label>
+                  <div class="col-sm-10">
+                      <input type="text" name="related_boxheight" placeholder="{{ placeholder_boxheight }}" id="input-related-boxheight" value="{{ cs_setting.related_box_height }}" class="form-control" />
+                      {% if error_height_related %}
+                          <div class="text-danger">{{ error_height_related }}</div>
+                      {% endif %}
+                  </div>
+                </div>
+
+                <div class="col-sm-12 panel-bar"></div>
+
+                <div class="form-group">
+                  <label class="col-sm-2 control-label" for="input-featured-type">{{ entry_featured_type }}</label>
+                  <div class="col-sm-10">
+                      <select name="featured_type" id="input-featured-type" class="form-control">
+                          {% if cs_setting.featured_type == 'image' %}
+                              <option value="image" selected="selected">{{ text_image }}</option>
+                              <option value="color">{{ text_color }}</option>
+                          {% else %}
+                              <option value="image">{{ text_image }}</option>
+                              <option value="color" selected="selected">{{ text_color }}</option>
+                          {% endif %}
+                      </select>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="col-sm-2 control-label" for="input-featured-boxwidth"><span data-toggle="tooltip" title="" data-original-title="{{ title_featured_boxwidth }}">{{ entry_featured_boxwidth }}</span></label>
+                  <div class="col-sm-10">
+                      <input type="text" name="featured_boxwidth" placeholder="{{ placeholder_boxwidth }}" id="input-featured-boxwidth" value="{{ cs_setting.featured_box_width }}" class="form-control" />
+                      {% if error_width_featured %}
+                          <div class="text-danger">{{ error_width_featured }}</div>
+                      {% endif %}
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-2 control-label" for="input-featured-boxheight"><span data-toggle="tooltip" title="" data-original-title="{{ title_featured_boxheight }}">{{ entry_featured_boxheight }}</span></label>
+                  <div class="col-sm-10">
+                      <input type="text" name="featured_boxheight" placeholder="{{ placeholder_boxheight }}" id="input-featured-boxheight" value="{{ cs_setting.featured_box_height }}" class="form-control" />
+                      {% if error_height_featured %}
+                          <div class="text-danger">{{ error_height_featured }}</div>
+                      {% endif %}
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane" id="support">
+                  <div class="form-group">
+                      <div class="col-sm-12">
+                          <img src="{{ base }}view/image/banner.jpg" width="450">
+                          <div><img src="{{ base }}view/image/document-icon.png" width="32"><a href="http://opencart.nebado.com/ColorSwatch.pdf" download>Click here to download extension document.</a></div>
+                      </div>
+                  </div>
+                  <div class="col-sm-12">
+                      For support:&nbsp&nbsp&nbsp<a href="mailto:nebado@nebado.com">nebado@nebado.com</a>
+                  </div>
+
+              </div>
+
+            </div>
+          </div>
+
+        </form>
+
+    </div>
+  </div>
+  <link href="view/javascript/codemirror/lib/codemirror.css" rel="stylesheet" />
+  <link href="view/javascript/codemirror/theme/monokai.css" rel="stylesheet" />
+  <script type="text/javascript" src="view/javascript/codemirror/lib/codemirror.js"></script> 
+  <script type="text/javascript" src="view/javascript/codemirror/lib/xml.js"></script> 
+  <script type="text/javascript" src="view/javascript/codemirror/lib/formatting.js"></script> 
+    
+  <script type="text/javascript" src="view/javascript/summernote/summernote.js"></script>
+  <link href="view/javascript/summernote/summernote.css" rel="stylesheet" />
+  <script type="text/javascript" src="view/javascript/summernote/summernote-image-attributes.js"></script>
+  <script type="text/javascript" src="view/javascript/summernote/opencart.js"></script>
+  <script type="text/javascript"><!--
+$("#language a:first").tab("show");
+//--></script></div>
+{{ footer }}

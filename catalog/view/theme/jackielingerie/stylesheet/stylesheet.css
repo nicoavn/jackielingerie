@@ -456,6 +456,7 @@ p.powered-center{
 	margin: 0 0 20px 0;
 	padding: 8px 0;
 	border: 1px solid transparent;
+	color: transparent;
 }
 .breadcrumb i {
 	font-size: 15px;
@@ -748,8 +749,11 @@ h2.price {
 }
 
 div.button-group{
-	width: 100%;
-	height:100%;
+	width: 50%;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+}
 
 }
 .product-thumb .button-group {
@@ -778,6 +782,23 @@ div.button-group{
 	font-size: 16px;
 	font-family: Montserrat;
 	/*text-transform: uppercase;*/
+}
+
+
+.button-group button{
+	/*width: 100%;*/
+	border: none;
+	display: inline-block;
+	float: left;
+	background-color: #000000;
+	color: #FFFFFF;
+	line-height: 38px;
+	/*font-weight: bold;*/
+	text-align: center;
+	font-size: 16px;
+	font-family: Montserrat;
+	/*text-transform: uppercase;*/
+
 }
 .product-thumb .button-group button + button {
 	width: 20%;
