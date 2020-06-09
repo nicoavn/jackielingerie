@@ -1,9 +1,13 @@
 <footer>
   <div class="container">
-    <div class="row">
+    <div class="row"> 
+      <div>
+        <div class="logo-footer"><a href="{{ home }}"><img src="image/JL-Home-logo.png" class="img-responsive" />
+        </div>
+      </div>
+      <h5 class="title-footer">{{ text_service }}</h5>
       {% if informations %}
       <div class="col-sm-3">
-        <h5>{{ text_information }}</h5>
         <ul class="list-unstyled">
          {% for information in informations %}
           <li><a href="{{ information.href }}">{{ information.title }}</a></li>
@@ -12,7 +16,7 @@
       </div>
       {% endif %}
       <div class="col-sm-3">
-        <h5>{{ text_service }}</h5>
+        <!--<h5>{{ text_service }}</h5>-->
         <ul class="list-unstyled">
           <li><a href="{{ contact }}">{{ text_contact }}</a></li>
           <li><a href="{{ return }}">{{ text_return }}</a></li>
@@ -20,7 +24,7 @@
         </ul>
       </div>
       <div class="col-sm-3">
-        <h5>{{ text_extra }}</h5>
+       <!-- <h5>{{ text_extra }}</h5>-->
         <ul class="list-unstyled">
           <li><a href="{{ manufacturer }}">{{ text_manufacturer }}</a></li>
           <li><a href="{{ voucher }}">{{ text_voucher }}</a></li>
@@ -29,7 +33,7 @@
         </ul>
       </div>
       <div class="col-sm-3">
-        <h5>{{ text_account }}</h5>
+        <!--<h5>{{ text_account }}</h5>-->
         <ul class="list-unstyled">
           <li><a href="{{ account }}">{{ text_account }}</a></li>
           <li><a href="{{ order }}">{{ text_order }}</a></li>
@@ -38,8 +42,8 @@
         </ul>
       </div>
     </div>
-    <hr>
-    <p>{{ powered }}</p>
+    <!--<hr>-->
+    <p class="powered-center">{{ powered }}</p>
   </div>
 </footer>
 {% for script in scripts %}
