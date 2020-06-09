@@ -12,6 +12,12 @@ h1, h2, h3, h4, h5, h6 {
 /* default font size */
 .fa {
 	font-size: 14px;
+	
+}
+
+ .fa-home {
+	font-size: 14px;
+	color: #EF8191;
 }
 /* Override the bootstrap defaults */
 h1 {
@@ -151,11 +157,11 @@ h3.logo_small {
 	font-family: Montserrat;
 	font-size: small;
 	letter-spacing: 5px;
-<<<<<<< HEAD
+
 	padding-left: 0px;
-=======
-	padding-left: 41px;
->>>>>>> master
+
+	text-align: center;
+
 	margin-top: -10px;
 }
 
@@ -449,13 +455,13 @@ p.powered-center{
 .breadcrumb {
 	margin: 0 0 20px 0;
 	padding: 8px 0;
-	border: 1px solid #ddd;
+	border: 1px solid transparent;
 }
 .breadcrumb i {
 	font-size: 15px;
 }
 .breadcrumb > li {
-	text-shadow: 0 1px 0 #FFF;
+	text-shadow: 0 1px 0 transparent;
 	padding: 0 20px;
 	position: relative;
 	white-space: nowrap;
@@ -466,18 +472,22 @@ p.powered-center{
 }
 .breadcrumb > li:after {
 	content: '';
-	display: block;
-	position: absolute;
-	top: -3px;
-	right: -5px;
-	width: 26px;
-	height: 26px;
-	border-right: 1px solid #DDD;
-	border-bottom: 1px solid #DDD;
-	-webkit-transform: rotate(-45deg);
-	-moz-transform: rotate(-45deg);
-	-o-transform: rotate(-45deg);
-	transform: rotate(-45deg);
+    display: block;
+    position: absolute;
+    top: 4px;
+    right: -5px;
+    width: 0px;
+    height: 12px;
+    border-right: 1px solid #7F8E99;
+    border-bottom: 1px solid #7F8E99;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(0deg);
+}
+.breadcrumb > li > a{
+	color: #7F8E99;
+	font-family: Montserrat;
 }
 .pagination {
 	margin: 0;
@@ -606,15 +616,19 @@ p.powered-center{
 }
 /* list group */
 .list-group a {
-	border: 1px solid #DDDDDD;
+	border: 1px solid transparent;
 	color: #888888;
 	padding: 8px 12px;
+	font-family: Montserrat;
+	font-style: bold;
 }
 .list-group a.active, .list-group a.active:hover, .list-group a:hover {
-	color: #444444;
-	background: #eeeeee;
-	border: 1px solid #DDDDDD;
-	text-shadow: 0 1px 0 #FFF;
+	color: #8C2F52;
+	background: transparent;
+	/*border: 1px solid #DDDDDD;*/
+	/*text-shadow: 0 1px 0 #FFF;*/
+	font-family: Montserrat;
+
 }
 /* carousel */
 .carousel-caption {
@@ -637,8 +651,9 @@ p.powered-center{
 }
 .product-thumb .image {
 	text-align: center;
-	height: 442px;
+	
 }
+
 .product-thumb .image a {
 	display: block;
 }
