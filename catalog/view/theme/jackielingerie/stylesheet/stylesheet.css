@@ -151,7 +151,11 @@ h3.logo_small {
 	font-family: Montserrat;
 	font-size: small;
 	letter-spacing: 5px;
+<<<<<<< HEAD
 	padding-left: 0px;
+=======
+	padding-left: 41px;
+>>>>>>> master
 	margin-top: -10px;
 }
 
@@ -854,8 +858,11 @@ div.button-group{
     }
 }
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> master
 /* Home Page */
 
 
