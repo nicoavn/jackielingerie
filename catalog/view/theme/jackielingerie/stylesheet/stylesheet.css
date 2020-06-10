@@ -1,5 +1,6 @@
 body {
-	font-family: 'Open Sans', sans-serif;
+	/*font-family: 'Open Sans', sans-serif;*/
+	font-family: Montserrat;
 	font-weight: 400;
 	color: #666;
 	font-size: 12px;
@@ -372,9 +373,14 @@ h5.title-footer{
     		text-align: center;
 		   
 	}
-
-
+	/*nombre de producto */
 	
+	.col-sm-13{
+		    width: 33.33333333%;
+		    margin: auto;
+    		text-align: center;
+		   
+			}
 
 	}
 @media (max-width: 767px) {
@@ -394,7 +400,7 @@ h5.title-footer{
 	}
 	#menu .dropdown-inner a {
 		width: 100%;
-		color: #fff;
+		
 	}
 	#menu .dropdown-menu a:hover,
 	#menu .dropdown-menu ul li a:hover {
@@ -436,7 +442,8 @@ footer a:hover {
 	color: #fff;
 }
 footer h5 {
-	font-family: 'Open Sans', sans-serif;
+	/*font-family: 'Open Sans', sans-serif;*/
+	font-family: Montserrat;
 	font-size: 13px;
 	font-weight: bold;
 	color: #fff;
@@ -682,6 +689,7 @@ p.powered-center{
 
 .product-thumb h4 a {
 	color: #8C2F52;
+	font-family: Montserrat;
 	}
 
 .product-thumb .caption {
@@ -848,6 +856,21 @@ div.button-group{
 .thumbnails .image-additional {
 	float: left;
 	margin-left: 20px;
+}
+
+.thumbnail-main > img{
+	display: inline-block;
+    height: 677px;
+    width: 577px;
+    padding: 4px;
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: border .2s ease-in-out;
+    -o-transition: border .2s ease-in-out;
+    transition: border .2s ease-in-out;
 }
 
 @media (min-width: 1200px) {
