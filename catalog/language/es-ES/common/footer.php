@@ -13,4 +13,4 @@ $_['text_account'] 	=  'Mi cuenta';
 $_['text_order'] 	=  'Historial de pedidos';
 $_['text_wishlist'] 	=  'Lista de deseos';
 $_['text_newsletter'] 	=  'Hoja informativa';
-$_['text_powered'] 	=  '%s &copy;%s Derechos reservados. Desarrollado por <a href="http://www.methedesigner.com">me the designer</a>';
+$_['text_powered'] 	=  '%s &copy;%s Derechos reservados. Desarrollado por <a href="https://www.instagram.com/methedesigner/">me the designer</a>';

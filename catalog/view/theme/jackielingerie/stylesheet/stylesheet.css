@@ -294,6 +294,7 @@ h5.title-footer{
 	padding-bottom: 20px;
     padding-top: 20px;
     padding-left: 20px;
+    background-size: cover;
 
 
 }
@@ -394,6 +395,9 @@ h5.title-footer{
 		margin-left: 10 !important;
 		padding-bottom: 10px;
 		background-color: rgba(0, 0, 0, 0.1);
+		background-size: contain;
+    	background-repeat: round;
+
 	}
 	#menu .dropdown-inner {
 		display: block;
@@ -860,7 +864,6 @@ div.button-group{
 
 .thumbnail-main > img{
 	display: inline-block;
-    height: 677px;
     width: 577px;
     padding: 4px;
     margin-bottom: 20px;

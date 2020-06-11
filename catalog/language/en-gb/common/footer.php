@@ -14,5 +14,5 @@ $_['text_account']      = 'My Account';
 $_['text_order']        = 'Order History';
 $_['text_wishlist']     = 'Wish List';
 $_['text_newsletter']   = 'Newsletter';
-$_['text_powered']      = '%s &copy;%s All rights reserved. Powered By <a href="http://www.methedesigner.com">me the designer</a>';
+$_['text_powered']      = '%s &copy;%s All rights reserved. Powered By <a href="https://www.instagram.com/methedesigner/">me the designer</a>';
 
