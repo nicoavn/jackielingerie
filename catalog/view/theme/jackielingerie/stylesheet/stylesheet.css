@@ -707,6 +707,7 @@ p.powered-center{
 .product-thumb .image img {
 	margin-left: auto;
 	margin-right: auto;
+	width: 383px;
 }
 .product-grid .product-thumb .image {
 	float: none;
@@ -716,6 +717,10 @@ p.powered-center{
 	float: left;
 	padding: 0 15px;
 }
+.col-sm-8 {
+    width: 54.666667%;
+}
+
 }
 .product-thumb h4 {
 	
