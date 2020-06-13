@@ -24,23 +24,38 @@
         </ul>
       </div>
       <div class="col-sm-3">
-       <!-- <h5>{{ text_extra }}</h5>-->
+       <h5>{{ text_extra }}</h5>
         <ul class="list-unstyled">
-          <li><a href="{{ manufacturer }}">{{ text_manufacturer }}</a></li>
-          <li><a href="{{ voucher }}">{{ text_voucher }}</a></li>
-          <li><a href="{{ affiliate }}">{{ text_affiliate }}</a></li>
-          <li><a href="{{ special }}">{{ text_special }}</a></li>
+          <!--<li><a href="{{ manufacturer }}">{{ text_manufacturer }}</a></li>-->
+          <li>
+            
+            <div id="fa-size-sn">
+              <a target="_blank" data-platform="facebook" href="#" title="Facebook"><span class="fa fa-facebook"> &nbsp; </span></a>
+              <a target="_blank" data-platform="instagram" href="#" title="Instagram"><span class="fa fa-instagram"> &nbsp; </span></a>
+              <a target="_blank" data-platform="twitter" href="#" title="Twitter"><span class="fa fa-twitter"> &nbsp; </span></a>
+            </div>
+            
+
+          </li>
+          <li><h4>Asistencia Rápida</h4><!--<a href="{{ voucher }}">{{ text_voucher }}</a>--></li>
+          <!--<li><a href="{{ affiliate }}">{{ text_affiliate }}</a></li>-->
+          <li><a href="https://api.whatsapp.com/send?phone=34 674821127">
+            <div id= "fa-size"><span class="fa fa-whatsapp"> &nbsp; 34 674821127</span></div>
+          </a></li>
+          <li id="fa-size-mail"><a href="mailto:espjack@hotmail.com">
+            <div><span class="fa fa-envelope"> &nbsp; espjack@hotmail.com</span></div></a></li>
+          <!--<li><a href="{{ special }}">{{ text_special }}</a></li>-->
         </ul>
       </div>
-      <div class="col-sm-3">
-        <!--<h5>{{ text_account }}</h5>-->
+      <!--<div class="col-sm-3">
+        <h5>{{ text_account }}</h5>
         <ul class="list-unstyled">
           <li><a href="{{ account }}">{{ text_account }}</a></li>
           <li><a href="{{ order }}">{{ text_order }}</a></li>
           <li><a href="{{ wishlist }}">{{ text_wishlist }}</a></li>
           <li><a href="{{ newsletter }}">{{ text_newsletter }}</a></li>
         </ul>
-      </div>
+      </div>-->
     </div>
     <!--<hr>-->
     <p class="powered-center">{{ powered }}</p>
