@@ -7,8 +7,12 @@ body {
 	line-height: 20px;
 	width: 100%;
 }
-h1, h2, h3, h4, h5, h6 {
+  h3, h4, h5, h6 {
 	color: #444;
+}
+
+h1, h2{
+	color: #8C2F52;
 }
 /* default font size */
 .fa {
@@ -22,13 +26,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* Override the bootstrap defaults */
 h1 {
-	font-size: 33px;
+	font-size: 26px;
 }
 h2 {
-	font-size: 27px;
+	font-size: 21px;
 }
 h3 {
-	font-size: 21px;
+	font-size: 18px;
 }
 h4 {
 	font-size: 15px;
@@ -100,11 +104,12 @@ div.required .control-label:before {
 #top #form-currency .currency-select,
 #top #form-language .language-select {
 	text-align: left;
+	font-family: Montserrat;
 }
 #top #form-currency .currency-select:hover,
 #top #form-language .language-select:hover {
 	text-shadow: none;
-	color: #ffffff;
+	color: #8C2F52;
 	/*background-color: #229ac8;*/
 	/*background-image: linear-gradient(to bottom, #23a1d1, #1f90bb);*/
 	background-repeat: repeat-x;
@@ -206,6 +211,14 @@ h5.title-footer{
 	line-height: 18px;
 	padding: 7px 13px;
 	text-shadow: 0 1px 0 #FFF;
+	background-color: transparent;
+	color: #EF8191;
+}
+
+#search .btn-lg:hover {
+	color: #444;
+    
+
 }
 /* cart */
 #cart {
@@ -366,6 +379,9 @@ h5.title-footer{
 	}
 }
 
+.col-sm-10 {
+	float: inherit;
+}
 
 @media (min-width: 768px){
 	.col-sm-4{
@@ -373,7 +389,7 @@ h5.title-footer{
 		    margin: auto;
     		text-align: center;
 		   
-	}
+			}
 	/*nombre de producto */
 	
 	.col-sm-13{
@@ -382,6 +398,16 @@ h5.title-footer{
     		text-align: left;
 		   
 			}
+
+	.col-sm-13 > h1 {
+		font-size: 22px;
+		font-family: Montserrat;
+		color: #8C2F52;
+			}	
+	.col-sm-10 {
+	float: left;
+}
+
 
 	}
 @media (max-width: 767px) {
@@ -418,7 +444,7 @@ h5.title-footer{
 	}
 
 
-}s
+}
 
 
 /* content */
@@ -509,7 +535,7 @@ p.powered-center{
 	margin: 1em 0;
 }
 .btn {
-	padding: 5.5px 4px;
+	padding: 7.5px 12px;
 	font-size: 12px;
 	border: 1px solid #cccccc;
 	border-radius: 4px;
@@ -538,25 +564,31 @@ p.powered-center{
 	font-size: 15px;
 }
 .btn-default {
-	color: #EF8191;
+	color: #fff;
 	/*text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);*/
 	/*background-color: #e7e7e7;*/
-	background-color: transparent;
+	background-color: #000000;
 	/*background-image: linear-gradient(to bottom, #eeeeee, #dddddd);*/
 	background-repeat: repeat-x;
 	/*border-color: #dddddd #dddddd #b3b3b3 #b7b7b7;*/
 }
 .btn-primary {
-	color: #EF8191;
+	color: #fff;
 	/*text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);*/
-	background-color: transparent;
+	background-color: #000000;
 	/*background-image: linear-gradient(to bottom, #23a1d1, #1f90bb);*/
 	background-repeat: repeat-x;
 	/*border-color: #1f90bb #1f90bb #145e7a;*/
 }
 .btn-primary:hover, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] {
-	background-color: #EF8191;
+	background-color: #EAADBA;
 	background-position: 0 -15px;
+}
+
+.btn-default:hover{
+	color: #fff;
+    background-color: #EAADBA;
+    border-color: #ccc;
 }
 .btn-warning {
 	color: #ffffff;
@@ -564,18 +596,18 @@ p.powered-center{
 	background-color: #faa732;
 	background-image: linear-gradient(to bottom, #fbb450, #f89406);
 	background-repeat: repeat-x;
-	border-color: #f89406 #f89406 #ad6704;
+	/*border-color: #f89406 #f89406 #ad6704;*/
 }
 .btn-warning:hover, .btn-warning:active, .btn-warning.active, .btn-warning.disabled, .btn-warning[disabled] {
 	box-shadow: inset 0 1000px 0 rgba(0, 0, 0, 0.1);
 }
 .btn-danger {
-	color: #ffffff;
+	color: #fff;
 	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 	background-color: #da4f49;
 	background-image: linear-gradient(to bottom, #ee5f5b, #bd362f);
 	background-repeat: repeat-x;
-	border-color: #bd362f #bd362f #802420;
+	/*border-color: #bd362f #bd362f #802420;*/
 }
 .btn-danger:hover, .btn-danger:active, .btn-danger.active, .btn-danger.disabled, .btn-danger[disabled] {
 	box-shadow: inset 0 1000px 0 rgba(0, 0, 0, 0.1);
@@ -817,8 +849,8 @@ div.button-group{
 	border-left: 1px solid #ddd;
 }
 .product-thumb .button-group button:hover {
-	color: #444;
-	background-color: #ddd;
+	color: #fff;
+	background-color: #EAADBA;
 	text-decoration: none;
 	cursor: pointer;
 }
