@@ -1079,6 +1079,7 @@ div.button-group{
 #common-home {
 	padding-left: 0;
 	padding-right: 0;
+	overflow-x: hidden;
 }
 
 #common-home #content {
