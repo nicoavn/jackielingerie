@@ -435,7 +435,11 @@ h5.title-footer{
 }
 
 .col-sm-3 {
-    width: 33.33%;
+    width: 27.33%;
+}
+
+.col-sm-9 {
+    width: 72%;
 }
 
 
