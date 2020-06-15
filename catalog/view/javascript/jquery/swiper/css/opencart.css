@@ -15,7 +15,7 @@
 	direction: ltr !important;
 }
 .swiper-pager {
-	width: 100%;
+	width: 90%;
 	position: absolute;
 	top: 50%;
 	line-height: 45px;
@@ -62,7 +62,7 @@
 	font-family: FontAwesome;
 	content: "\f053"; 
 	color: rgba(0,0,0,0.8);
-	font-size: 40px;
+	font-size: 10px;
 }
 .swiper-button-next:before {
 	width: 40px;
@@ -70,7 +70,7 @@
 	font-family: FontAwesome;
 	content: "\f054"; 
 	color: rgba(0,0,0,0.8);
-	font-size: 40px;
+	font-size: 10px;
 }
 .swiper-pagination {
 	bottom: -40px;

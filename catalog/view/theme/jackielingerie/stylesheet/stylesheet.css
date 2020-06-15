@@ -37,14 +37,27 @@ h1, h2{
 
 }
 
-#fa-size-sn .fa-facebook, .fa-instagram, .fa-twitter {
-	font-size: 18px;
+#fa-size .fa-whatsapp:hover {
 	color: #EF8191;
+
+}
+
+#fa-size-sn .fa-facebook, .fa-instagram, .fa-twitter {
+	font-size: 22px;
+	color: #EF8191;
+}
+
+#fa-size-sn .fa-facebook:hover, .fa-instagram:hover, .fa-twitter:hover {
+	color: #fff;
 }
 
 #fa-size-mail .fa-envelope{
 	color: #EF8191;
 
+}
+
+#fa-size-mail .fa-envelope:hover{
+	color: #fff;
 }
 
 
@@ -213,14 +226,11 @@ h3.logo_small {
 
 h5.title-footer{
 	padding-top: 56px;
-    padding-left: 141px;
+	margin-left: 15px;
+    
 }
 
-.row div.col-sm-3{
 
-	padding-top: 10px;
-    padding-left: 142px;
-}
 /* search */
 #search {
 	margin-top: 5px;
@@ -334,9 +344,11 @@ h5.title-footer{
     padding-top: 20px;
     padding-left: 20px;
     background-size: cover;
-
-
 }
+
+
+
+
 #menu .dropdown-inner {
 	display: table;
 }
@@ -430,20 +442,41 @@ h5.title-footer{
 		font-family: Montserrat;
 		color: #8C2F52;
 			}	
-	.col-sm-10 {
-	float: left;
+
+		.col-sm-10 {
+		float: left;
 }
 
 .col-sm-3 {
-    width: 27.33%;
+    width: 25%;
+    float: left;
+    
 }
+
+.col-lg-3 {
+		width: 32%;
+	}
+
 
 .col-sm-9 {
     width: 72%;
 }
 
+.row div.col-sm-3{
+
+	padding-top: 10px;
+    
+}
 
 	}
+
+	.row div.col-sm-3{
+
+	padding-top: 0px;
+
+
+    
+}
 @media (max-width: 767px) {
 	#menu {
 		border-radius: 4px;
@@ -514,6 +547,13 @@ footer h5 {
 	color: #fff;
 }
 
+#date h5 {
+	
+	color: #fff;
+    font-family: Montserrat;
+    font-weight: 100;
+    font-size: 12px
+}
 
 p.powered-center{
 	text-align: center;
@@ -782,6 +822,7 @@ p.powered-center{
 	min-height: 210px;
 	padding: 0 10px;
 }
+
 }
 @media (max-width: 767px) {
 .product-list .product-thumb .caption {
@@ -899,11 +940,15 @@ div.button-group{
 	.product-thumb .button-group button, .product-thumb .button-group button + button {
 		width: 100%;
 	}
+
+
 }
 @media (max-width: 767px) {
 	.product-thumb .button-group button, .product-thumb .button-group button + button {
 		width: 100%;
 	}
+
+
 }
 .thumbnails {
 	overflow: auto;
@@ -1040,3 +1085,7 @@ div.button-group{
 	padding-left: 0;
 	padding-right: 0;
 }
+
+
+
+
