@@ -1,5 +1,5 @@
 <?php
-$_['heading_title'] 	=  'Revisa';
+$_['heading_title'] 	=  'Completar la orden';
 $_['text_cart'] 	=  'Carrito de compras';
 $_['text_checkout_option'] 	=  'Paso %s: Opciones de pago';
 $_['text_checkout_account'] 	=  'Paso %s: Cuenta & amp; Detalles de facturación';
@@ -22,7 +22,7 @@ $_['text_your_address'] 	=  'Su dirección';
 $_['text_your_password'] 	=  'Tu contraseña';
 $_['text_agree'] 	=  'He leído y acepto el <a href="%s" class="agree"> <b> %s </ b> </a>';
 $_['text_address_new'] 	=  'Quiero usar una nueva dirección';
-$_['text_address_existing'] 	=  'quiero usar una dirección existente';
+$_['text_address_existing'] 	=  'Quiero usar una dirección existente';
 $_['text_shipping_method'] 	=  'Seleccione el método de envío preferido para utilizar en este pedido.';
 $_['text_payment_method'] 	=  'Seleccione el método de pago preferido para utilizar en este pedido.';
 $_['text_comments'] 	=  'Añadir Comentarios Sobre Su Pedido';

@@ -5,7 +5,7 @@ $_['text_remove'] 	=  'Éxito: ¡Has modificado tu carrito de compras!';
 $_['text_login'] 	=  'Atención: Debe <a href="%s"> iniciar sesión </a> o <a href="%s"> crear una cuenta </a> para ver los precios!';
 $_['text_items'] 	=  '% S artículo (s) - %s';
 $_['text_points'] 	=  'Puntos de recompensa: %s';
-$_['text_next'] 	=  'Que te gustaría hacer después?';
+$_['text_next'] 	=  'Opciones disponibles';
 $_['text_next_choice'] 	=  'Elija si tiene un código de descuento o puntos de recompensa que desea utilizar o si desea estimar el costo de envío.';
 $_['text_empty'] 	=  '¡Su cesta está vacía!';
 $_['text_day'] 	=  'día';

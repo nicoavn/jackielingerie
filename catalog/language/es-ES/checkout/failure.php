@@ -1,7 +1,7 @@
 <?php
 $_['heading_title'] 	=  '¡Pago fallido!';
 $_['text_basket'] 	=  'Carrito de compras';
-$_['text_checkout'] 	=  'Revisa';
+$_['text_checkout'] 	=  'Completar la orden';
 $_['text_failure'] 	=  'Pago fallido';
 $_['text_message'] 	=  '<p> Hubo un problema al procesar su pago y el pedido no se completó. </p>
 
