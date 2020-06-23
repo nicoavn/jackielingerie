@@ -15,10 +15,11 @@
 	direction: ltr !important;
 }
 .swiper-pager {
-	width: 90%;
+	width: 100%;
 	position: absolute;
 	top: 50%;
 	line-height: 45px;
+	text-align: center;
 }
 .swiper-button-prev, .swiper-button-next {
 	color: rgba(0, 0, 0, 0.8);
