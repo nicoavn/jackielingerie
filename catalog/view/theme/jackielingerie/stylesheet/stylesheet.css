@@ -708,7 +708,10 @@ p.powered-center{
 
 #bt-update .btn-primary {
 	background-color: #fff;
+<<<<<<< HEAD
 	border-color: #cccccc;
+=======
+>>>>>>> master
 }
 #bt-update .btn-primary:hover {
 	border-color: #cccccc;
@@ -762,6 +765,7 @@ p.powered-center{
 }
 .btn-danger:hover, .btn-danger:active, .btn-danger.active, .btn-danger.disabled, .btn-danger[disabled] {
 	box-shadow: inset 0 1000px 0;
+<<<<<<< HEAD
 	border-color: #666;
 
 }
@@ -773,6 +777,8 @@ p.powered-center{
 
 .fa-times {
 	color: #666;
+=======
+>>>>>>> master
 }
 
 .fa-times:hover {
@@ -1350,7 +1356,49 @@ display:none;
 }
 
 
+<<<<<<< HEAD
+=======
 }
+
+
+@media screen and (max-width: 440px) {
+.nav{
+	padding-left: 0%;
+}
+
+
+}
+
+@media screen and (max-width: 768px){
+.navbar-nav > li{
+	right: 0%; 
+
+>>>>>>> master
+}
+.navbar-nav {
+    margin: 7.5px -15px;
+}
+.navbar-collapse{
+padding-right: 0px;
+}
+
+.nav{
+	padding-left: 0%;
+
+}
+
+
+}
+
+ #accordion .panel-default > .panel-heading {
+	color: #333;
+    background-color: #fff;
+    border-color: #ddd;
+}
+
+
+
+
 
 
 @media screen and (max-width: 440px) {
