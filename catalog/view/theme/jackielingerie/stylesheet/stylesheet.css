@@ -33,6 +33,17 @@ h1, h2{
 	color: #EF8191;
 }
 
+#bt-update .btn-primary {
+  	background-color: transparent;
+  	border-color: #cccccc;
+  }
+
+  #bt-update .btn-primary:hover {
+  	color: #666
+ 	background-color: transparent;
+  	border-color: #cccccc;
+  }
+
  .fa-refresh{
  	color: #666;
  }
@@ -41,9 +52,26 @@ h1, h2{
  	color: #8C2F52;
  }
 
- #bt-update .btn-danger:hover .fa-times-circle{
+ 
+
+ #bt-update .btn-danger {
+ 	background-color: transparent;
+  	border-color: #cccccc;
+
+ }
+
+  #bt-update .btn-danger:hover {
+  	color: #666
+ 	background-color: transparent;
+  	border-color: #cccccc;
+
+ }
+
+  #bt-update .btn-danger:hover .fa-times-circle {
  	color: #8C2F52;
  }
+
+
 
  #fa-size .fa-whatsapp {
 	font-size: 17px;
@@ -705,25 +733,6 @@ p.powered-center{
 	background-repeat: repeat-x;
 	/*border-color: #dddddd #dddddd #b3b3b3 #b7b7b7;*/
 }
-
-#bt-update .btn-primary {
-	background-color: #fff;
-<<<<<<< HEAD
-	border-color: #cccccc;
-=======
->>>>>>> master
-}
-#bt-update .btn-primary:hover {
-	border-color: #cccccc;
-}
-#bt-update .btn-danger {
-	background-color: #fff;
-}
-#bt-update .btn-danger:hover {
-	border-color: #cccccc;
-}
-
-
 .btn-primary {
 	color: #fff;
 	/*text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);*/
@@ -764,26 +773,24 @@ p.powered-center{
 	border-color: #cccccc;
 }
 .btn-danger:hover, .btn-danger:active, .btn-danger.active, .btn-danger.disabled, .btn-danger[disabled] {
-	box-shadow: inset 0 1000px 0;
-<<<<<<< HEAD
-	border-color: #666;
-
+	/*box-shadow: inset 0 1000px 0 rgba(0, 0, 0, 0.1);*/
 }
+
+
+#cart .btn-danger {
+ 	background-color: transparent;
+  	border-color: #cccccc;
+ }
+
+  #cart .btn-danger:hover {
+  	color: #8C2F52;
+ 	background-color: transparent;
+  	border-color: #cccccc;
+ }
+
 #car .btn-danger:hover .fa-times {
 	color: #8C2F52;
 	border-color: #666;
-
-}
-
-.fa-times {
-	color: #666;
-=======
->>>>>>> master
-}
-
-.fa-times:hover {
-	color: #8C2F52;
-
 }
 
 .btn-success {
@@ -1356,49 +1363,7 @@ display:none;
 }
 
 
-<<<<<<< HEAD
-=======
 }
-
-
-@media screen and (max-width: 440px) {
-.nav{
-	padding-left: 0%;
-}
-
-
-}
-
-@media screen and (max-width: 768px){
-.navbar-nav > li{
-	right: 0%; 
-
->>>>>>> master
-}
-.navbar-nav {
-    margin: 7.5px -15px;
-}
-.navbar-collapse{
-padding-right: 0px;
-}
-
-.nav{
-	padding-left: 0%;
-
-}
-
-
-}
-
- #accordion .panel-default > .panel-heading {
-	color: #333;
-    background-color: #fff;
-    border-color: #ddd;
-}
-
-
-
-
 
 
 @media screen and (max-width: 440px) {
