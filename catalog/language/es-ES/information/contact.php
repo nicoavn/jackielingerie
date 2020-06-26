@@ -1,6 +1,6 @@
 <?php
-$_['heading_title'] 	=  'Contáctenos';
-$_['text_location'] 	=  'nuestra ubicación';
+$_['heading_title'] =  'Contáctenos';
+$_['text_location'] =  'Nuestra ubicación';
 $_['text_store'] 	=  'Nuestras Tiendas';
 $_['text_contact'] 	=  'Formulario de contacto';
 $_['text_address'] 	=  'Dirección';

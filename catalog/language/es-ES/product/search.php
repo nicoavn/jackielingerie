@@ -24,6 +24,6 @@ $_['text_rating_asc'] 	=  'Clasificación (Menor)';
 $_['text_rating_desc'] 	=  'Puntuación (más alto)';
 $_['text_model_asc'] 	=  'Modelo (A - Z)';
 $_['text_model_desc'] 	=  'Modelo (Z - A)';
-$_['text_limit'] 	=  'Espectáculo:';
+$_['text_limit'] 	=  'Mostrando:';
 $_['entry_search'] 	=  'Criterio de búsqueda';
 $_['entry_description'] 	=  'Buscar en las descripciones de producto';

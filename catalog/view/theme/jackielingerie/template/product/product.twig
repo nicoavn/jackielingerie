@@ -113,7 +113,7 @@
         {% if column_left or column_right %}
         {% set class = 'col-sm-6' %}
         {% else %}
-        {% set class = 'col-lg-3' %}
+        {% set class = 'col-lg-4' %}
         {% endif %}
         <div class="{{ class }}">
           <div class="btn-group">
@@ -175,7 +175,59 @@
                 {% endif %} </option>
                 {% endfor %}
               </select>
-            </div>
+              <div>
+                <p class="pop-up-button">Ver guía de tallas</p>
+                <div class="pop-up">
+                  <span>x</span>
+                  <br><p></p><p class="h1-popup">Tabla Conversión Tallas Internacional</p> 
+                      <div id= "table-popup" class="contenedor">
+                      <table>
+                        <tbody><tr>
+                          <th>EU</th>
+                          <th>BRA</th>
+                          <th>USA/UK</th>
+                        </tr>
+                        <tr>
+                          <td>80</td>
+                          <td>MS (P)</td>
+                          <td>32-34</td>
+                        </tr>
+                        <tr>
+                          <td>85-90</td>
+                          <td>M (M)</td>
+                          <td>34-36</td>
+                        </tr>
+                        <tr>
+                          <td>90-95</td>
+                          <td>L (G)</td>
+                          <td>36-38</td>
+                        </tr>
+                        <tr>
+                          <td>95-100</td>
+                          <td>XL (GG)</td>
+                          <td>38-40</td>
+                        </tr>
+                        <tr>
+                          <td>110-115</td>
+                          <td>XXL (GGG)</td>
+                          <td>40-42</td>
+                        </tr>
+                      </tbody></table>
+                       
+                      <div><br></div>
+                      <p class="h4-popup"><b><font color="#000000">Observación</font></b></p>
+                      <div class="h4-popup">La mayoría de las tangas y braguitas son ajustables pensado en mujeres que tengan pecho y sean de contorno delgado.&nbsp;</div>
+                      <div class="h4-popup"><br></div>
+                        </div>
+
+                  <!--<div class="pop-up-text">
+                    <h1>Heading 1</h1>
+                    <p>Some sample pop-up text.</p>
+                    <img src="https://images.unsplash.com/photo-1474244707578-17999c7d3fc4"/>
+                  </div>-->
+                </div>
+             </div><br>
+              </div>
             {% endif %}
             {% if option.type == 'radio' %}
             <div class="form-group{% if option.required %} required {% endif %}">
@@ -183,9 +235,9 @@
               <div id="input-option{{ option.product_option_id }}"> {% for option_value in option.product_option_value %}
                 <div class="radio">
                   <label>
-                    <input type="radio" name="option[{{ option.product_option_id }}]" value="{{ option_value.product_option_value_id }}" />
+                    <input class="opacity-color" type="radio" name="option[{{ option.product_option_id }}]" value="{{ option_value.product_option_value_id }}" />
                     {% if option_value.image %} <img src="{{ option_value.image }}" alt="{{ option_value.name }} {% if option_value.price %} {{ option_value.price_prefix }} {{ option_value.price }} {% endif %}" class="img-thumbnail" /> {% endif %}                  
-                    {{ option_value.name }}
+                    <!--{{ option_value.name }}-->
                     {% if option_value.price %}
                     ({{ option_value.price_prefix }}{{ option_value.price }})
                     {% endif %} </label>
@@ -297,7 +349,7 @@
           {% endif %} </div>
       </div>
       {% if products %}
-      <h3>{{ text_related }}</h3>
+      <h3 class="h3-center">{{ text_related }}</h3><br>
       <div class="row"> {% set i = 0 %}
         {% for product in products %}
         {% if column_left and column_right %}
@@ -305,14 +357,14 @@
         {% elseif column_left or column_right %}
         {% set class = 'col-xs-6 col-md-4' %}
         {% else %}
-        {% set class = 'col-md-6 col-md-3' %}
+        {% set class = 'col-md-6 col-md-4' %}
         {% endif %}
         <div class="{{ class }}">
           <div class="product-thumb transition">
             <div class="image"><a href="{{ product.href }}"><img src="{{ product.thumb }}" alt="{{ product.name }}" title="{{ product.name }}" class="img-responsive" /></a></div>
             <div class="caption">
               <h4><a href="{{ product.href }}">{{ product.name }}</a></h4>
-              <p>{{ product.description }}</p>
+              <!--<p>{{ product.description }}</p>-->
               {% if product.rating %}
               <div class="rating"> {% for j in 1..5 %}
                 {% if product.rating < j %} <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i></span> {% else %} <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span> {% endif %}
@@ -351,6 +403,8 @@
       {{ content_bottom }}</div>
     {{ column_right }}</div>
 </div>
+ <div class="h3">MAYOR CLUB DE LENCERÍA DE EUROPA. ENTREGAMOS A LA PUERTA DE TU CASA! SI TIENES ALGUNA DUDA ¡LLÁMANOS!<br></div>
+          <div><br></div>
 <script type="text/javascript"><!--
 $('select[name=\'recurring_id\'], input[name="quantity"]').change(function(){
 	$.ajax({

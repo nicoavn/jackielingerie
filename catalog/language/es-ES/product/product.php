@@ -17,7 +17,7 @@ $_['text_login'] 	=  'Por favor, <a href="%s"> iniciar sesión </a> o <a href="%
 $_['text_no_reviews'] 	=  'No hay comentarios para este producto.';
 $_['text_note'] 	=  '<Span class = "text-danger"> Nota: </ span> ¡HTML no está traducido!';
 $_['text_success'] 	=  'Gracias por su comentario. Se ha enviado al webmaster para su aprobación.';
-$_['text_related'] 	=  'Productos relacionados';
+$_['text_related'] 	=  'También te podría gustar';
 $_['text_tags'] 	=  'Etiquetas:';
 $_['text_error'] 	=  '¡Producto no encontrado!';
 $_['text_payment_recurring'] 	=  'Perfil de pago';
