@@ -339,7 +339,8 @@
           <div class="rating">
             <p>{% for i in 1..5 %}
               {% if rating < i %}<span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i></span>{% else %}<span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>{% endif %}
-              {% endfor %} <a href="" onclick="$('a[href=\'#tab-review\']').trigger('click'); return false;">{{ reviews }}</a> / <a href="" onclick="$('a[href=\'#tab-review\']').trigger('click'); return false;">{{ text_write }}</a></p>
+                <!--btn scroll up-->
+              {% endfor %} <a id="button-portfolio" href="" onclick="$('a[href=\'#tab-review\']').trigger('click'); return false;">{{ reviews }}</a> / <a id="button-portfolio" href="" onclick="$('a[href=\'#tab-review\']').trigger('click'); return false;">{{ text_write }}</a></p>
             <hr>
             <!-- AddThis Button BEGIN -->
             <div class="addthis_toolbox addthis_default_style" data-url="{{ share }}"><a class="addthis_button_facebook_like" fb:like:layout="button_count"></a> <a class="addthis_button_tweet"></a> <a class="addthis_button_pinterest_pinit"></a> <a class="addthis_counter addthis_pill_style"></a></div>
@@ -600,5 +601,92 @@ $(document).ready(function() {
 		}
 	});
 });
+
+//btn scroll up
+
+$(document).ready(
+  function(){
+    $("#button-portfolio").click(function(){
+          $('html, body').animate({
+        scrollTop: $("#tab-review").offset().top
+    }, 1000);
+    })
+    
+       
+
+//=====progressbar=====
+
+
+
+    function creerAnimerProgressBar(barId,i,level){
+      //alert("Fresco");
+      i=0;
+
+      function createProgressBar(){
+        i++;
+        $(barId).progressbar({
+        value:i
+        });
+
+        if(i<level)
+        {
+            setTimeout(createProgressBar,25);
+        }
+      }
+
+      createProgressBar();
+
+  }
+
+function createAllProgressBar(){
+  creerAnimerProgressBar("#barreHTML",0,98);
+  creerAnimerProgressBar("#barreCSS",0,85);
+  creerAnimerProgressBar("#barreJavascript",0,65);
+  creerAnimerProgressBar("#barreJavascript",0,65);
+  creerAnimerProgressBar("#barreBootstrap",0,65);
+  creerAnimerProgressBar("#barreJQuery",0,65);
+  creerAnimerProgressBar("#barreC",0,65);
+  creerAnimerProgressBar("#barreActionscript",0,80);
+  creerAnimerProgressBar("#barreMySQL",0,75);
+  creerAnimerProgressBar("#barreJavascript",0,75);
+  creerAnimerProgressBar("#barrePHP",0,80);
+  creerAnimerProgressBar("#barreJQueryUI",0,80);
+}
+    //
+    // $("#barreJavascript").progressbar({
+    // value:65
+    // });
+    // $("#barreBootstrap").progressbar({
+    // value:65
+    // });
+    // $("#barreJQuery").progressbar({
+    // value:65
+    // });
+    // $("#barreC").progressbar({
+    // value:65
+    // });
+    // $("#barreActionscript").progressbar({
+    // value:80
+    // });
+    // $("#barreMySQL").progressbar({
+    // value:75
+    // });
+    // $("#barreCss").progressbar({
+    // value:75
+    // });
+    // $("#barrePHP").progressbar({
+    // value:70
+    // });
+
+
+  }
+
+  )
+
+
+
+//end scroll
+
+
 //--></script> 
 {{ footer }} 
