@@ -484,7 +484,24 @@ h5.title-footer{
 	#menu .dropdown:hover .dropdown-menu {
 		display: block;
 	}
+
+
 }
+
+@media (min-width: 768px) {
+
+	.text-mayorclub{
+		font-size: 16px;
+		color: #000000;
+	    font-family: Montserrat;
+	    font-weight: Bold;
+	    text-align: center;
+	    line-height: 1.6;
+		}
+
+
+}
+
 
 .col-sm-10 {
 	float: inherit;
@@ -547,15 +564,12 @@ h5.title-footer{
 
 		}
 
-
-
-
-
 	}
 
 	.row div.col-sm-3{
 
 	padding-top: 0px;
+	text-align: center;
 }
 
 .navbar {
@@ -595,6 +609,36 @@ h5.title-footer{
 		border-radius: 0;
 		color: #fff;
 	}
+	.text-mayorclub {
+	font-size: 5px;
+    color: #000000;
+    font-family: Montserrat;
+    font-weight: Bold;
+    text-align: center;
+    line-height: 1.6;
+
+	}
+
+	footer a {
+    color: #ccc;
+    text-decoration: none;
+    text-align: center;
+}
+
+p.powered-center {
+    text-align: center;
+    padding-top: 44px;
+    color: #B3B3B3;
+    font-size: 7px;
+}
+
+.product-thumb h4 a {
+    color: #8C2F52;
+    font-family: BentonSansBook,Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
 
 
 }
