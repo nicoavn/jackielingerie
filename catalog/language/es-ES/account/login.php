@@ -1,7 +1,7 @@
 <?php
 $_['heading_title'] 	=  'Cuenta de Ingreso';
 $_['text_account'] 	=  'Cuenta';
-$_['text_login'] 	=  'Iniciar sesión';
+$_['text_login'] 	=  'Login';
 $_['text_new_customer'] 	=  'Nuevo cliente';
 $_['text_register'] 	=  'Registrar Cuenta';
 $_['text_register_account'] 	=  'Al crear una cuenta podrá comprar más rápido, estar al día en el estado de una orden y realizar un seguimiento de los pedidos que ha realizado anteriormente.';

@@ -129,6 +129,9 @@ a {
 a:hover {
 	text-decoration: none;
 }
+
+
+
 legend {
 	font-size: 18px;
 	padding: 7px 0px
@@ -377,7 +380,7 @@ h5.title-footer{
 	/*background-image: linear-gradient(to bottom, #23a1d1, #1f90bb);*/
 	background-repeat: repeat-x;
 	/*border-color: #1f90bb #1f90bb #145e7a;*/
-	min-height: 40px;
+	min-height: 0px;
 }
 
 
@@ -465,21 +468,42 @@ h5.title-footer{
 	color: #000000;
 	/*text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);*/
 }
+
+/* Menu gusano*/
 #menu .btn-navbar {
+
 	font-size: 15px;
 	font-stretch: expanded;
-	color: #FFF;
-	padding: 2px 18px;
-	float: right;
-	background-color: #888;
+	color: #666;
+	padding: 0px;
+	float: left;
+	background-color: transparent;
 	/*background-image: linear-gradient(to bottom, #23a1d1, #1f90bb);*/
 	background-repeat: repeat-x;
 	/*border-color: #1f90bb #1f90bb #145e7a;*/
 }
 #menu .btn-navbar:hover, #menu .btn-navbar:focus, #menu .btn-navbar:active, #menu .btn-navbar.disabled, #menu .btn-navbar[disabled] {
-	color: #ffffff;
-	background-color: #444;
+	color: #8C2F52;
+	background-color: transparent;
+
+	
 }
+
+#menu .fa-bars {
+	font-size: 25px;
+    box-shadow: inset 0 3px 5px white;
+}
+#menu .btn:active:focus{
+	outline-color: white;
+    outline-width: 1px;
+
+}
+
+#menu .navbar-toggle{
+	margin-top: -36px;
+}
+
+
 @media (min-width: 768px) {
 	#menu .dropdown:hover .dropdown-menu {
 		display: block;
@@ -566,11 +590,22 @@ h5.title-footer{
 
 	}
 
+	/* Test*/
 	.row div.col-sm-3{
 
 	padding-top: 0px;
 	text-align: center;
-}
+
+	}
+
+#content div.col-sm-3{
+
+	padding-top: 0px;
+	text-align: left;
+
+	}
+
+
 
 .navbar {
 	margin-bottom: 0px;
@@ -795,6 +830,11 @@ p.powered-center{
 	background-position: 0 -15px;
 
 }
+
+#button-margin .btn-primary {
+	margin-bottom: 15px;
+
+	}
 
 .btn-default:hover{
 	color: #fff;
@@ -1424,11 +1464,13 @@ border-collapse: separate;
 	float: right;
 }
 
-
+/* Ocualta el Search en mobil*/
 @media handheld, only screen and (max-width: 767px) {
 .search-right {
 display:none;
 }
+
+
 }
 
 @media only screen and (max-width: 1023px) {
@@ -1691,7 +1733,9 @@ cursor: pointer;
 
   /* Shadow and Border */
 
-  .btn:focus,
+  .btn:focus{
+  	outline-color: transparent;
+  }
   .btn.active:focus,
   .btn.active.focus:focus,
   .btn:active:focus,
@@ -1707,4 +1751,23 @@ cursor: pointer;
     -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 4px rgba(150,150,150,.6); 
      box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 4px rgba(150,150,150,.6); 
 }
+
+/* Ocultar El banner 
+@media handheld, only screen and (max-width: 767px) {
+.swiper-viewport {
+display:none;
+}
+
+
+}
+
+@media only screen and (max-width: 1023px) {
+.swiper-viewport {
+display:none;
+}
+
+
+}*/
+
+/* End olcutar search*/
 

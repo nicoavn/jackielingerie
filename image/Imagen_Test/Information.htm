@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<!-- saved from url=(0139)http://localhost/jackielingerie/admin/index.php?route=catalog/information/edit&user_token=8tPMH0eRrhXzPlz5nUfZg0m2f4EfDUoi&information_id=4 -->
+<html dir="ltr" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Information</title>
+<!--<base href="http://localhost/jackielingerie/admin/">--><base href=".">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/javascript" src="./Information_files/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="./Information_files/bootstrap.min.js"></script>
+<link href="./Information_files/bootstrap.css" type="text/css" rel="stylesheet">
+<link href="./Information_files/font-awesome.min.css" type="text/css" rel="stylesheet">
+<script src="./Information_files/moment.min.js" type="text/javascript"></script>
+<script src="./Information_files/moment-with-locales.min.js" type="text/javascript"></script>
+<script src="./Information_files/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
+<link href="./Information_files/bootstrap-datetimepicker.min.css" type="text/css" rel="stylesheet" media="screen">
+<link type="text/css" href="./Information_files/stylesheet.css" rel="stylesheet" media="screen">
+<script src="./Information_files/common.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="container">
+<header id="header" class="navbar navbar-static-top">
+  <div class="container-fluid">
+
+  
+    <div id="header-logo" class="navbar-header"><a href="http://localhost/jackielingerie/admin/index.php?route=common/dashboard&amp;user_token=8tPMH0eRrhXzPlz5nUfZg0m2f4EfDUoi" class="navbar-brand"><img src="./Information_files/logo.png" alt="OpenCart" title="OpenCart"></a></div>
+    <a href="http://localhost/jackielingerie/admin/#" id="button-menu" class="hidden-md hidden-lg"><span class="fa fa-bars"></span></a>    
+    
+
+    
+    <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown"><a href="http://localhost/jackielingerie/admin/#" class="dropdown-toggle" data-toggle="dropdown"><img src="./Information_files/JL-Home-icon-45x45.png" alt="Jackie Lingerie" title="jl_admin" id="user-profile" class="img-circle">Jackie Lingerie <i class="fa fa-caret-down fa-fw"></i></a>
+        <ul class="dropdown-menu dropdown-menu-right">
+          <li><a href="http://localhost/jackielingerie/admin/index.php?route=common/profile&amp;user_token=8tPMH0eRrhXzPlz5nUfZg0m2f4EfDUoi"><i class="fa fa-user-circle-o fa-fw"></i> Your Profile</a></li>
+          <li role="separator" class="divider"></li>
+          <li class="dropdown-header">Stores</li>
+                    <li><a href="http://localhost/jackielingerie/" target="_blank">Jackie</a></li>
+                    <li role="separator" class="divider"></li>
+          <li class="dropdown-header">Help</li>
+          <li><a href="http://www.opencart.com/" target="_blank"><i class="fa fa-opencart fa-fw"></i> OpenCart Homepage</a></li>
+          <li><a href="http://docs.opencart.com/" target="_blank"><i class="fa fa-file-text-o fa-fw"></i> Documentation</a></li>
+          <li><a href="http://forum.opencart.com/" target="_blank"><i class="fa fa-comments-o fa-fw"></i> Support Forum</a></li>
+        </ul>
+      </li>
+      <li><a href="http://localhost/jackielingerie/admin/index.php?route=common/logout&amp;user_token=8tPMH0eRrhXzPlz5nUfZg0m2f4EfDUoi"><i class="fa fa-sign-out"></i> <span class="hidden-xs hidden-sm hidden-md">Logout</span></a></li>
+    </ul>
+     </div>
+</header>
+<nav id="column-left">
+  <div id="navigation"><span class="fa fa-bars"></span> Navigation</div>
+  <ul id="menu" class="in">
+            <li id="menu-dashboard"><a href="http://localhost/jackielingerie/admin/index.php?route=common/dashboard&amp;user_token=8tPMH0eRrhXzPlz5nUfZg0m2f4EfDUoi"><i class="fa fa-dashboard fw"></i> Dashboard</a>        
+      
+      </li>
+            <li id="menu-catalog" class="active"><a href="http://localhost/jackielingerie/admin/#collapse1" data-toggle="collapse" class="parent collapsed"><i class="fa fa-tags fw"></i> Catalog</a>                  <ul id="collapse1" class="collapse in">
+                                      <li>                  <a href="http://localhost/jackielingerie/admin/index.php?route=catalog/category&amp;user_token=8tPMH0eRrhXzPlz5nUfZg0m2f4EfDUoi">Categories</a>
+                                 </li>
+                                        <li>                  <a href="http://localhost/jackielingerie/admin/index.php?route=catalog/product&amp;user_token=8tPMH0eRrhXzPlz5nUfZg0m2f4EfDUoi">Products</a>
+                                 </li>
+                                        <li>                  <a href="http://localhost/jackielingerie/admin/index.php?route=catalog/recurring&amp;user_token=8tPMH0eRrhXzPlz5nUfZg0m2f4EfDUoi">Recurring Profiles</a>
+                                 </li>
+                                        <li>                  <a href="http://localhost/jackielingerie/admin/index.php?route=catalog/filter&amp;user_token=8tPMH0eRrhXzPlz5nUfZg0m2f4EfDUoi">Filters</a>
+                                 </li>
+                                        <li>                  <a href="http://localhost/jackielingerie/admin/#collapse1-4" data-toggle="collapse" class="parent collapsed">Attributes</a>
+                                                  <ul id="collapse1-4" class="collapse">
+                                                              <li>                          <a href="http://localhost/jackielingerie/admin/index.php?route=catalog/attribute&amp;user_token=8tPMH0eRrhXzPlz5nUfZg0m2f4EfDUoi">Attributes</a>
+                                                </li>
+                                                                <li>                          <a href="http://localhost/jackielingerie/admin/index.php?route=catalog/attribute_group&amp;user_token=8tPMH0eRrhXzPlz5nUfZg0m2f4EfDUoi">Attribute Groups</a>
+                                                </li>
+                                                            </ul>
+                 </li>
+                                        <li>                  <a href="http://localhost/jackielingerie/admin/index.php?route=catalog/option&amp;user_token=8tPMH0eRrhXzPlz5nUfZg0m2f4EfDUoi">Options</a>
+                                 </li>
+                                        <li>                  <a href="http://localhost/jackielingerie/admin/index.php?route=catalog/manufacturer&amp;user_token=8tPMH0eRrhXzPlz5nUfZg0m2f4EfDUoi">Manufacturers</a>
+                                 </li>
+                                        <li>                  <a href="http://localhost/jackielingerie/admin/index.php?route=catalog/download&amp;user_token=8tPMH0eRrhXzPlz5nUfZg0m2f4EfDUoi">Downloads</a>
+                                 </li>
+                                        <li>                  <a href="http://localhost/jackielingerie/admin/index.php?route=catalog/review&amp;user_token=8tPMH0eRrhXzPlz5nUfZg0m2f4EfDUoi">Reviews</a>
+                                 </li>
+                                        <li class="active">                  <a href="http://localhost/jackielingerie/admin/index.php?route=catalog/information&amp;user_token=8tPMH0eRrhXzPlz5nUfZg0m2f4EfDUoi">Information</a>
+                                 </li>
+                                    </ul>
+        
+      
+      </li>
+            <li id="menu-extension"><a href="http://localhost/jackielingerie/admin/#collapse2" data-toggle="collapse" class="parent collapsed"><i class="fa fa-puzzle-piece fw"></i> Extensions</a>                  <ul id="collapse2" class="collapse">
+                                      <li>                  <a href="http://localhost/jackielingerie/admin/index.php?route=marketplace/marketplace&amp;user_token=8tPMH0eRrhXzPlz5nUfZg0m2f4EfDUoi">Marketplace</a>
+                                 </li>
+                                        <li>                  <a href="http://localhost/jackielingerie/admin/index.php?route=marketplace/installer&amp;user_token=8tPMH0eRrhXzPlz5nUfZg0m2f4EfDUoi">Installer</a>
+                                 </li>
+                                        <li>                  <a href="http://localhost/jackielingerie/admin/index.php?route=marketplace/extension&amp;user_token=8tPMH0eRrhXzPlz5nUfZg0m2f4EfDUoi">Extensions</a>
+                                 </li>
+                                        <li>                  <a href="http://localhost/jackielingerie/admin/index.php?route=marketplace/modification&amp;user_token=8tPMH0eRrhXzPlz5nUfZg0m2f4EfDUoi">Modifications</a>
+                                 </li>
+                                        <li>                  <a href="http://localhost/jackielingerie/admin/index.php?route=marketplace/event&amp;user_token=8tPMH0eRrhXzPlz5nUfZg0m2f4EfDUoi">Events</a>
+                                 </li>
+                                    </ul>
+        
+      
+      </li>
+            <li id="menu-design"><a href="http://localhost/jackielingerie/admin/#collapse3" data-toggle="collapse" class="parent collapsed"><i class="fa fa-television fw"></i> Design</a>                  <ul id="collapse3" class="collapse">
+                                      <li>                  <a href="http://localhost/jackielingerie/admin/index.php?route=design/layout&amp;user_token=8tPMH0eRrhXzPlz5nUfZg0m2f4EfDUoi">Layouts</a>
+                                 </li>
+                                        <li>                  <a href="http://localhost/jackielingerie/admin/index.php?route=design/theme&amp;user_token=8tPMH0eRrhXzPlz5nUfZg0m2f4EfDUoi">Theme Editor</a>
+                                 </li>
+                                        <li>                  <a href="http://localhost/jackielingerie/admin/index.php?route=design/translation&amp;user_token=8tPMH0eRrhXzPlz5nUfZg0m2f4EfDUoi">Language Editor</a>
+                                 </li>
+                                        <li>                  <a href="http://localhost/jackielingerie/admin/index.php?route=design/banner&amp;user_token=8tPMH0eRrhXzPlz5nUfZg0m2f4EfDUoi">Banners</a>
+                                 </li>
+                                        <li>                  <a href="http://localhost/jackielingerie/admin/index.php?route=design/seo_url&amp;user_token=8tPMH0eRrhXzPlz5nUfZg0m2f4EfDUoi">SEO URL</a>
+                                 </li>
+                                    </ul>
+        
+      
+      </li>
+            <li id="menu-sale"><a href="http://localhost/jackielingerie/admin/#collapse4" data-toggle="collapse" class="parent collapsed"><i class="fa fa-shopping-cart fw"></i> Sales</a>                  <ul id="collapse4" class="collapse">
+                                      <li>                  <a href="http://localhost/jackielingerie/admin/index.php?route=sale/order&amp;user_token=8tPMH0eRrhXzPlz5nUfZg0m2f4EfDUoi">Orders</a>
+                                 </li>
+                                        <li>                  <a href="http://localhost/jackielingerie/admin/index.php?route=sale/recurring&amp;user_token=8tPMH0eRrhXzPlz5nUfZg0m2f4EfDUoi">Recurring Profiles</a>
+                                 </li>
+                                        <li>                  <a href="http://localhost/jackielingerie/admin/index.php?route=sale/return&amp;user_token=8tPMH0eRrhXzPlz5nUfZg0m2f4EfDUoi">Returns</a>
+                                 </li>
+                                        <li>                  <a href="http://localhost/jackielingerie/admin/#collapse4-3" data-toggle="collapse" class="parent collapsed">Gift Vouchers</a>
+                                                  <ul id="collapse4-3" class="collapse">
+                                                              <li>                          <a href="http://localhost/jackielingerie/admin/index.php?route=sale/voucher&amp;user_token=8tPMH0eRrhXzPlz5nUfZg0m2f4EfDUoi">Gift Vouchers</a>
+                                                </li>
+                                                                <li>                          <a href="http://localhost/jackielingerie/admin/index.php?route=sale/voucher_theme&amp;user_token=8tPMH0eRrhXzPlz5nUfZg0m2f4EfDUoi">Voucher Themes</a>
+                                                </li>
+                                                            </ul>
+                 </li>
+                                    </ul>
+        
+      
+      </li>
+            <li id="menu-customer"><a href="http://localhost/jackielingerie/admin/#collapse5" data-toggle="collapse" class="parent collapsed"><i class="fa fa-user fw"></i> Customers</a>                  <ul id="collapse5" class="collapse">
+                                      <li>                  <a href="http://localhost/jackielingerie/admin/index.php?route=customer/customer&amp;user_token=8tPMH0eRrhXzPlz5nUfZg0m2f4EfDUoi">Customers</a>
+                                 </li>
+                                        <li>                  <a href="http://localhost/jackielingerie/admin/index.php?route=customer/customer_group&amp;user_token=8tPMH0eRrhXzPlz5nUfZg0m2f4EfDUoi">Customer Groups</a>
+                                 </li>
+                                        <li>                  <a href="http://localhost/jackielingerie/admin/index.php?route=customer/customer_approval&amp;user_token=8tPMH0eRrhXzPlz5nUfZg0m2f4EfDUoi">Customer Approvals</a>
+                                 </li>
+                                        <li>                  <a href="http://localhost/jackielingerie/admin/index.php?route=customer/custom_field&amp;user_token=8tPMH0eRrhXzPlz5nUfZg0m2f4EfDUoi">Custom Fields</a>
+                                 </li>
+                                    </ul>
+        
+      
+      </li>
+            <li id="menu-marketing"><a href="http://localhost/jackielingerie/admin/#collapse6" data-toggle="collapse" class="parent collapsed"><i class="fa fa-share-alt fw"></i> Marketing</a>                  <ul id="collapse6" class="collapse">
+                                      <li>                  <a href="http://localhost/jackielingerie/admin/index.php?route=marketing/marketing&amp;user_token=8tPMH0eRrhXzPlz5nUfZg0m2f4EfDUoi">Marketing</a>
+                                 </li>
+                                        <li>                  <a href="http://localhost/jackielingerie/admin/index.php?route=marketing/coupon&amp;user_token=8tPMH0eRrhXzPlz5nUfZg0m2f4EfDUoi">Coupons</a>
+                                 </li>
+                                        <li>                  <a href="http://localhost/jackielingerie/admin/index.php?route=marketing/contact&amp;user_token=8tPMH0eRrhXzPlz5nUfZg0m2f4EfDUoi">Mail</a>
+                                 </li>
+                                    </ul>
+        
+      
+      </li>
+            <li id="menu-system"><a href="http://localhost/jackielingerie/admin/#collapse7" data-toggle="collapse" class="parent collapsed"><i class="fa fa-cog fw"></i> System</a>                  <ul id="collapse7" class="collapse">
+                                      <li>                  <a href="http://localhost/jackielingerie/admin/index.php?route=setting/store&amp;user_token=8tPMH0eRrhXzPlz5nUfZg0m2f4EfDUoi">Settings</a>
+                                 </li>
+                                        <li>                  <a href="http://localhost/jackielingerie/admin/#collapse7-1" data-toggle="collapse" class="parent collapsed">Users</a>
+                                                  <ul id="collapse7-1" class="collapse">
+                                                              <li>                          <a href="http://localhost/jackielingerie/admin/index.php?route=user/user&amp;user_token=8tPMH0eRrhXzPlz5nUfZg0m2f4EfDUoi">Users</a>
+                                                </li>
+                                                                <li>                          <a href="http://localhost/jackielingerie/admin/index.php?route=user/user_permission&amp;user_token=8tPMH0eRrhXzPlz5nUfZg0m2f4EfDUoi">User Groups</a>
+                                                </li>
+                                                                <li>                          <a href="http://localhost/jackielingerie/admin/index.php?route=user/api&amp;user_token=8tPMH0eRrhXzPlz5nUfZg0m2f4EfDUoi">API</a>
+                                                </li>
+                                                            </ul>
+                 </li>
+                                        <li>                  <a href="http://localhost/jackielingerie/admin/#collapse7-2" data-toggle="collapse" class="parent collapsed">Localisation</a>
+                                                  <ul id="collapse7-2" class="collapse">
+                                                              <li>                          <a href="http://localhost/jackielingerie/admin/index.php?route=localisation/location&amp;user_token=8tPMH0eRrhXzPlz5nUfZg0m2f4EfDUoi">Store Location</a>
+                                                </li>
+                                                                <li>                          <a href="http://localhost/jackielingerie/admin/index.php?route=localisation/language&amp;user_token=8tPMH0eRrhXzPlz5nUfZg0m2f4EfDUoi">Languages</a>
+                                                </li>
+                                                                <li>                          <a href="http://localhost/jackielingerie/admin/index.php?route=localisation/currency&amp;user_token=8tPMH0eRrhXzPlz5nUfZg0m2f4EfDUoi">Currencies</a>
+                                                </li>
+                                                                <li>                          <a href="http://localhost/jackielingerie/admin/index.php?route=localisation/stock_status&amp;user_token=8tPMH0eRrhXzPlz5nUfZg0m2f4EfDUoi">Stock Statuses</a>
+                                                </li>
+                                                                <li>                          <a href="http://localhost/jackielingerie/admin/index.php?route=localisation/order_status&amp;user_token=8tPMH0eRrhXzPlz5nUfZg0m2f4EfDUoi">Order Statuses</a>
+                                                </li>
+                                                                <li>                          <a href="http://localhost/jackielingerie/admin/#collapse-7-2-5" data-toggle="collapse" class="parent collapsed">Returns</a>
+                                                                          <ul id="collapse-7-2-5" class="collapse">
+                                                          <li><a href="http://localhost/jackielingerie/admin/index.php?route=localisation/return_status&amp;user_token=8tPMH0eRrhXzPlz5nUfZg0m2f4EfDUoi">Return Statuses</a></li>
+                                                          <li><a href="http://localhost/jackielingerie/admin/index.php?route=localisation/return_action&amp;user_token=8tPMH0eRrhXzPlz5nUfZg0m2f4EfDUoi">Return Actions</a></li>
+                                                          <li><a href="http://localhost/jackielingerie/admin/index.php?route=localisation/return_reason&amp;user_token=8tPMH0eRrhXzPlz5nUfZg0m2f4EfDUoi">Return Reasons</a></li>
+                                                      </ul>
+                        </li>
+                                                                <li>                          <a href="http://localhost/jackielingerie/admin/index.php?route=localisation/country&amp;user_token=8tPMH0eRrhXzPlz5nUfZg0m2f4EfDUoi">Countries</a>
+                                                </li>
+                                                                <li>                          <a href="http://localhost/jackielingerie/admin/index.php?route=localisation/zone&amp;user_token=8tPMH0eRrhXzPlz5nUfZg0m2f4EfDUoi">Zones</a>
+                                                </li>
+                                                                <li>                          <a href="http://localhost/jackielingerie/admin/index.php?route=localisation/geo_zone&amp;user_token=8tPMH0eRrhXzPlz5nUfZg0m2f4EfDUoi">Geo Zones</a>
+                                                </li>
+                                                                <li>                          <a href="http://localhost/jackielingerie/admin/#collapse-7-2-9" data-toggle="collapse" class="parent collapsed">Taxes</a>
+                                                                          <ul id="collapse-7-2-9" class="collapse">
+                                                          <li><a href="http://localhost/jackielingerie/admin/index.php?route=localisation/tax_class&amp;user_token=8tPMH0eRrhXzPlz5nUfZg0m2f4EfDUoi">Tax Classes</a></li>
+                                                          <li><a href="http://localhost/jackielingerie/admin/index.php?route=localisation/tax_rate&amp;user_token=8tPMH0eRrhXzPlz5nUfZg0m2f4EfDUoi">Tax Rates</a></li>
+                                                      </ul>
+                        </li>
+                                                                <li>                          <a href="http://localhost/jackielingerie/admin/index.php?route=localisation/length_class&amp;user_token=8tPMH0eRrhXzPlz5nUfZg0m2f4EfDUoi">Length Classes</a>
+                                                </li>
+                                                                <li>                          <a href="http://localhost/jackielingerie/admin/index.php?route=localisation/weight_class&amp;user_token=8tPMH0eRrhXzPlz5nUfZg0m2f4EfDUoi">Weight Classes</a>
+                                                </li>
+                                                            </ul>
+                 </li>
+                                        <li>                  <a href="http://localhost/jackielingerie/admin/#collapse7-3" data-toggle="collapse" class="parent collapsed">Maintenance</a>
+                                                  <ul id="collapse7-3" class="collapse">
+                                                              <li>                          <a href="http://localhost/jackielingerie/admin/index.php?route=tool/backup&amp;user_token=8tPMH0eRrhXzPlz5nUfZg0m2f4EfDUoi">Backup / Restore</a>
+                                                </li>
+                                                                <li>                          <a href="http://localhost/jackielingerie/admin/index.php?route=tool/upload&amp;user_token=8tPMH0eRrhXzPlz5nUfZg0m2f4EfDUoi">Uploads</a>
+                                                </li>
+                                                                <li>                          <a href="http://localhost/jackielingerie/admin/index.php?route=tool/log&amp;user_token=8tPMH0eRrhXzPlz5nUfZg0m2f4EfDUoi">Error Logs</a>
+                                                </li>
+                                                            </ul>
+                 </li>
+                                    </ul>
+        
+      
+      </li>
+            <li id="menu-report"><a href="http://localhost/jackielingerie/admin/#collapse8" data-toggle="collapse" class="parent collapsed"><i class="fa fa-bar-chart-o fw"></i> Reports</a>                  <ul id="collapse8" class="collapse">
+                                      <li>                  <a href="http://localhost/jackielingerie/admin/index.php?route=report/report&amp;user_token=8tPMH0eRrhXzPlz5nUfZg0m2f4EfDUoi">Reports</a>
+                                 </li>
+                                        <li>                  <a href="http://localhost/jackielingerie/admin/index.php?route=report/online&amp;user_token=8tPMH0eRrhXzPlz5nUfZg0m2f4EfDUoi">Who's Online</a>
+                                 </li>
+                                        <li>                  <a href="http://localhost/jackielingerie/admin/index.php?route=report/statistics&amp;user_token=8tPMH0eRrhXzPlz5nUfZg0m2f4EfDUoi">Statistics</a>
+                                 </li>
+                                    </ul>
+        
+      
+      </li>
+          </ul>
+  <div id="stats">
+    <ul>
+      <li>
+        <div>Orders Completed <span class="pull-right">0%</span></div>
+        <div class="progress">
+          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"> <span class="sr-only">0%</span></div>
+        </div>
+      </li>
+      <li>
+        <div>Orders Processing <span class="pull-right">0%</span></div>
+        <div class="progress">
+          <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"> <span class="sr-only">0%</span></div>
+        </div>
+      </li>
+      <li>
+        <div>Other Statuses <span class="pull-right">0%</span></div>
+        <div class="progress">
+          <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"> <span class="sr-only">0%</span></div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div id="content">
+  <div class="page-header">
+    <div class="container-fluid">
+      <div class="pull-right">
+        <button type="submit" form="form-information" data-toggle="tooltip" title="" class="btn btn-primary" data-original-title="Save"><i class="fa fa-save"></i></button>
+        <a href="http://localhost/jackielingerie/admin/index.php?route=catalog/information&amp;user_token=8tPMH0eRrhXzPlz5nUfZg0m2f4EfDUoi" data-toggle="tooltip" title="" class="btn btn-default" data-original-title="Cancel"><i class="fa fa-reply"></i></a></div>
+      <h1>Information</h1>
+      <ul class="breadcrumb">
+                <li><a href="http://localhost/jackielingerie/admin/index.php?route=common/dashboard&amp;user_token=8tPMH0eRrhXzPlz5nUfZg0m2f4EfDUoi">Home</a></li>
+                <li><a href="http://localhost/jackielingerie/admin/index.php?route=catalog/information&amp;user_token=8tPMH0eRrhXzPlz5nUfZg0m2f4EfDUoi">Information</a></li>
+              </ul>
+    </div>
+  </div>
+  <div class="container-fluid">    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title"><i class="fa fa-pencil"></i> Edit Information</h3>
+      </div>
+      <div class="panel-body">
+        <form action="http://localhost/jackielingerie/admin/index.php?route=catalog/information/edit&amp;user_token=8tPMH0eRrhXzPlz5nUfZg0m2f4EfDUoi&amp;information_id=4" method="post" enctype="multipart/form-data" id="form-information" class="form-horizontal">
+          <ul class="nav nav-tabs">
+            <li class="active"><a href="http://localhost/jackielingerie/admin/#tab-general" data-toggle="tab">General</a></li>
+            <li><a href="http://localhost/jackielingerie/admin/#tab-data" data-toggle="tab">Data</a></li>
+            <li><a href="http://localhost/jackielingerie/admin/#tab-seo" data-toggle="tab">SEO</a></li>
+            <li><a href="http://localhost/jackielingerie/admin/#tab-design" data-toggle="tab">Design</a></li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane active" id="tab-general">
+              <ul class="nav nav-tabs" id="language">
+                                <li class="active"><a href="http://localhost/jackielingerie/admin/#language1" data-toggle="tab" aria-expanded="true"><img src="./Information_files/en-gb.png" title="English"> English</a></li>
+                                <li><a href="http://localhost/jackielingerie/admin/#language2" data-toggle="tab"><img src="./Information_files/es-ES.png" title="Español"> Español</a></li>
+                              </ul>
+              <div class="tab-content">                <div class="tab-pane active" id="language1">
+                  <div class="form-group required">
+                    <label class="col-sm-2 control-label" for="input-title1">Information Title</label>
+                    <div class="col-sm-10">
+                      <input type="text" name="information_description[1][title]" value="About Us" placeholder="Information Title" id="input-title1" class="form-control">
+                       </div>
+                  </div>
+                  <div class="form-group required">
+                    <label class="col-sm-2 control-label" for="input-description1">Description</label>
+                    <div class="col-sm-10">
+                      <textarea name="information_description[1][description]" placeholder="Description" id="input-description1" data-toggle="summernote" data-lang="" class="form-control" style="display: none;">&lt;div&gt;&lt;img class="img-hide" src="http://localhost/jackielingerie/image/catalog/Imagenes_Test/Imagen_test_01.jpg" style="width: 372.49px; float: right; height: 558.734px;"&gt;
+&lt;p&gt;&lt;/p&gt;&lt;p class="h1" style="text-align: justify;"&gt;Jackie Lingerie&lt;/p&gt; 
+
+&lt;div class="contenedor"&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p class="h4"&gt;Jackie Lingerie nació del sueño de una Brazileña en España, emprendedora y amante de la lencería, los encajes bordados, los colores, las telas y valorar el cuerpo femenino con comodidad y elegancia.&lt;/p&gt;
+
+&lt;p class="h2"&gt;Siempre fue nuestro mayor objetivo el concepto de una lencería que sea confortable y que se adiera a la piel con suavidad y llena de detalles.&lt;/p&gt;
+
+&lt;div class="h4"&gt;Pensamos en la lencería óptima para la mujer que trabaja 12 hrs al día y tambien en la lencería para momentos únicos y especiales con un modelo moderno, actual, cómodo y elegante, sin perder la sensualidad femenina.&amp;nbsp;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="h3"&gt;MAYOR CLUB DE LENCERÍA DE EUROPA. ENTREGAMOS A LA PUERTA DE TU CASA! SI TIENES ALGUNA DUDA ¡LLÁMANOS!&lt;br&gt;&lt;/div&gt;
+&lt;div&gt;&lt;br&gt;&lt;/div&gt;
+
+&lt;style&gt;
+  
+  .foto2 { 
+  padding: 10px; 
+  margin: 10px; 
+  float: right; 
+  
+  }
+  
+ 
+  
+.h1 {
+	font-size: 30px;
+  	color: #8C2F52;
+  	font-weight: bold;
+  	font-family: Montserrat;
+  	line-height: 1.6;
+}
+.h2 {
+	font-size: 20px;
+  	color: #8C2F52;
+  	font-weight: bold;
+  	font-family: Montserrat;
+  	line-height: 1.6;
+
+}
+.h3 {
+	font-size: 16px;
+  	color: #000000;
+  	font-family: Montserrat;
+  	font-weight: Bold;
+  	text-align: center;
+    line-height: 1.6;
+  
+}
+.h4 {
+	font-size: 14px;
+  	color: #666666;
+  	font-family: Montserrat;
+  	font-weight: Medium;
+  	line-height: 1.6;
+  	
+  
+}
+.h5 {
+	font-size: 12px;
+}
+.h6 {
+	font-size: 10.2px;
+}
+  
+  
+   @media (max-width: 440px){
+  		.contenedor {
+ 			 width: 100%;
+ 			 }
+  }
+  
+  
+  @media (min-width: 768px){
+  		.contenedor {
+ 			 width: 50%;
+ 			 }
+  }
+  
+  
+@media handheld, only screen and (max-width: 767px) {
+.img-hide {
+display:none;
+}
+}
+
+@media only screen and (max-width: 1023px) {
+.img-hide {
+display:none;
+}
+
+
+}
+
+&lt;/style&gt;
+
+  
+
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;</textarea><div class="note-editor note-frame panel panel-default codeview"><div class="note-dropzone">  <div class="note-dropzone-message"></div></div><div class="note-toolbar panel-heading"><div class="note-btn-group btn-group note-style"><div class="note-btn-group btn-group"><button type="button" class="note-btn btn btn-default btn-sm dropdown-toggle disabled" tabindex="-1" data-toggle="dropdown" title="" data-original-title="Style" disabled="disabled"><i class="note-icon-magic"></i> <span class="note-icon-caret"></span></button><div class="dropdown-menu dropdown-style"><li><a href="http://localhost/jackielingerie/admin/#" data-value="p"><p>p</p></a></li><li><a href="http://localhost/jackielingerie/admin/#" data-value="blockquote"><blockquote>Quote</blockquote></a></li><li><a href="http://localhost/jackielingerie/admin/#" data-value="pre"><pre>Code</pre></a></li><li><a href="http://localhost/jackielingerie/admin/#" data-value="h1"><h1>Header 1</h1></a></li><li><a href="http://localhost/jackielingerie/admin/#" data-value="h2"><h2>Header 2</h2></a></li><li><a href="http://localhost/jackielingerie/admin/#" data-value="h3"><h3>Header 3</h3></a></li><li><a href="http://localhost/jackielingerie/admin/#" data-value="h4"><h4>Header 4</h4></a></li><li><a href="http://localhost/jackielingerie/admin/#" data-value="h5"><h5>Header 5</h5></a></li><li><a href="http://localhost/jackielingerie/admin/#" data-value="h6"><h6>Header 6</h6></a></li></div></div></div><div class="note-btn-group btn-group note-font"><button type="button" class="note-btn btn btn-default btn-sm note-btn-bold active disabled" tabindex="-1" title="" data-original-title="Bold (⌘+B)" disabled="disabled"><i class="note-icon-bold"></i></button><button type="button" class="note-btn btn btn-default btn-sm note-btn-underline disabled" tabindex="-1" title="" data-original-title="Underline (⌘+U)" disabled="disabled"><i class="note-icon-underline"></i></button><button type="button" class="note-btn btn btn-default btn-sm disabled" tabindex="-1" title="" data-original-title="Remove Font Style (⌘+\)" disabled="disabled"><i class="note-icon-eraser"></i></button></div><div class="note-btn-group btn-group note-fontname"><div class="note-btn-group btn-group"><button type="button" class="note-btn btn btn-default btn-sm dropdown-toggle disabled" tabindex="-1" data-toggle="dropdown" title="" data-original-title="Font Family" disabled="disabled"><span class="note-current-fontname">Montserrat</span> <span class="note-icon-caret"></span></button><div class="dropdown-menu note-check dropdown-fontname"><li><a href="http://localhost/jackielingerie/admin/#" data-value="Arial" class=""><i class="note-icon-check"></i> <span style="font-family:Arial">Arial</span></a></li><li><a href="http://localhost/jackielingerie/admin/#" data-value="Arial Black" class=""><i class="note-icon-check"></i> <span style="font-family:Arial Black">Arial Black</span></a></li><li><a href="http://localhost/jackielingerie/admin/#" data-value="Comic Sans MS" class=""><i class="note-icon-check"></i> <span style="font-family:Comic Sans MS">Comic Sans MS</span></a></li><li><a href="http://localhost/jackielingerie/admin/#" data-value="Courier New" class=""><i class="note-icon-check"></i> <span style="font-family:Courier New">Courier New</span></a></li><li><a href="http://localhost/jackielingerie/admin/#" data-value="Helvetica Neue" class=""><i class="note-icon-check"></i> <span style="font-family:Helvetica Neue">Helvetica Neue</span></a></li><li><a href="http://localhost/jackielingerie/admin/#" data-value="Helvetica" class=""><i class="note-icon-check"></i> <span style="font-family:Helvetica">Helvetica</span></a></li><li><a href="http://localhost/jackielingerie/admin/#" data-value="Impact" class=""><i class="note-icon-check"></i> <span style="font-family:Impact">Impact</span></a></li><li><a href="http://localhost/jackielingerie/admin/#" data-value="Lucida Grande" class=""><i class="note-icon-check"></i> <span style="font-family:Lucida Grande">Lucida Grande</span></a></li><li><a href="http://localhost/jackielingerie/admin/#" data-value="Tahoma" class=""><i class="note-icon-check"></i> <span style="font-family:Tahoma">Tahoma</span></a></li><li><a href="http://localhost/jackielingerie/admin/#" data-value="Times New Roman" class=""><i class="note-icon-check"></i> <span style="font-family:Times New Roman">Times New Roman</span></a></li><li><a href="http://localhost/jackielingerie/admin/#" data-value="Verdana" class=""><i class="note-icon-check"></i> <span style="font-family:Verdana">Verdana</span></a></li></div></div></div><div class="note-btn-group btn-group note-fontsize"><div class="note-btn-group btn-group"><button type="button" class="note-btn btn btn-default btn-sm dropdown-toggle disabled" tabindex="-1" data-toggle="dropdown" title="" data-original-title="Font Size" disabled="disabled"><span class="note-current-fontsize">16</span><span class="note-icon-caret"></span></button><div class="dropdown-menu note-check dropdown-fontsize"><li><a href="http://localhost/jackielingerie/admin/#" data-value="8" class=""><i class="note-icon-check"></i> 8</a></li><li><a href="http://localhost/jackielingerie/admin/#" data-value="9" class=""><i class="note-icon-check"></i> 9</a></li><li><a href="http://localhost/jackielingerie/admin/#" data-value="10" class=""><i class="note-icon-check"></i> 10</a></li><li><a href="http://localhost/jackielingerie/admin/#" data-value="11" class=""><i class="note-icon-check"></i> 11</a></li><li><a href="http://localhost/jackielingerie/admin/#" data-value="12" class=""><i class="note-icon-check"></i> 12</a></li><li><a href="http://localhost/jackielingerie/admin/#" data-value="14" class=""><i class="note-icon-check"></i> 14</a></li><li><a href="http://localhost/jackielingerie/admin/#" data-value="18" class=""><i class="note-icon-check"></i> 18</a></li><li><a href="http://localhost/jackielingerie/admin/#" data-value="24" class=""><i class="note-icon-check"></i> 24</a></li><li><a href="http://localhost/jackielingerie/admin/#" data-value="36" class=""><i class="note-icon-check"></i> 36</a></li></div></div></div><div class="note-btn-group btn-group note-color"><div class="note-btn-group btn-group note-color"><button type="button" class="note-btn btn btn-default btn-sm note-current-color-button disabled" tabindex="-1" title="" data-original-title="Recent Color" data-backcolor="#FFFF00" disabled="disabled"><i class="note-icon-font note-recent-color" style="background-color: rgb(255, 255, 0);"></i></button><button type="button" class="note-btn btn btn-default btn-sm dropdown-toggle disabled" tabindex="-1" data-toggle="dropdown" title="" data-original-title="More Color" disabled="disabled"><span class="note-icon-caret"></span></button><div class="dropdown-menu"><li><div class="btn-group">  <div class="note-palette-title">Background Color</div>  <div>    <button type="button" class="note-color-reset btn btn-default disabled" data-event="backColor" data-value="inherit" disabled="disabled">Transparent    </button>  </div>  <div class="note-holder" data-event="backColor"><div class="note-color-palette"><div class="note-color-row"><button type="button" class="note-color-btn disabled" style="background-color:#000000" data-event="backColor" data-value="#000000" title="" data-toggle="button" tabindex="-1" data-original-title="#000000" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#424242" data-event="backColor" data-value="#424242" title="" data-toggle="button" tabindex="-1" data-original-title="#424242" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#636363" data-event="backColor" data-value="#636363" title="" data-toggle="button" tabindex="-1" data-original-title="#636363" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#9C9C94" data-event="backColor" data-value="#9C9C94" title="" data-toggle="button" tabindex="-1" data-original-title="#9C9C94" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#CEC6CE" data-event="backColor" data-value="#CEC6CE" title="" data-toggle="button" tabindex="-1" data-original-title="#CEC6CE" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#EFEFEF" data-event="backColor" data-value="#EFEFEF" title="" data-toggle="button" tabindex="-1" data-original-title="#EFEFEF" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#F7F7F7" data-event="backColor" data-value="#F7F7F7" title="" data-toggle="button" tabindex="-1" data-original-title="#F7F7F7" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#FFFFFF" data-event="backColor" data-value="#FFFFFF" title="" data-toggle="button" tabindex="-1" data-original-title="#FFFFFF" disabled="disabled"></button></div><div class="note-color-row"><button type="button" class="note-color-btn disabled" style="background-color:#FF0000" data-event="backColor" data-value="#FF0000" title="" data-toggle="button" tabindex="-1" data-original-title="#FF0000" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#FF9C00" data-event="backColor" data-value="#FF9C00" title="" data-toggle="button" tabindex="-1" data-original-title="#FF9C00" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#FFFF00" data-event="backColor" data-value="#FFFF00" title="" data-toggle="button" tabindex="-1" data-original-title="#FFFF00" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#00FF00" data-event="backColor" data-value="#00FF00" title="" data-toggle="button" tabindex="-1" data-original-title="#00FF00" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#00FFFF" data-event="backColor" data-value="#00FFFF" title="" data-toggle="button" tabindex="-1" data-original-title="#00FFFF" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#0000FF" data-event="backColor" data-value="#0000FF" title="" data-toggle="button" tabindex="-1" data-original-title="#0000FF" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#9C00FF" data-event="backColor" data-value="#9C00FF" title="" data-toggle="button" tabindex="-1" data-original-title="#9C00FF" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#FF00FF" data-event="backColor" data-value="#FF00FF" title="" data-toggle="button" tabindex="-1" data-original-title="#FF00FF" disabled="disabled"></button></div><div class="note-color-row"><button type="button" class="note-color-btn disabled" style="background-color:#F7C6CE" data-event="backColor" data-value="#F7C6CE" title="" data-toggle="button" tabindex="-1" data-original-title="#F7C6CE" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#FFE7CE" data-event="backColor" data-value="#FFE7CE" title="" data-toggle="button" tabindex="-1" data-original-title="#FFE7CE" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#FFEFC6" data-event="backColor" data-value="#FFEFC6" title="" data-toggle="button" tabindex="-1" data-original-title="#FFEFC6" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#D6EFD6" data-event="backColor" data-value="#D6EFD6" title="" data-toggle="button" tabindex="-1" data-original-title="#D6EFD6" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#CEDEE7" data-event="backColor" data-value="#CEDEE7" title="" data-toggle="button" tabindex="-1" data-original-title="#CEDEE7" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#CEE7F7" data-event="backColor" data-value="#CEE7F7" title="" data-toggle="button" tabindex="-1" data-original-title="#CEE7F7" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#D6D6E7" data-event="backColor" data-value="#D6D6E7" title="" data-toggle="button" tabindex="-1" data-original-title="#D6D6E7" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#E7D6DE" data-event="backColor" data-value="#E7D6DE" title="" data-toggle="button" tabindex="-1" data-original-title="#E7D6DE" disabled="disabled"></button></div><div class="note-color-row"><button type="button" class="note-color-btn disabled" style="background-color:#E79C9C" data-event="backColor" data-value="#E79C9C" title="" data-toggle="button" tabindex="-1" data-original-title="#E79C9C" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#FFC69C" data-event="backColor" data-value="#FFC69C" title="" data-toggle="button" tabindex="-1" data-original-title="#FFC69C" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#FFE79C" data-event="backColor" data-value="#FFE79C" title="" data-toggle="button" tabindex="-1" data-original-title="#FFE79C" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#B5D6A5" data-event="backColor" data-value="#B5D6A5" title="" data-toggle="button" tabindex="-1" data-original-title="#B5D6A5" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#A5C6CE" data-event="backColor" data-value="#A5C6CE" title="" data-toggle="button" tabindex="-1" data-original-title="#A5C6CE" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#9CC6EF" data-event="backColor" data-value="#9CC6EF" title="" data-toggle="button" tabindex="-1" data-original-title="#9CC6EF" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#B5A5D6" data-event="backColor" data-value="#B5A5D6" title="" data-toggle="button" tabindex="-1" data-original-title="#B5A5D6" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#D6A5BD" data-event="backColor" data-value="#D6A5BD" title="" data-toggle="button" tabindex="-1" data-original-title="#D6A5BD" disabled="disabled"></button></div><div class="note-color-row"><button type="button" class="note-color-btn disabled" style="background-color:#E76363" data-event="backColor" data-value="#E76363" title="" data-toggle="button" tabindex="-1" data-original-title="#E76363" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#F7AD6B" data-event="backColor" data-value="#F7AD6B" title="" data-toggle="button" tabindex="-1" data-original-title="#F7AD6B" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#FFD663" data-event="backColor" data-value="#FFD663" title="" data-toggle="button" tabindex="-1" data-original-title="#FFD663" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#94BD7B" data-event="backColor" data-value="#94BD7B" title="" data-toggle="button" tabindex="-1" data-original-title="#94BD7B" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#73A5AD" data-event="backColor" data-value="#73A5AD" title="" data-toggle="button" tabindex="-1" data-original-title="#73A5AD" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#6BADDE" data-event="backColor" data-value="#6BADDE" title="" data-toggle="button" tabindex="-1" data-original-title="#6BADDE" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#8C7BC6" data-event="backColor" data-value="#8C7BC6" title="" data-toggle="button" tabindex="-1" data-original-title="#8C7BC6" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#C67BA5" data-event="backColor" data-value="#C67BA5" title="" data-toggle="button" tabindex="-1" data-original-title="#C67BA5" disabled="disabled"></button></div><div class="note-color-row"><button type="button" class="note-color-btn disabled" style="background-color:#CE0000" data-event="backColor" data-value="#CE0000" title="" data-toggle="button" tabindex="-1" data-original-title="#CE0000" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#E79439" data-event="backColor" data-value="#E79439" title="" data-toggle="button" tabindex="-1" data-original-title="#E79439" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#EFC631" data-event="backColor" data-value="#EFC631" title="" data-toggle="button" tabindex="-1" data-original-title="#EFC631" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#6BA54A" data-event="backColor" data-value="#6BA54A" title="" data-toggle="button" tabindex="-1" data-original-title="#6BA54A" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#4A7B8C" data-event="backColor" data-value="#4A7B8C" title="" data-toggle="button" tabindex="-1" data-original-title="#4A7B8C" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#3984C6" data-event="backColor" data-value="#3984C6" title="" data-toggle="button" tabindex="-1" data-original-title="#3984C6" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#634AA5" data-event="backColor" data-value="#634AA5" title="" data-toggle="button" tabindex="-1" data-original-title="#634AA5" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#A54A7B" data-event="backColor" data-value="#A54A7B" title="" data-toggle="button" tabindex="-1" data-original-title="#A54A7B" disabled="disabled"></button></div><div class="note-color-row"><button type="button" class="note-color-btn disabled" style="background-color:#9C0000" data-event="backColor" data-value="#9C0000" title="" data-toggle="button" tabindex="-1" data-original-title="#9C0000" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#B56308" data-event="backColor" data-value="#B56308" title="" data-toggle="button" tabindex="-1" data-original-title="#B56308" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#BD9400" data-event="backColor" data-value="#BD9400" title="" data-toggle="button" tabindex="-1" data-original-title="#BD9400" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#397B21" data-event="backColor" data-value="#397B21" title="" data-toggle="button" tabindex="-1" data-original-title="#397B21" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#104A5A" data-event="backColor" data-value="#104A5A" title="" data-toggle="button" tabindex="-1" data-original-title="#104A5A" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#085294" data-event="backColor" data-value="#085294" title="" data-toggle="button" tabindex="-1" data-original-title="#085294" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#311873" data-event="backColor" data-value="#311873" title="" data-toggle="button" tabindex="-1" data-original-title="#311873" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#731842" data-event="backColor" data-value="#731842" title="" data-toggle="button" tabindex="-1" data-original-title="#731842" disabled="disabled"></button></div><div class="note-color-row"><button type="button" class="note-color-btn disabled" style="background-color:#630000" data-event="backColor" data-value="#630000" title="" data-toggle="button" tabindex="-1" data-original-title="#630000" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#7B3900" data-event="backColor" data-value="#7B3900" title="" data-toggle="button" tabindex="-1" data-original-title="#7B3900" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#846300" data-event="backColor" data-value="#846300" title="" data-toggle="button" tabindex="-1" data-original-title="#846300" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#295218" data-event="backColor" data-value="#295218" title="" data-toggle="button" tabindex="-1" data-original-title="#295218" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#083139" data-event="backColor" data-value="#083139" title="" data-toggle="button" tabindex="-1" data-original-title="#083139" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#003163" data-event="backColor" data-value="#003163" title="" data-toggle="button" tabindex="-1" data-original-title="#003163" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#21104A" data-event="backColor" data-value="#21104A" title="" data-toggle="button" tabindex="-1" data-original-title="#21104A" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#4A1031" data-event="backColor" data-value="#4A1031" title="" data-toggle="button" tabindex="-1" data-original-title="#4A1031" disabled="disabled"></button></div></div></div></div><div class="btn-group">  <div class="note-palette-title">Foreground Color</div>  <div>    <button type="button" class="note-color-reset btn btn-default disabled" data-event="removeFormat" data-value="foreColor" disabled="disabled">Reset to default    </button>  </div>  <div class="note-holder" data-event="foreColor"><div class="note-color-palette"><div class="note-color-row"><button type="button" class="note-color-btn disabled" style="background-color:#000000" data-event="foreColor" data-value="#000000" title="" data-toggle="button" tabindex="-1" data-original-title="#000000" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#424242" data-event="foreColor" data-value="#424242" title="" data-toggle="button" tabindex="-1" data-original-title="#424242" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#636363" data-event="foreColor" data-value="#636363" title="" data-toggle="button" tabindex="-1" data-original-title="#636363" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#9C9C94" data-event="foreColor" data-value="#9C9C94" title="" data-toggle="button" tabindex="-1" data-original-title="#9C9C94" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#CEC6CE" data-event="foreColor" data-value="#CEC6CE" title="" data-toggle="button" tabindex="-1" data-original-title="#CEC6CE" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#EFEFEF" data-event="foreColor" data-value="#EFEFEF" title="" data-toggle="button" tabindex="-1" data-original-title="#EFEFEF" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#F7F7F7" data-event="foreColor" data-value="#F7F7F7" title="" data-toggle="button" tabindex="-1" data-original-title="#F7F7F7" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#FFFFFF" data-event="foreColor" data-value="#FFFFFF" title="" data-toggle="button" tabindex="-1" data-original-title="#FFFFFF" disabled="disabled"></button></div><div class="note-color-row"><button type="button" class="note-color-btn disabled" style="background-color:#FF0000" data-event="foreColor" data-value="#FF0000" title="" data-toggle="button" tabindex="-1" data-original-title="#FF0000" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#FF9C00" data-event="foreColor" data-value="#FF9C00" title="" data-toggle="button" tabindex="-1" data-original-title="#FF9C00" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#FFFF00" data-event="foreColor" data-value="#FFFF00" title="" data-toggle="button" tabindex="-1" data-original-title="#FFFF00" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#00FF00" data-event="foreColor" data-value="#00FF00" title="" data-toggle="button" tabindex="-1" data-original-title="#00FF00" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#00FFFF" data-event="foreColor" data-value="#00FFFF" title="" data-toggle="button" tabindex="-1" data-original-title="#00FFFF" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#0000FF" data-event="foreColor" data-value="#0000FF" title="" data-toggle="button" tabindex="-1" data-original-title="#0000FF" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#9C00FF" data-event="foreColor" data-value="#9C00FF" title="" data-toggle="button" tabindex="-1" data-original-title="#9C00FF" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#FF00FF" data-event="foreColor" data-value="#FF00FF" title="" data-toggle="button" tabindex="-1" data-original-title="#FF00FF" disabled="disabled"></button></div><div class="note-color-row"><button type="button" class="note-color-btn disabled" style="background-color:#F7C6CE" data-event="foreColor" data-value="#F7C6CE" title="" data-toggle="button" tabindex="-1" data-original-title="#F7C6CE" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#FFE7CE" data-event="foreColor" data-value="#FFE7CE" title="" data-toggle="button" tabindex="-1" data-original-title="#FFE7CE" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#FFEFC6" data-event="foreColor" data-value="#FFEFC6" title="" data-toggle="button" tabindex="-1" data-original-title="#FFEFC6" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#D6EFD6" data-event="foreColor" data-value="#D6EFD6" title="" data-toggle="button" tabindex="-1" data-original-title="#D6EFD6" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#CEDEE7" data-event="foreColor" data-value="#CEDEE7" title="" data-toggle="button" tabindex="-1" data-original-title="#CEDEE7" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#CEE7F7" data-event="foreColor" data-value="#CEE7F7" title="" data-toggle="button" tabindex="-1" data-original-title="#CEE7F7" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#D6D6E7" data-event="foreColor" data-value="#D6D6E7" title="" data-toggle="button" tabindex="-1" data-original-title="#D6D6E7" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#E7D6DE" data-event="foreColor" data-value="#E7D6DE" title="" data-toggle="button" tabindex="-1" data-original-title="#E7D6DE" disabled="disabled"></button></div><div class="note-color-row"><button type="button" class="note-color-btn disabled" style="background-color:#E79C9C" data-event="foreColor" data-value="#E79C9C" title="" data-toggle="button" tabindex="-1" data-original-title="#E79C9C" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#FFC69C" data-event="foreColor" data-value="#FFC69C" title="" data-toggle="button" tabindex="-1" data-original-title="#FFC69C" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#FFE79C" data-event="foreColor" data-value="#FFE79C" title="" data-toggle="button" tabindex="-1" data-original-title="#FFE79C" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#B5D6A5" data-event="foreColor" data-value="#B5D6A5" title="" data-toggle="button" tabindex="-1" data-original-title="#B5D6A5" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#A5C6CE" data-event="foreColor" data-value="#A5C6CE" title="" data-toggle="button" tabindex="-1" data-original-title="#A5C6CE" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#9CC6EF" data-event="foreColor" data-value="#9CC6EF" title="" data-toggle="button" tabindex="-1" data-original-title="#9CC6EF" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#B5A5D6" data-event="foreColor" data-value="#B5A5D6" title="" data-toggle="button" tabindex="-1" data-original-title="#B5A5D6" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#D6A5BD" data-event="foreColor" data-value="#D6A5BD" title="" data-toggle="button" tabindex="-1" data-original-title="#D6A5BD" disabled="disabled"></button></div><div class="note-color-row"><button type="button" class="note-color-btn disabled" style="background-color:#E76363" data-event="foreColor" data-value="#E76363" title="" data-toggle="button" tabindex="-1" data-original-title="#E76363" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#F7AD6B" data-event="foreColor" data-value="#F7AD6B" title="" data-toggle="button" tabindex="-1" data-original-title="#F7AD6B" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#FFD663" data-event="foreColor" data-value="#FFD663" title="" data-toggle="button" tabindex="-1" data-original-title="#FFD663" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#94BD7B" data-event="foreColor" data-value="#94BD7B" title="" data-toggle="button" tabindex="-1" data-original-title="#94BD7B" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#73A5AD" data-event="foreColor" data-value="#73A5AD" title="" data-toggle="button" tabindex="-1" data-original-title="#73A5AD" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#6BADDE" data-event="foreColor" data-value="#6BADDE" title="" data-toggle="button" tabindex="-1" data-original-title="#6BADDE" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#8C7BC6" data-event="foreColor" data-value="#8C7BC6" title="" data-toggle="button" tabindex="-1" data-original-title="#8C7BC6" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#C67BA5" data-event="foreColor" data-value="#C67BA5" title="" data-toggle="button" tabindex="-1" data-original-title="#C67BA5" disabled="disabled"></button></div><div class="note-color-row"><button type="button" class="note-color-btn disabled" style="background-color:#CE0000" data-event="foreColor" data-value="#CE0000" title="" data-toggle="button" tabindex="-1" data-original-title="#CE0000" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#E79439" data-event="foreColor" data-value="#E79439" title="" data-toggle="button" tabindex="-1" data-original-title="#E79439" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#EFC631" data-event="foreColor" data-value="#EFC631" title="" data-toggle="button" tabindex="-1" data-original-title="#EFC631" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#6BA54A" data-event="foreColor" data-value="#6BA54A" title="" data-toggle="button" tabindex="-1" data-original-title="#6BA54A" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#4A7B8C" data-event="foreColor" data-value="#4A7B8C" title="" data-toggle="button" tabindex="-1" data-original-title="#4A7B8C" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#3984C6" data-event="foreColor" data-value="#3984C6" title="" data-toggle="button" tabindex="-1" data-original-title="#3984C6" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#634AA5" data-event="foreColor" data-value="#634AA5" title="" data-toggle="button" tabindex="-1" data-original-title="#634AA5" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#A54A7B" data-event="foreColor" data-value="#A54A7B" title="" data-toggle="button" tabindex="-1" data-original-title="#A54A7B" disabled="disabled"></button></div><div class="note-color-row"><button type="button" class="note-color-btn disabled" style="background-color:#9C0000" data-event="foreColor" data-value="#9C0000" title="" data-toggle="button" tabindex="-1" data-original-title="#9C0000" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#B56308" data-event="foreColor" data-value="#B56308" title="" data-toggle="button" tabindex="-1" data-original-title="#B56308" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#BD9400" data-event="foreColor" data-value="#BD9400" title="" data-toggle="button" tabindex="-1" data-original-title="#BD9400" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#397B21" data-event="foreColor" data-value="#397B21" title="" data-toggle="button" tabindex="-1" data-original-title="#397B21" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#104A5A" data-event="foreColor" data-value="#104A5A" title="" data-toggle="button" tabindex="-1" data-original-title="#104A5A" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#085294" data-event="foreColor" data-value="#085294" title="" data-toggle="button" tabindex="-1" data-original-title="#085294" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#311873" data-event="foreColor" data-value="#311873" title="" data-toggle="button" tabindex="-1" data-original-title="#311873" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#731842" data-event="foreColor" data-value="#731842" title="" data-toggle="button" tabindex="-1" data-original-title="#731842" disabled="disabled"></button></div><div class="note-color-row"><button type="button" class="note-color-btn disabled" style="background-color:#630000" data-event="foreColor" data-value="#630000" title="" data-toggle="button" tabindex="-1" data-original-title="#630000" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#7B3900" data-event="foreColor" data-value="#7B3900" title="" data-toggle="button" tabindex="-1" data-original-title="#7B3900" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#846300" data-event="foreColor" data-value="#846300" title="" data-toggle="button" tabindex="-1" data-original-title="#846300" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#295218" data-event="foreColor" data-value="#295218" title="" data-toggle="button" tabindex="-1" data-original-title="#295218" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#083139" data-event="foreColor" data-value="#083139" title="" data-toggle="button" tabindex="-1" data-original-title="#083139" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#003163" data-event="foreColor" data-value="#003163" title="" data-toggle="button" tabindex="-1" data-original-title="#003163" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#21104A" data-event="foreColor" data-value="#21104A" title="" data-toggle="button" tabindex="-1" data-original-title="#21104A" disabled="disabled"></button><button type="button" class="note-color-btn disabled" style="background-color:#4A1031" data-event="foreColor" data-value="#4A1031" title="" data-toggle="button" tabindex="-1" data-original-title="#4A1031" disabled="disabled"></button></div></div></div></div></li></div></div></div><div class="note-btn-group btn-group note-para"><button type="button" class="note-btn btn btn-default btn-sm disabled" tabindex="-1" title="" data-original-title="Unordered list (⌘+⇧+NUM7)" disabled="disabled"><i class="note-icon-unorderedlist"></i></button><button type="button" class="note-btn btn btn-default btn-sm disabled" tabindex="-1" title="" data-original-title="Ordered list (⌘+⇧+NUM8)" disabled="disabled"><i class="note-icon-orderedlist"></i></button><div class="note-btn-group btn-group"><button type="button" class="note-btn btn btn-default btn-sm dropdown-toggle disabled" tabindex="-1" data-toggle="dropdown" title="" data-original-title="Paragraph" disabled="disabled"><i class="note-icon-align-left"></i> <span class="note-icon-caret"></span></button><div class="dropdown-menu"><div class="note-btn-group btn-group note-align"><button type="button" class="note-btn btn btn-default btn-sm disabled" tabindex="-1" title="" data-original-title="Align left (⌘+⇧+L)" disabled="disabled"><i class="note-icon-align-left"></i></button><button type="button" class="note-btn btn btn-default btn-sm disabled" tabindex="-1" title="" data-original-title="Align center (⌘+⇧+E)" disabled="disabled"><i class="note-icon-align-center"></i></button><button type="button" class="note-btn btn btn-default btn-sm disabled" tabindex="-1" title="" data-original-title="Align right (⌘+⇧+R)" disabled="disabled"><i class="note-icon-align-right"></i></button><button type="button" class="note-btn btn btn-default btn-sm disabled" tabindex="-1" title="" data-original-title="Justify full (⌘+⇧+J)" disabled="disabled"><i class="note-icon-align-justify"></i></button></div><div class="note-btn-group btn-group note-list"><button type="button" class="note-btn btn btn-default btn-sm disabled" tabindex="-1" title="" data-original-title="Outdent (⌘+[)" disabled="disabled"><i class="note-icon-align-outdent"></i></button><button type="button" class="note-btn btn btn-default btn-sm disabled" tabindex="-1" title="" data-original-title="Indent (⌘+])" disabled="disabled"><i class="note-icon-align-indent"></i></button></div></div></div></div><div class="note-btn-group btn-group note-table"><div class="note-btn-group btn-group"><button type="button" class="note-btn btn btn-default btn-sm dropdown-toggle disabled" tabindex="-1" data-toggle="dropdown" title="" data-original-title="Table" disabled="disabled"><i class="note-icon-table"></i> <span class="note-icon-caret"></span></button><div class="dropdown-menu note-table"><div class="note-dimension-picker">  <div class="note-dimension-picker-mousecatcher" data-event="insertTable" data-value="1x1" style="width: 10em; height: 10em;"></div>  <div class="note-dimension-picker-highlighted"></div>  <div class="note-dimension-picker-unhighlighted"></div></div><div class="note-dimension-display">1 x 1</div></div></div></div><div class="note-btn-group btn-group note-insert"><button type="button" class="note-btn btn btn-default btn-sm disabled" tabindex="-1" title="" data-original-title="Link (⌘+K)" disabled="disabled"><i class="note-icon-link"></i></button><button type="button" class="note-btn btn btn-default btn-sm disabled" tabindex="-1" title="" data-original-title="Picture" disabled="disabled"><i class="note-icon-picture"></i></button><button type="button" class="note-btn btn btn-default btn-sm disabled" tabindex="-1" title="" data-original-title="Video" disabled="disabled"><i class="note-icon-video"></i></button></div><div class="note-btn-group btn-group note-view"><button type="button" class="note-btn btn btn-default btn-sm btn-fullscreen disabled" tabindex="-1" title="" data-original-title="Full Screen" disabled="disabled"><i class="note-icon-arrows-alt"></i></button><button type="button" class="note-btn btn btn-default btn-sm btn-codeview active" tabindex="-1" title="" data-original-title="Code View"><i class="note-icon-code"></i></button><button type="button" class="note-btn btn btn-default btn-sm disabled" tabindex="-1" title="" data-original-title="Help" disabled="disabled"><i class="note-icon-question"></i></button></div></div><div class="note-editing-area"><div class="note-handle"><div class="note-control-selection" style="display: none;"><div class="note-control-selection-bg"></div><div class="note-control-holder note-control-nw"></div><div class="note-control-holder note-control-ne"></div><div class="note-control-holder note-control-sw"></div><div class="note-control-sizing note-control-se"></div><div class="note-control-selection-info"></div></div></div><textarea class="note-codable" style="height: 300px; display: none;"></textarea><div class="CodeMirror cm-s-monokai CodeMirror-focused" style="height: 300px;"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 212px; left: 0px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" style="position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none;" tabindex="0"></textarea></div><div class="CodeMirror-vscrollbar" cm-not-content="true" style="display: block; bottom: 0px; width: 18px; pointer-events: none;"><div style="min-width: 1px; height: 1968px;"></div></div><div class="CodeMirror-hscrollbar" cm-not-content="true" style="display: block; right: 0px; left: 29px; height: 18px; pointer-events: auto;"><div style="height: 100%; min-height: 1px; width: 2141.14px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 29px; margin-bottom: 0px; border-right-width: 30px; min-height: 1968px; min-width: 2141.14px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>98</div></div><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>103</div></div><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>98</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors" style=""><div class="CodeMirror-cursor" style="left: 130.031px; top: 220px; height: 20px;">&nbsp;</div></div><div class="CodeMirror-code" style=""><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: 82px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">1</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-tag">&lt;div&gt;&lt;img</span> <span class="cm-attribute">class</span>=<span class="cm-string">"img-hide"</span> <span class="cm-attribute">src</span>=<span class="cm-string">"http://localhost/jackielingerie/image/catalog/Imagenes_Test/Imagen_test_01.jpg"</span> <span class="cm-attribute">style</span>=<span class="cm-string">"width: 372.49px; float: right; height: 558.734px;"</span><span class="cm-tag">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: 82px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">2</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-tag">&lt;p&gt;&lt;/p&gt;&lt;p</span> <span class="cm-attribute">class</span>=<span class="cm-string">"h1"</span> <span class="cm-attribute">style</span>=<span class="cm-string">"text-align: justify;"</span><span class="cm-tag">&gt;</span>Jackie Lingerie<span class="cm-tag">&lt;/p&gt;</span> </span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: 82px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">3</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: 82px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">4</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"contenedor"</span><span class="cm-tag">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: 82px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">5</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-tag">&lt;p&gt;&lt;br&gt;&lt;/p&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: 82px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">6</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-tag">&lt;p</span> <span class="cm-attribute">class</span>=<span class="cm-string">"h4"</span><span class="cm-tag">&gt;</span>Jackie Lingerie nació del sueño de una Brazileña en España, emprendedora y amante de la lencería, los encajes bordados, los colores, las telas y valorar el cuerpo femenino con comodidad y elegancia.<span class="cm-tag">&lt;/p&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: 82px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">7</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: 82px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">8</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-tag">&lt;p</span> <span class="cm-attribute">class</span>=<span class="cm-string">"h2"</span><span class="cm-tag">&gt;</span>Siempre fue nuestro mayor objetivo el concepto de una lencería que sea confortable y que se adiera a la piel con suavidad y llena de detalles.<span class="cm-tag">&lt;/p&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: 82px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">9</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: 82px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">10</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"h4"</span><span class="cm-tag">&gt;</span>Pensamos en la lencería óptima para la mujer que trabaja 12 hrs al día y tambien en la lencería para momentos únicos y especiales con un modelo moderno, actual, cómodo y elegante, sin perder la sensualidad femenina.<span class="cm-atom">&amp;nbsp;</span><span class="cm-tag">&lt;/div&gt;&lt;/div&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: 82px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">11</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-tag">&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"h3"</span><span class="cm-tag">&gt;&lt;br&gt;&lt;/div&gt;&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"h3"</span><span class="cm-tag">&gt;&lt;br&gt;&lt;/div&gt;&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"h3"</span><span class="cm-tag">&gt;&lt;br&gt;&lt;/div&gt;&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"h3"</span><span class="cm-tag">&gt;&lt;br&gt;&lt;/div&gt;&lt;div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"h3"</span> <span class="cm-attribute">CLASS</span><span class="cm-string">"text-mayorclub"</span> <span class="cm-tag">&gt;</span>MAYOR CLUB DE LENCERÍA DE EUROPA. ENTREGAMOS A LA PUERTA DE TU CASA! SI TIENES ALGUNA DUDA ¡LLÁMANOS!<span class="cm-tag">&lt;br&gt;&lt;/div&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: 82px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">12</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-tag">&lt;div&gt;&lt;br&gt;&lt;/div&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: 82px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">13</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: 82px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">14</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-tag">&lt;style&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: 82px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">15</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">  </span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: 82px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">16</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">  .foto2 { </span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: 82px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">17</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">  padding: 10px; </span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: 82px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">18</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">  margin: 10px; </span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: 82px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">19</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">  float: right; </span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: 82px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">20</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">  </span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: 82px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">21</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">  }</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: 82px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">22</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">  </span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: 82px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">23</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> </span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: 82px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">24</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">  </span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: 82px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">25</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">.h1 {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: 82px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">26</div></div><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">    </span>font-size: 30px;</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px; border-bottom: 0px solid transparent; top: 1968px;"></div><div class="CodeMirror-gutters" style="height: 1998px; left: 111px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 29px;"></div></div></div></div><div class="note-editable panel-body" contenteditable="true" style="height: 300px;"><div><img class="img-hide" src="./Information_files/Imagen_test_01.jpg" style="width: 372.49px; float: right; height: 558.734px;">
+<p></p><p class="h1" style="text-align: justify;">Jackie Lingerie</p> 
+
+<div class="contenedor">
+<p><br></p>
+<p class="h4">Jackie Lingerie nació del sueño de una Brazileña en España, emprendedora y amante de la lencería, los encajes bordados, los colores, las telas y valorar el cuerpo femenino con comodidad y elegancia.</p>
+
+<p class="h2">Siempre fue nuestro mayor objetivo el concepto de una lencería que sea confortable y que se adiera a la piel con suavidad y llena de detalles.</p>
+
+<div class="h4">Pensamos en la lencería óptima para la mujer que trabaja 12 hrs al día y tambien en la lencería para momentos únicos y especiales con un modelo moderno, actual, cómodo y elegante, sin perder la sensualidad femenina.&nbsp;</div></div>
+<div class="h3"><br></div><div class="h3"><br></div><div class="h3"><br></div><div class="h3"><br></div><div class="h3">MAYOR CLUB DE LENCERÍA DE EUROPA. ENTREGAMOS A LA PUERTA DE TU CASA! SI TIENES ALGUNA DUDA ¡LLÁMANOS!<br></div>
+<div><br></div>
+
+<style>
+  
+  .foto2 { 
+  padding: 10px; 
+  margin: 10px; 
+  float: right; 
+  
+  }
+  
+ 
+  
+.h1 {
+	font-size: 30px;
+  	color: #8C2F52;
+  	font-weight: bold;
+  	font-family: Montserrat;
+  	line-height: 1.6;
+}
+.h2 {
+	font-size: 20px;
+  	color: #8C2F52;
+  	font-weight: bold;
+  	font-family: Montserrat;
+  	line-height: 1.6;
+
+}
+.h3 {
+	font-size: 16px;
+  	color: #000000;
+  	font-family: Montserrat;
+  	font-weight: Bold;
+  	text-align: center;
+    line-height: 1.6;
+  
+}
+.h4 {
+	font-size: 14px;
+  	color: #666666;
+  	font-family: Montserrat;
+  	font-weight: Medium;
+  	line-height: 1.6;
+  	
+  
+}
+.h5 {
+	font-size: 12px;
+}
+.h6 {
+	font-size: 10.2px;
+}
+  
+  
+   @media (max-width: 440px){
+  		.contenedor {
+ 			 width: 100%;
+ 			 }
+  }
+  
+  
+  @media (min-width: 768px){
+  		.contenedor {
+ 			 width: 50%;
+ 			 }
+  }
+  
+  
+@media handheld, only screen and (max-width: 767px) {
+.img-hide {
+display:none;
+}
+}
+
+@media only screen and (max-width: 1023px) {
+.img-hide {
+display:none;
+}
+
+
+}
+
+</style>
+
+  
+
+<p></p></div></div></div><div class="note-statusbar">  <div class="note-resizebar">    <div class="note-icon-bar"></div>    <div class="note-icon-bar"></div>    <div class="note-icon-bar"></div>  </div></div><div class="modal link-dialog" aria-hidden="false" tabindex="-1"><div class="modal-dialog">  <div class="modal-content">    <div class="modal-header">      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>      <h4 class="modal-title">Insert Link</h4>    </div>    <div class="modal-body"><div class="form-group"><label>Text to display</label><input class="note-link-text form-control" type="text"></div><div class="form-group"><label>To what URL should this link go?</label><input class="note-link-url form-control" type="text" value="http://"></div><div class="checkbox"><label><input type="checkbox" checked=""> Open in new window</label></div></div>    <div class="modal-footer"><button href="#" class="btn btn-primary note-link-btn disabled" disabled="">Insert Link</button></div>  </div></div></div><div class="modal" aria-hidden="false" tabindex="-1"><div class="modal-dialog">  <div class="modal-content">    <div class="modal-header">      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>      <h4 class="modal-title">Insert Image</h4>    </div>    <div class="modal-body"><div class="form-group note-group-select-from-files"><label>Select from files</label><input class="note-image-input form-control" type="file" name="files" accept="image/*" multiple="multiple"></div><div class="form-group note-group-image-url" style="overflow:auto;"><label>Image URL</label><input class="note-image-url form-control col-md-12" type="text"></div></div>    <div class="modal-footer"><button href="#" class="btn btn-primary note-image-btn disabled" disabled="">Insert Image</button></div>  </div></div></div><div class="modal" aria-hidden="false" tabindex="-1"><div class="modal-dialog">  <div class="modal-content">    <div class="modal-header">      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>      <h4 class="modal-title">Insert Video</h4>    </div>    <div class="modal-body"><div class="form-group row-fluid"><label>Video URL? <small class="text-muted">(YouTube, Vimeo, Vine, Instagram, DailyMotion or Youku)</small></label><input class="note-video-url form-control span12" type="text"></div></div>    <div class="modal-footer"><button href="#" class="btn btn-primary note-video-btn disabled" disabled="">Insert Video</button></div>  </div></div></div><div class="modal" aria-hidden="false" tabindex="-1"><div class="modal-dialog">  <div class="modal-content">    <div class="modal-header">      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>      <h4 class="modal-title">Help</h4>    </div>    <div class="modal-body" style="max-height: 300px; overflow: scroll;"><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>ENTER</kbd></label><span>Insert Paragraph</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+Z</kbd></label><span>Undoes the last command</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+SHIFT+Z</kbd></label><span>Redoes the last command</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>TAB</kbd></label><span>Tab</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>SHIFT+TAB</kbd></label><span>Untab</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+B</kbd></label><span>Set a bold style</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+I</kbd></label><span>Set a italic style</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+U</kbd></label><span>Set a underline style</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+SHIFT+S</kbd></label><span>Set a strikethrough style</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+BACKSLASH</kbd></label><span>Clean a style</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+SHIFT+L</kbd></label><span>Set left align</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+SHIFT+E</kbd></label><span>Set center align</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+SHIFT+R</kbd></label><span>Set right align</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+SHIFT+J</kbd></label><span>Set full align</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+SHIFT+NUM7</kbd></label><span>Toggle unordered list</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+SHIFT+NUM8</kbd></label><span>Toggle ordered list</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+LEFTBRACKET</kbd></label><span>Outdent on current paragraph</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+RIGHTBRACKET</kbd></label><span>Indent on current paragraph</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+NUM0</kbd></label><span>Change current block's format as a paragraph(P tag)</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+NUM1</kbd></label><span>Change current block's format as H1</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+NUM2</kbd></label><span>Change current block's format as H2</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+NUM3</kbd></label><span>Change current block's format as H3</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+NUM4</kbd></label><span>Change current block's format as H4</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+NUM5</kbd></label><span>Change current block's format as H5</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+NUM6</kbd></label><span>Change current block's format as H6</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+ENTER</kbd></label><span>Insert horizontal rule</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+K</kbd></label><span>Show Link Dialog</span></div>    <div class="modal-footer"><p class="text-center"><a href="http://summernote.org/" target="_blank">Summernote 0.8.2</a> · <a href="https://github.com/summernote/summernote" target="_blank">Project</a> · <a href="https://github.com/summernote/summernote/issues" target="_blank">Issues</a></p></div>  </div></div></div><div class="modal" aria-hidden="false" tabindex="-1"><div class="modal-dialog">  <div class="modal-content">    <div class="modal-header">      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>      <h4 class="modal-title">Image Attributes</h4>    </div>    <div class="modal-body"><div class="form-group"><label for="note-image-attributes-title" class="control-label col-xs-2">Title</label><div class="input-group col-xs-10"><input type="text" id="note-image-attributes-title" class="note-image-attributes-title form-control"></div></div><div class="form-group"><label for="note-image-attributes-src" class="control-label col-xs-2">Source</label><div class="input-group col-xs-10"><input type="text" id="note-image-attributes-src" class="note-image-attributes-src form-control"></div></div><div class="form-group note-group-select-from-files"><label class="control-label col-xs-2"></label><div class="input-group col-xs-10"><input class="note-image-input form-control" type="file" name="file" accept="image/*"><small class="help-block">Selecting an image will replace existing image with an Inlined Image.</small></div></div><div class="form-group"><label for="note-image-attributes-alt" class="control-label col-xs-2">Alt</label><div class="input-group col-xs-10"><input type="text" id="note-image-attributes-alt" class="note-image-attributes-alt form-control"></div></div><h4>Link Attributes</h4><hr><div class="form-group"><label for="note-image-attributes-link-href" class="control-label col-xs-2">URL</label><div class="input-group col-xs-10"><input type="text" id="note-image-attributes-link-href" class="note-image-attributes-href form-control"></div></div><div class="form-group"><label for="note-image-attributes-link-target" class="control-label col-xs-2">Target</label><div class="input-group col-xs-10"><select id="note-image-attributes-link-target" class="note-image-attributes-target form-control"><option value="_self">Self</option><option value="_blank">Blank</option><option value="_top">Top</option><option value="_parent">Parent</option></select></div></div></div>    <div class="modal-footer"><button href="#" class="btn btn-primary note-image-attributes-btn">OK</button></div>  </div></div></div></div>
+                       </div>
+                  </div>
+                  <div class="form-group required">
+                    <label class="col-sm-2 control-label" for="input-meta-title1">Meta Tag Title</label>
+                    <div class="col-sm-10">
+                      <input type="text" name="information_description[1][meta_title]" value="About Us" placeholder="Meta Tag Title" id="input-meta-title1" class="form-control">
+                       </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label" for="input-meta-description1">Meta Tag Description</label>
+                    <div class="col-sm-10">
+                      <textarea name="information_description[1][meta_description]" rows="5" placeholder="Meta Tag Description" id="input-meta-description1" class="form-control"></textarea>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label" for="input-meta-keyword1">Meta Tag Keywords</label>
+                    <div class="col-sm-10">
+                      <textarea name="information_description[1][meta_keyword]" rows="5" placeholder="Meta Tag Keywords" id="input-meta-keyword1" class="form-control"></textarea>
+                    </div>
+                  </div>
+                </div>
+                                <div class="tab-pane" id="language2">
+                  <div class="form-group required">
+                    <label class="col-sm-2 control-label" for="input-title2">Information Title</label>
+                    <div class="col-sm-10">
+                      <input type="text" name="information_description[2][title]" value="Sobre Nosotros" placeholder="Information Title" id="input-title2" class="form-control">
+                       </div>
+                  </div>
+                  <div class="form-group required">
+                    <label class="col-sm-2 control-label" for="input-description2">Description</label>
+                    <div class="col-sm-10">
+                      <textarea name="information_description[2][description]" placeholder="Description" id="input-description2" data-toggle="summernote" data-lang="" class="form-control" style="display: none;">&lt;div&gt;&lt;img class="img-hide" src="http://localhost/jackielingerie/image/catalog/Imagenes_Test/Imagen_test_01.jpg" style="width: 372.49px; float: right; height: 558.734px;"&gt;
+&lt;p&gt;&lt;/p&gt;&lt;p class="h1" style="text-align: justify;"&gt;Jackie Lingerie&lt;/p&gt; 
+
+&lt;div class="contenedor"&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p class="h4"&gt;Jackie Lingerie nació del sueño de una Brazileña en España, emprendedora y amante de la lencería, los encajes bordados, los colores, las telas y valorar el cuerpo femenino con comodidad y elegancia.
+&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p class="h2"&gt;Siempre fue nuestro mayor objetivo el concepto de una lencería que sea confortable y que se adiera a la piel con suavidad y llena de detalles.
+ &lt;/p&gt;
+&lt;div&gt;&lt;br&gt;&lt;/div&gt;
+
+&lt;div class="h4"&gt;Pensamos en la lencería óptima para la mujer que trabaja 12 hrs al día y tambien en la lencería para momentos únicos y especiales con un modelo moderno, actual, cómodo y elegante, sin perder la sensualidad femenina.&amp;nbsp;&lt;/div&gt;
+&lt;div class="h4"&gt;&lt;br&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
+&lt;div&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/div&gt;
+&lt;div class="h3"&gt;MAYOR CLUB DE LENCERÍA DE EUROPA. ENTREGAMOS A LA PUERTA DE TU CASA! SI TIENES ALGUNA DUDA ¡LLÁMANOS!&lt;br&gt;&lt;/div&gt;
+&lt;div&gt;&lt;br&gt;&lt;/div&gt;
+
+&lt;style&gt;
+  
+  .foto2 { 
+  padding: 10px; 
+  margin: 10px; 
+  float: right; 
+  
+  }
+  
+ 
+  
+.h1 {
+	font-size: 30px;
+  	color: #8C2F52;
+  	font-weight: bold;
+  	font-family: Montserrat;
+  	line-height: 1.6;
+}
+.h2 {
+	font-size: 20px;
+  	color: #8C2F52;
+  	font-weight: bold;
+  	font-family: Montserrat;
+  	line-height: 1.6;
+
+}
+.h3 {
+	font-size: 16px;
+  	color: #000000;
+  	font-family: Montserrat;
+  	font-weight: Bold;
+  	text-align: center;
+    line-height: 1.6;
+  
+}
+.h4 {
+	font-size: 14px;
+  	color: #666666;
+  	font-family: Montserrat;
+  	font-weight: Medium;
+  	line-height: 1.6;
+  	
+  
+}
+.h5 {
+	font-size: 12px;
+}
+.h6 {
+	font-size: 10.2px;
+}
+  
+  
+   @media (max-width: 440px){
+  		.contenedor {
+ 			 width: 100%;
+ 			 }
+  }
+  
+  
+  @media (min-width: 768px){
+  		.contenedor {
+ 			 width: 50%;
+ 			 }
+  }
+  
+  
+@media handheld, only screen and (max-width: 767px) {
+.img-hide {
+display:none;
+}
+}
+
+@media only screen and (max-width: 1023px) {
+.img-hide {
+display:none;
+}
+
+
+}
+
+&lt;/style&gt;
+
+  
+
+&lt;p&gt;&lt;/p&gt;&lt;/div&gt;</textarea><div class="note-editor note-frame panel panel-default"><div class="note-dropzone">  <div class="note-dropzone-message"></div></div><div class="note-toolbar panel-heading"><div class="note-btn-group btn-group note-style"><div class="note-btn-group btn-group"><button type="button" class="note-btn btn btn-default btn-sm dropdown-toggle" tabindex="-1" data-toggle="dropdown" title="" data-original-title="Style"><i class="note-icon-magic"></i> <span class="note-icon-caret"></span></button><div class="dropdown-menu dropdown-style"><li><a href="http://localhost/jackielingerie/admin/#" data-value="p"><p>p</p></a></li><li><a href="http://localhost/jackielingerie/admin/#" data-value="blockquote"><blockquote>Quote</blockquote></a></li><li><a href="http://localhost/jackielingerie/admin/#" data-value="pre"><pre>Code</pre></a></li><li><a href="http://localhost/jackielingerie/admin/#" data-value="h1"><h1>Header 1</h1></a></li><li><a href="http://localhost/jackielingerie/admin/#" data-value="h2"><h2>Header 2</h2></a></li><li><a href="http://localhost/jackielingerie/admin/#" data-value="h3"><h3>Header 3</h3></a></li><li><a href="http://localhost/jackielingerie/admin/#" data-value="h4"><h4>Header 4</h4></a></li><li><a href="http://localhost/jackielingerie/admin/#" data-value="h5"><h5>Header 5</h5></a></li><li><a href="http://localhost/jackielingerie/admin/#" data-value="h6"><h6>Header 6</h6></a></li></div></div></div><div class="note-btn-group btn-group note-font"><button type="button" class="note-btn btn btn-default btn-sm note-btn-bold" tabindex="-1" title="" data-original-title="Bold (⌘+B)"><i class="note-icon-bold"></i></button><button type="button" class="note-btn btn btn-default btn-sm note-btn-underline" tabindex="-1" title="" data-original-title="Underline (⌘+U)"><i class="note-icon-underline"></i></button><button type="button" class="note-btn btn btn-default btn-sm" tabindex="-1" title="" data-original-title="Remove Font Style (⌘+\)"><i class="note-icon-eraser"></i></button></div><div class="note-btn-group btn-group note-fontname"><div class="note-btn-group btn-group"><button type="button" class="note-btn btn btn-default btn-sm dropdown-toggle" tabindex="-1" data-toggle="dropdown" title="" data-original-title="Font Family"><span class="note-current-fontname">sans-serif</span> <span class="note-icon-caret"></span></button><div class="dropdown-menu note-check dropdown-fontname"><li><a href="http://localhost/jackielingerie/admin/#" data-value="Arial" class=""><i class="note-icon-check"></i> <span style="font-family:Arial">Arial</span></a></li><li><a href="http://localhost/jackielingerie/admin/#" data-value="Arial Black" class=""><i class="note-icon-check"></i> <span style="font-family:Arial Black">Arial Black</span></a></li><li><a href="http://localhost/jackielingerie/admin/#" data-value="Comic Sans MS" class=""><i class="note-icon-check"></i> <span style="font-family:Comic Sans MS">Comic Sans MS</span></a></li><li><a href="http://localhost/jackielingerie/admin/#" data-value="Courier New" class=""><i class="note-icon-check"></i> <span style="font-family:Courier New">Courier New</span></a></li><li><a href="http://localhost/jackielingerie/admin/#" data-value="Helvetica Neue" class=""><i class="note-icon-check"></i> <span style="font-family:Helvetica Neue">Helvetica Neue</span></a></li><li><a href="http://localhost/jackielingerie/admin/#" data-value="Helvetica" class=""><i class="note-icon-check"></i> <span style="font-family:Helvetica">Helvetica</span></a></li><li><a href="http://localhost/jackielingerie/admin/#" data-value="Impact" class=""><i class="note-icon-check"></i> <span style="font-family:Impact">Impact</span></a></li><li><a href="http://localhost/jackielingerie/admin/#" data-value="Lucida Grande" class=""><i class="note-icon-check"></i> <span style="font-family:Lucida Grande">Lucida Grande</span></a></li><li><a href="http://localhost/jackielingerie/admin/#" data-value="Tahoma" class=""><i class="note-icon-check"></i> <span style="font-family:Tahoma">Tahoma</span></a></li><li><a href="http://localhost/jackielingerie/admin/#" data-value="Times New Roman" class=""><i class="note-icon-check"></i> <span style="font-family:Times New Roman">Times New Roman</span></a></li><li><a href="http://localhost/jackielingerie/admin/#" data-value="Verdana" class=""><i class="note-icon-check"></i> <span style="font-family:Verdana">Verdana</span></a></li></div></div></div><div class="note-btn-group btn-group note-fontsize"><div class="note-btn-group btn-group"><button type="button" class="note-btn btn btn-default btn-sm dropdown-toggle" tabindex="-1" data-toggle="dropdown" title="" data-original-title="Font Size"><span class="note-current-fontsize">14</span><span class="note-icon-caret"></span></button><div class="dropdown-menu note-check dropdown-fontsize"><li><a href="http://localhost/jackielingerie/admin/#" data-value="8" class=""><i class="note-icon-check"></i> 8</a></li><li><a href="http://localhost/jackielingerie/admin/#" data-value="9" class=""><i class="note-icon-check"></i> 9</a></li><li><a href="http://localhost/jackielingerie/admin/#" data-value="10" class=""><i class="note-icon-check"></i> 10</a></li><li><a href="http://localhost/jackielingerie/admin/#" data-value="11" class=""><i class="note-icon-check"></i> 11</a></li><li><a href="http://localhost/jackielingerie/admin/#" data-value="12" class=""><i class="note-icon-check"></i> 12</a></li><li><a href="http://localhost/jackielingerie/admin/#" data-value="14" class="checked"><i class="note-icon-check"></i> 14</a></li><li><a href="http://localhost/jackielingerie/admin/#" data-value="18" class=""><i class="note-icon-check"></i> 18</a></li><li><a href="http://localhost/jackielingerie/admin/#" data-value="24" class=""><i class="note-icon-check"></i> 24</a></li><li><a href="http://localhost/jackielingerie/admin/#" data-value="36" class=""><i class="note-icon-check"></i> 36</a></li></div></div></div><div class="note-btn-group btn-group note-color"><div class="note-btn-group btn-group note-color"><button type="button" class="note-btn btn btn-default btn-sm note-current-color-button" tabindex="-1" title="" data-original-title="Recent Color" data-backcolor="#FFFF00"><i class="note-icon-font note-recent-color" style="background-color: rgb(255, 255, 0);"></i></button><button type="button" class="note-btn btn btn-default btn-sm dropdown-toggle" tabindex="-1" data-toggle="dropdown" title="" data-original-title="More Color"><span class="note-icon-caret"></span></button><div class="dropdown-menu"><li><div class="btn-group">  <div class="note-palette-title">Background Color</div>  <div>    <button type="button" class="note-color-reset btn btn-default" data-event="backColor" data-value="inherit">Transparent    </button>  </div>  <div class="note-holder" data-event="backColor"><div class="note-color-palette"><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#000000" data-event="backColor" data-value="#000000" title="" data-toggle="button" tabindex="-1" data-original-title="#000000"></button><button type="button" class="note-color-btn" style="background-color:#424242" data-event="backColor" data-value="#424242" title="" data-toggle="button" tabindex="-1" data-original-title="#424242"></button><button type="button" class="note-color-btn" style="background-color:#636363" data-event="backColor" data-value="#636363" title="" data-toggle="button" tabindex="-1" data-original-title="#636363"></button><button type="button" class="note-color-btn" style="background-color:#9C9C94" data-event="backColor" data-value="#9C9C94" title="" data-toggle="button" tabindex="-1" data-original-title="#9C9C94"></button><button type="button" class="note-color-btn" style="background-color:#CEC6CE" data-event="backColor" data-value="#CEC6CE" title="" data-toggle="button" tabindex="-1" data-original-title="#CEC6CE"></button><button type="button" class="note-color-btn" style="background-color:#EFEFEF" data-event="backColor" data-value="#EFEFEF" title="" data-toggle="button" tabindex="-1" data-original-title="#EFEFEF"></button><button type="button" class="note-color-btn" style="background-color:#F7F7F7" data-event="backColor" data-value="#F7F7F7" title="" data-toggle="button" tabindex="-1" data-original-title="#F7F7F7"></button><button type="button" class="note-color-btn" style="background-color:#FFFFFF" data-event="backColor" data-value="#FFFFFF" title="" data-toggle="button" tabindex="-1" data-original-title="#FFFFFF"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#FF0000" data-event="backColor" data-value="#FF0000" title="" data-toggle="button" tabindex="-1" data-original-title="#FF0000"></button><button type="button" class="note-color-btn" style="background-color:#FF9C00" data-event="backColor" data-value="#FF9C00" title="" data-toggle="button" tabindex="-1" data-original-title="#FF9C00"></button><button type="button" class="note-color-btn" style="background-color:#FFFF00" data-event="backColor" data-value="#FFFF00" title="" data-toggle="button" tabindex="-1" data-original-title="#FFFF00"></button><button type="button" class="note-color-btn" style="background-color:#00FF00" data-event="backColor" data-value="#00FF00" title="" data-toggle="button" tabindex="-1" data-original-title="#00FF00"></button><button type="button" class="note-color-btn" style="background-color:#00FFFF" data-event="backColor" data-value="#00FFFF" title="" data-toggle="button" tabindex="-1" data-original-title="#00FFFF"></button><button type="button" class="note-color-btn" style="background-color:#0000FF" data-event="backColor" data-value="#0000FF" title="" data-toggle="button" tabindex="-1" data-original-title="#0000FF"></button><button type="button" class="note-color-btn" style="background-color:#9C00FF" data-event="backColor" data-value="#9C00FF" title="" data-toggle="button" tabindex="-1" data-original-title="#9C00FF"></button><button type="button" class="note-color-btn" style="background-color:#FF00FF" data-event="backColor" data-value="#FF00FF" title="" data-toggle="button" tabindex="-1" data-original-title="#FF00FF"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#F7C6CE" data-event="backColor" data-value="#F7C6CE" title="" data-toggle="button" tabindex="-1" data-original-title="#F7C6CE"></button><button type="button" class="note-color-btn" style="background-color:#FFE7CE" data-event="backColor" data-value="#FFE7CE" title="" data-toggle="button" tabindex="-1" data-original-title="#FFE7CE"></button><button type="button" class="note-color-btn" style="background-color:#FFEFC6" data-event="backColor" data-value="#FFEFC6" title="" data-toggle="button" tabindex="-1" data-original-title="#FFEFC6"></button><button type="button" class="note-color-btn" style="background-color:#D6EFD6" data-event="backColor" data-value="#D6EFD6" title="" data-toggle="button" tabindex="-1" data-original-title="#D6EFD6"></button><button type="button" class="note-color-btn" style="background-color:#CEDEE7" data-event="backColor" data-value="#CEDEE7" title="" data-toggle="button" tabindex="-1" data-original-title="#CEDEE7"></button><button type="button" class="note-color-btn" style="background-color:#CEE7F7" data-event="backColor" data-value="#CEE7F7" title="" data-toggle="button" tabindex="-1" data-original-title="#CEE7F7"></button><button type="button" class="note-color-btn" style="background-color:#D6D6E7" data-event="backColor" data-value="#D6D6E7" title="" data-toggle="button" tabindex="-1" data-original-title="#D6D6E7"></button><button type="button" class="note-color-btn" style="background-color:#E7D6DE" data-event="backColor" data-value="#E7D6DE" title="" data-toggle="button" tabindex="-1" data-original-title="#E7D6DE"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#E79C9C" data-event="backColor" data-value="#E79C9C" title="" data-toggle="button" tabindex="-1" data-original-title="#E79C9C"></button><button type="button" class="note-color-btn" style="background-color:#FFC69C" data-event="backColor" data-value="#FFC69C" title="" data-toggle="button" tabindex="-1" data-original-title="#FFC69C"></button><button type="button" class="note-color-btn" style="background-color:#FFE79C" data-event="backColor" data-value="#FFE79C" title="" data-toggle="button" tabindex="-1" data-original-title="#FFE79C"></button><button type="button" class="note-color-btn" style="background-color:#B5D6A5" data-event="backColor" data-value="#B5D6A5" title="" data-toggle="button" tabindex="-1" data-original-title="#B5D6A5"></button><button type="button" class="note-color-btn" style="background-color:#A5C6CE" data-event="backColor" data-value="#A5C6CE" title="" data-toggle="button" tabindex="-1" data-original-title="#A5C6CE"></button><button type="button" class="note-color-btn" style="background-color:#9CC6EF" data-event="backColor" data-value="#9CC6EF" title="" data-toggle="button" tabindex="-1" data-original-title="#9CC6EF"></button><button type="button" class="note-color-btn" style="background-color:#B5A5D6" data-event="backColor" data-value="#B5A5D6" title="" data-toggle="button" tabindex="-1" data-original-title="#B5A5D6"></button><button type="button" class="note-color-btn" style="background-color:#D6A5BD" data-event="backColor" data-value="#D6A5BD" title="" data-toggle="button" tabindex="-1" data-original-title="#D6A5BD"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#E76363" data-event="backColor" data-value="#E76363" title="" data-toggle="button" tabindex="-1" data-original-title="#E76363"></button><button type="button" class="note-color-btn" style="background-color:#F7AD6B" data-event="backColor" data-value="#F7AD6B" title="" data-toggle="button" tabindex="-1" data-original-title="#F7AD6B"></button><button type="button" class="note-color-btn" style="background-color:#FFD663" data-event="backColor" data-value="#FFD663" title="" data-toggle="button" tabindex="-1" data-original-title="#FFD663"></button><button type="button" class="note-color-btn" style="background-color:#94BD7B" data-event="backColor" data-value="#94BD7B" title="" data-toggle="button" tabindex="-1" data-original-title="#94BD7B"></button><button type="button" class="note-color-btn" style="background-color:#73A5AD" data-event="backColor" data-value="#73A5AD" title="" data-toggle="button" tabindex="-1" data-original-title="#73A5AD"></button><button type="button" class="note-color-btn" style="background-color:#6BADDE" data-event="backColor" data-value="#6BADDE" title="" data-toggle="button" tabindex="-1" data-original-title="#6BADDE"></button><button type="button" class="note-color-btn" style="background-color:#8C7BC6" data-event="backColor" data-value="#8C7BC6" title="" data-toggle="button" tabindex="-1" data-original-title="#8C7BC6"></button><button type="button" class="note-color-btn" style="background-color:#C67BA5" data-event="backColor" data-value="#C67BA5" title="" data-toggle="button" tabindex="-1" data-original-title="#C67BA5"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#CE0000" data-event="backColor" data-value="#CE0000" title="" data-toggle="button" tabindex="-1" data-original-title="#CE0000"></button><button type="button" class="note-color-btn" style="background-color:#E79439" data-event="backColor" data-value="#E79439" title="" data-toggle="button" tabindex="-1" data-original-title="#E79439"></button><button type="button" class="note-color-btn" style="background-color:#EFC631" data-event="backColor" data-value="#EFC631" title="" data-toggle="button" tabindex="-1" data-original-title="#EFC631"></button><button type="button" class="note-color-btn" style="background-color:#6BA54A" data-event="backColor" data-value="#6BA54A" title="" data-toggle="button" tabindex="-1" data-original-title="#6BA54A"></button><button type="button" class="note-color-btn" style="background-color:#4A7B8C" data-event="backColor" data-value="#4A7B8C" title="" data-toggle="button" tabindex="-1" data-original-title="#4A7B8C"></button><button type="button" class="note-color-btn" style="background-color:#3984C6" data-event="backColor" data-value="#3984C6" title="" data-toggle="button" tabindex="-1" data-original-title="#3984C6"></button><button type="button" class="note-color-btn" style="background-color:#634AA5" data-event="backColor" data-value="#634AA5" title="" data-toggle="button" tabindex="-1" data-original-title="#634AA5"></button><button type="button" class="note-color-btn" style="background-color:#A54A7B" data-event="backColor" data-value="#A54A7B" title="" data-toggle="button" tabindex="-1" data-original-title="#A54A7B"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#9C0000" data-event="backColor" data-value="#9C0000" title="" data-toggle="button" tabindex="-1" data-original-title="#9C0000"></button><button type="button" class="note-color-btn" style="background-color:#B56308" data-event="backColor" data-value="#B56308" title="" data-toggle="button" tabindex="-1" data-original-title="#B56308"></button><button type="button" class="note-color-btn" style="background-color:#BD9400" data-event="backColor" data-value="#BD9400" title="" data-toggle="button" tabindex="-1" data-original-title="#BD9400"></button><button type="button" class="note-color-btn" style="background-color:#397B21" data-event="backColor" data-value="#397B21" title="" data-toggle="button" tabindex="-1" data-original-title="#397B21"></button><button type="button" class="note-color-btn" style="background-color:#104A5A" data-event="backColor" data-value="#104A5A" title="" data-toggle="button" tabindex="-1" data-original-title="#104A5A"></button><button type="button" class="note-color-btn" style="background-color:#085294" data-event="backColor" data-value="#085294" title="" data-toggle="button" tabindex="-1" data-original-title="#085294"></button><button type="button" class="note-color-btn" style="background-color:#311873" data-event="backColor" data-value="#311873" title="" data-toggle="button" tabindex="-1" data-original-title="#311873"></button><button type="button" class="note-color-btn" style="background-color:#731842" data-event="backColor" data-value="#731842" title="" data-toggle="button" tabindex="-1" data-original-title="#731842"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#630000" data-event="backColor" data-value="#630000" title="" data-toggle="button" tabindex="-1" data-original-title="#630000"></button><button type="button" class="note-color-btn" style="background-color:#7B3900" data-event="backColor" data-value="#7B3900" title="" data-toggle="button" tabindex="-1" data-original-title="#7B3900"></button><button type="button" class="note-color-btn" style="background-color:#846300" data-event="backColor" data-value="#846300" title="" data-toggle="button" tabindex="-1" data-original-title="#846300"></button><button type="button" class="note-color-btn" style="background-color:#295218" data-event="backColor" data-value="#295218" title="" data-toggle="button" tabindex="-1" data-original-title="#295218"></button><button type="button" class="note-color-btn" style="background-color:#083139" data-event="backColor" data-value="#083139" title="" data-toggle="button" tabindex="-1" data-original-title="#083139"></button><button type="button" class="note-color-btn" style="background-color:#003163" data-event="backColor" data-value="#003163" title="" data-toggle="button" tabindex="-1" data-original-title="#003163"></button><button type="button" class="note-color-btn" style="background-color:#21104A" data-event="backColor" data-value="#21104A" title="" data-toggle="button" tabindex="-1" data-original-title="#21104A"></button><button type="button" class="note-color-btn" style="background-color:#4A1031" data-event="backColor" data-value="#4A1031" title="" data-toggle="button" tabindex="-1" data-original-title="#4A1031"></button></div></div></div></div><div class="btn-group">  <div class="note-palette-title">Foreground Color</div>  <div>    <button type="button" class="note-color-reset btn btn-default" data-event="removeFormat" data-value="foreColor">Reset to default    </button>  </div>  <div class="note-holder" data-event="foreColor"><div class="note-color-palette"><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#000000" data-event="foreColor" data-value="#000000" title="" data-toggle="button" tabindex="-1" data-original-title="#000000"></button><button type="button" class="note-color-btn" style="background-color:#424242" data-event="foreColor" data-value="#424242" title="" data-toggle="button" tabindex="-1" data-original-title="#424242"></button><button type="button" class="note-color-btn" style="background-color:#636363" data-event="foreColor" data-value="#636363" title="" data-toggle="button" tabindex="-1" data-original-title="#636363"></button><button type="button" class="note-color-btn" style="background-color:#9C9C94" data-event="foreColor" data-value="#9C9C94" title="" data-toggle="button" tabindex="-1" data-original-title="#9C9C94"></button><button type="button" class="note-color-btn" style="background-color:#CEC6CE" data-event="foreColor" data-value="#CEC6CE" title="" data-toggle="button" tabindex="-1" data-original-title="#CEC6CE"></button><button type="button" class="note-color-btn" style="background-color:#EFEFEF" data-event="foreColor" data-value="#EFEFEF" title="" data-toggle="button" tabindex="-1" data-original-title="#EFEFEF"></button><button type="button" class="note-color-btn" style="background-color:#F7F7F7" data-event="foreColor" data-value="#F7F7F7" title="" data-toggle="button" tabindex="-1" data-original-title="#F7F7F7"></button><button type="button" class="note-color-btn" style="background-color:#FFFFFF" data-event="foreColor" data-value="#FFFFFF" title="" data-toggle="button" tabindex="-1" data-original-title="#FFFFFF"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#FF0000" data-event="foreColor" data-value="#FF0000" title="" data-toggle="button" tabindex="-1" data-original-title="#FF0000"></button><button type="button" class="note-color-btn" style="background-color:#FF9C00" data-event="foreColor" data-value="#FF9C00" title="" data-toggle="button" tabindex="-1" data-original-title="#FF9C00"></button><button type="button" class="note-color-btn" style="background-color:#FFFF00" data-event="foreColor" data-value="#FFFF00" title="" data-toggle="button" tabindex="-1" data-original-title="#FFFF00"></button><button type="button" class="note-color-btn" style="background-color:#00FF00" data-event="foreColor" data-value="#00FF00" title="" data-toggle="button" tabindex="-1" data-original-title="#00FF00"></button><button type="button" class="note-color-btn" style="background-color:#00FFFF" data-event="foreColor" data-value="#00FFFF" title="" data-toggle="button" tabindex="-1" data-original-title="#00FFFF"></button><button type="button" class="note-color-btn" style="background-color:#0000FF" data-event="foreColor" data-value="#0000FF" title="" data-toggle="button" tabindex="-1" data-original-title="#0000FF"></button><button type="button" class="note-color-btn" style="background-color:#9C00FF" data-event="foreColor" data-value="#9C00FF" title="" data-toggle="button" tabindex="-1" data-original-title="#9C00FF"></button><button type="button" class="note-color-btn" style="background-color:#FF00FF" data-event="foreColor" data-value="#FF00FF" title="" data-toggle="button" tabindex="-1" data-original-title="#FF00FF"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#F7C6CE" data-event="foreColor" data-value="#F7C6CE" title="" data-toggle="button" tabindex="-1" data-original-title="#F7C6CE"></button><button type="button" class="note-color-btn" style="background-color:#FFE7CE" data-event="foreColor" data-value="#FFE7CE" title="" data-toggle="button" tabindex="-1" data-original-title="#FFE7CE"></button><button type="button" class="note-color-btn" style="background-color:#FFEFC6" data-event="foreColor" data-value="#FFEFC6" title="" data-toggle="button" tabindex="-1" data-original-title="#FFEFC6"></button><button type="button" class="note-color-btn" style="background-color:#D6EFD6" data-event="foreColor" data-value="#D6EFD6" title="" data-toggle="button" tabindex="-1" data-original-title="#D6EFD6"></button><button type="button" class="note-color-btn" style="background-color:#CEDEE7" data-event="foreColor" data-value="#CEDEE7" title="" data-toggle="button" tabindex="-1" data-original-title="#CEDEE7"></button><button type="button" class="note-color-btn" style="background-color:#CEE7F7" data-event="foreColor" data-value="#CEE7F7" title="" data-toggle="button" tabindex="-1" data-original-title="#CEE7F7"></button><button type="button" class="note-color-btn" style="background-color:#D6D6E7" data-event="foreColor" data-value="#D6D6E7" title="" data-toggle="button" tabindex="-1" data-original-title="#D6D6E7"></button><button type="button" class="note-color-btn" style="background-color:#E7D6DE" data-event="foreColor" data-value="#E7D6DE" title="" data-toggle="button" tabindex="-1" data-original-title="#E7D6DE"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#E79C9C" data-event="foreColor" data-value="#E79C9C" title="" data-toggle="button" tabindex="-1" data-original-title="#E79C9C"></button><button type="button" class="note-color-btn" style="background-color:#FFC69C" data-event="foreColor" data-value="#FFC69C" title="" data-toggle="button" tabindex="-1" data-original-title="#FFC69C"></button><button type="button" class="note-color-btn" style="background-color:#FFE79C" data-event="foreColor" data-value="#FFE79C" title="" data-toggle="button" tabindex="-1" data-original-title="#FFE79C"></button><button type="button" class="note-color-btn" style="background-color:#B5D6A5" data-event="foreColor" data-value="#B5D6A5" title="" data-toggle="button" tabindex="-1" data-original-title="#B5D6A5"></button><button type="button" class="note-color-btn" style="background-color:#A5C6CE" data-event="foreColor" data-value="#A5C6CE" title="" data-toggle="button" tabindex="-1" data-original-title="#A5C6CE"></button><button type="button" class="note-color-btn" style="background-color:#9CC6EF" data-event="foreColor" data-value="#9CC6EF" title="" data-toggle="button" tabindex="-1" data-original-title="#9CC6EF"></button><button type="button" class="note-color-btn" style="background-color:#B5A5D6" data-event="foreColor" data-value="#B5A5D6" title="" data-toggle="button" tabindex="-1" data-original-title="#B5A5D6"></button><button type="button" class="note-color-btn" style="background-color:#D6A5BD" data-event="foreColor" data-value="#D6A5BD" title="" data-toggle="button" tabindex="-1" data-original-title="#D6A5BD"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#E76363" data-event="foreColor" data-value="#E76363" title="" data-toggle="button" tabindex="-1" data-original-title="#E76363"></button><button type="button" class="note-color-btn" style="background-color:#F7AD6B" data-event="foreColor" data-value="#F7AD6B" title="" data-toggle="button" tabindex="-1" data-original-title="#F7AD6B"></button><button type="button" class="note-color-btn" style="background-color:#FFD663" data-event="foreColor" data-value="#FFD663" title="" data-toggle="button" tabindex="-1" data-original-title="#FFD663"></button><button type="button" class="note-color-btn" style="background-color:#94BD7B" data-event="foreColor" data-value="#94BD7B" title="" data-toggle="button" tabindex="-1" data-original-title="#94BD7B"></button><button type="button" class="note-color-btn" style="background-color:#73A5AD" data-event="foreColor" data-value="#73A5AD" title="" data-toggle="button" tabindex="-1" data-original-title="#73A5AD"></button><button type="button" class="note-color-btn" style="background-color:#6BADDE" data-event="foreColor" data-value="#6BADDE" title="" data-toggle="button" tabindex="-1" data-original-title="#6BADDE"></button><button type="button" class="note-color-btn" style="background-color:#8C7BC6" data-event="foreColor" data-value="#8C7BC6" title="" data-toggle="button" tabindex="-1" data-original-title="#8C7BC6"></button><button type="button" class="note-color-btn" style="background-color:#C67BA5" data-event="foreColor" data-value="#C67BA5" title="" data-toggle="button" tabindex="-1" data-original-title="#C67BA5"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#CE0000" data-event="foreColor" data-value="#CE0000" title="" data-toggle="button" tabindex="-1" data-original-title="#CE0000"></button><button type="button" class="note-color-btn" style="background-color:#E79439" data-event="foreColor" data-value="#E79439" title="" data-toggle="button" tabindex="-1" data-original-title="#E79439"></button><button type="button" class="note-color-btn" style="background-color:#EFC631" data-event="foreColor" data-value="#EFC631" title="" data-toggle="button" tabindex="-1" data-original-title="#EFC631"></button><button type="button" class="note-color-btn" style="background-color:#6BA54A" data-event="foreColor" data-value="#6BA54A" title="" data-toggle="button" tabindex="-1" data-original-title="#6BA54A"></button><button type="button" class="note-color-btn" style="background-color:#4A7B8C" data-event="foreColor" data-value="#4A7B8C" title="" data-toggle="button" tabindex="-1" data-original-title="#4A7B8C"></button><button type="button" class="note-color-btn" style="background-color:#3984C6" data-event="foreColor" data-value="#3984C6" title="" data-toggle="button" tabindex="-1" data-original-title="#3984C6"></button><button type="button" class="note-color-btn" style="background-color:#634AA5" data-event="foreColor" data-value="#634AA5" title="" data-toggle="button" tabindex="-1" data-original-title="#634AA5"></button><button type="button" class="note-color-btn" style="background-color:#A54A7B" data-event="foreColor" data-value="#A54A7B" title="" data-toggle="button" tabindex="-1" data-original-title="#A54A7B"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#9C0000" data-event="foreColor" data-value="#9C0000" title="" data-toggle="button" tabindex="-1" data-original-title="#9C0000"></button><button type="button" class="note-color-btn" style="background-color:#B56308" data-event="foreColor" data-value="#B56308" title="" data-toggle="button" tabindex="-1" data-original-title="#B56308"></button><button type="button" class="note-color-btn" style="background-color:#BD9400" data-event="foreColor" data-value="#BD9400" title="" data-toggle="button" tabindex="-1" data-original-title="#BD9400"></button><button type="button" class="note-color-btn" style="background-color:#397B21" data-event="foreColor" data-value="#397B21" title="" data-toggle="button" tabindex="-1" data-original-title="#397B21"></button><button type="button" class="note-color-btn" style="background-color:#104A5A" data-event="foreColor" data-value="#104A5A" title="" data-toggle="button" tabindex="-1" data-original-title="#104A5A"></button><button type="button" class="note-color-btn" style="background-color:#085294" data-event="foreColor" data-value="#085294" title="" data-toggle="button" tabindex="-1" data-original-title="#085294"></button><button type="button" class="note-color-btn" style="background-color:#311873" data-event="foreColor" data-value="#311873" title="" data-toggle="button" tabindex="-1" data-original-title="#311873"></button><button type="button" class="note-color-btn" style="background-color:#731842" data-event="foreColor" data-value="#731842" title="" data-toggle="button" tabindex="-1" data-original-title="#731842"></button></div><div class="note-color-row"><button type="button" class="note-color-btn" style="background-color:#630000" data-event="foreColor" data-value="#630000" title="" data-toggle="button" tabindex="-1" data-original-title="#630000"></button><button type="button" class="note-color-btn" style="background-color:#7B3900" data-event="foreColor" data-value="#7B3900" title="" data-toggle="button" tabindex="-1" data-original-title="#7B3900"></button><button type="button" class="note-color-btn" style="background-color:#846300" data-event="foreColor" data-value="#846300" title="" data-toggle="button" tabindex="-1" data-original-title="#846300"></button><button type="button" class="note-color-btn" style="background-color:#295218" data-event="foreColor" data-value="#295218" title="" data-toggle="button" tabindex="-1" data-original-title="#295218"></button><button type="button" class="note-color-btn" style="background-color:#083139" data-event="foreColor" data-value="#083139" title="" data-toggle="button" tabindex="-1" data-original-title="#083139"></button><button type="button" class="note-color-btn" style="background-color:#003163" data-event="foreColor" data-value="#003163" title="" data-toggle="button" tabindex="-1" data-original-title="#003163"></button><button type="button" class="note-color-btn" style="background-color:#21104A" data-event="foreColor" data-value="#21104A" title="" data-toggle="button" tabindex="-1" data-original-title="#21104A"></button><button type="button" class="note-color-btn" style="background-color:#4A1031" data-event="foreColor" data-value="#4A1031" title="" data-toggle="button" tabindex="-1" data-original-title="#4A1031"></button></div></div></div></div></li></div></div></div><div class="note-btn-group btn-group note-para"><button type="button" class="note-btn btn btn-default btn-sm" tabindex="-1" title="" data-original-title="Unordered list (⌘+⇧+NUM7)"><i class="note-icon-unorderedlist"></i></button><button type="button" class="note-btn btn btn-default btn-sm" tabindex="-1" title="" data-original-title="Ordered list (⌘+⇧+NUM8)"><i class="note-icon-orderedlist"></i></button><div class="note-btn-group btn-group"><button type="button" class="note-btn btn btn-default btn-sm dropdown-toggle" tabindex="-1" data-toggle="dropdown" title="" data-original-title="Paragraph"><i class="note-icon-align-left"></i> <span class="note-icon-caret"></span></button><div class="dropdown-menu"><div class="note-btn-group btn-group note-align"><button type="button" class="note-btn btn btn-default btn-sm" tabindex="-1" title="" data-original-title="Align left (⌘+⇧+L)"><i class="note-icon-align-left"></i></button><button type="button" class="note-btn btn btn-default btn-sm" tabindex="-1" title="" data-original-title="Align center (⌘+⇧+E)"><i class="note-icon-align-center"></i></button><button type="button" class="note-btn btn btn-default btn-sm" tabindex="-1" title="" data-original-title="Align right (⌘+⇧+R)"><i class="note-icon-align-right"></i></button><button type="button" class="note-btn btn btn-default btn-sm" tabindex="-1" title="" data-original-title="Justify full (⌘+⇧+J)"><i class="note-icon-align-justify"></i></button></div><div class="note-btn-group btn-group note-list"><button type="button" class="note-btn btn btn-default btn-sm" tabindex="-1" title="" data-original-title="Outdent (⌘+[)"><i class="note-icon-align-outdent"></i></button><button type="button" class="note-btn btn btn-default btn-sm" tabindex="-1" title="" data-original-title="Indent (⌘+])"><i class="note-icon-align-indent"></i></button></div></div></div></div><div class="note-btn-group btn-group note-table"><div class="note-btn-group btn-group"><button type="button" class="note-btn btn btn-default btn-sm dropdown-toggle" tabindex="-1" data-toggle="dropdown" title="" data-original-title="Table"><i class="note-icon-table"></i> <span class="note-icon-caret"></span></button><div class="dropdown-menu note-table"><div class="note-dimension-picker">  <div class="note-dimension-picker-mousecatcher" data-event="insertTable" data-value="1x1" style="width: 10em; height: 10em;"></div>  <div class="note-dimension-picker-highlighted"></div>  <div class="note-dimension-picker-unhighlighted"></div></div><div class="note-dimension-display">1 x 1</div></div></div></div><div class="note-btn-group btn-group note-insert"><button type="button" class="note-btn btn btn-default btn-sm" tabindex="-1" title="" data-original-title="Link (⌘+K)"><i class="note-icon-link"></i></button><button type="button" class="note-btn btn btn-default btn-sm" tabindex="-1" title="" data-original-title="Picture"><i class="note-icon-picture"></i></button><button type="button" class="note-btn btn btn-default btn-sm" tabindex="-1" title="" data-original-title="Video"><i class="note-icon-video"></i></button></div><div class="note-btn-group btn-group note-view"><button type="button" class="note-btn btn btn-default btn-sm btn-fullscreen" tabindex="-1" title="" data-original-title="Full Screen"><i class="note-icon-arrows-alt"></i></button><button type="button" class="note-btn btn btn-default btn-sm btn-codeview" tabindex="-1" title="" data-original-title="Code View"><i class="note-icon-code"></i></button><button type="button" class="note-btn btn btn-default btn-sm" tabindex="-1" title="" data-original-title="Help"><i class="note-icon-question"></i></button></div></div><div class="note-editing-area"><div class="note-handle"><div class="note-control-selection"><div class="note-control-selection-bg"></div><div class="note-control-holder note-control-nw"></div><div class="note-control-holder note-control-ne"></div><div class="note-control-holder note-control-sw"></div><div class="note-control-sizing note-control-se"></div><div class="note-control-selection-info"></div></div></div><textarea class="note-codable"></textarea><div class="note-editable panel-body" contenteditable="true" style="height: 300px;"><div><img class="img-hide" src="./Information_files/Imagen_test_01.jpg" style="width: 372.49px; float: right; height: 558.734px;">
+<p></p><p class="h1" style="text-align: justify;">Jackie Lingerie</p> 
+
+<div class="contenedor">
+<p><br></p>
+<p class="h4">Jackie Lingerie nació del sueño de una Brazileña en España, emprendedora y amante de la lencería, los encajes bordados, los colores, las telas y valorar el cuerpo femenino con comodidad y elegancia.
+</p>
+<p><br></p>
+
+<p class="h2">Siempre fue nuestro mayor objetivo el concepto de una lencería que sea confortable y que se adiera a la piel con suavidad y llena de detalles.
+ </p>
+<div><br></div>
+
+<div class="h4">Pensamos en la lencería óptima para la mujer que trabaja 12 hrs al día y tambien en la lencería para momentos únicos y especiales con un modelo moderno, actual, cómodo y elegante, sin perder la sensualidad femenina.&nbsp;</div>
+<div class="h4"><br></div>
+  </div>
+
+<div><br><br><br><br><br><br></div>
+<div class="h3">MAYOR CLUB DE LENCERÍA DE EUROPA. ENTREGAMOS A LA PUERTA DE TU CASA! SI TIENES ALGUNA DUDA ¡LLÁMANOS!<br></div>
+<div><br></div>
+
+<style>
+  
+  .foto2 { 
+  padding: 10px; 
+  margin: 10px; 
+  float: right; 
+  
+  }
+  
+ 
+  
+.h1 {
+	font-size: 30px;
+  	color: #8C2F52;
+  	font-weight: bold;
+  	font-family: Montserrat;
+  	line-height: 1.6;
+}
+.h2 {
+	font-size: 20px;
+  	color: #8C2F52;
+  	font-weight: bold;
+  	font-family: Montserrat;
+  	line-height: 1.6;
+
+}
+.h3 {
+	font-size: 16px;
+  	color: #000000;
+  	font-family: Montserrat;
+  	font-weight: Bold;
+  	text-align: center;
+    line-height: 1.6;
+  
+}
+.h4 {
+	font-size: 14px;
+  	color: #666666;
+  	font-family: Montserrat;
+  	font-weight: Medium;
+  	line-height: 1.6;
+  	
+  
+}
+.h5 {
+	font-size: 12px;
+}
+.h6 {
+	font-size: 10.2px;
+}
+  
+  
+   @media (max-width: 440px){
+  		.contenedor {
+ 			 width: 100%;
+ 			 }
+  }
+  
+  
+  @media (min-width: 768px){
+  		.contenedor {
+ 			 width: 50%;
+ 			 }
+  }
+  
+  
+@media handheld, only screen and (max-width: 767px) {
+.img-hide {
+display:none;
+}
+}
+
+@media only screen and (max-width: 1023px) {
+.img-hide {
+display:none;
+}
+
+
+}
+
+</style>
+
+  
+
+<p></p></div></div></div><div class="note-statusbar">  <div class="note-resizebar">    <div class="note-icon-bar"></div>    <div class="note-icon-bar"></div>    <div class="note-icon-bar"></div>  </div></div><div class="modal link-dialog" aria-hidden="false" tabindex="-1"><div class="modal-dialog">  <div class="modal-content">    <div class="modal-header">      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>      <h4 class="modal-title">Insert Link</h4>    </div>    <div class="modal-body"><div class="form-group"><label>Text to display</label><input class="note-link-text form-control" type="text"></div><div class="form-group"><label>To what URL should this link go?</label><input class="note-link-url form-control" type="text" value="http://"></div><div class="checkbox"><label><input type="checkbox" checked=""> Open in new window</label></div></div>    <div class="modal-footer"><button href="#" class="btn btn-primary note-link-btn disabled" disabled="">Insert Link</button></div>  </div></div></div><div class="modal" aria-hidden="false" tabindex="-1"><div class="modal-dialog">  <div class="modal-content">    <div class="modal-header">      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>      <h4 class="modal-title">Insert Image</h4>    </div>    <div class="modal-body"><div class="form-group note-group-select-from-files"><label>Select from files</label><input class="note-image-input form-control" type="file" name="files" accept="image/*" multiple="multiple"></div><div class="form-group note-group-image-url" style="overflow:auto;"><label>Image URL</label><input class="note-image-url form-control col-md-12" type="text"></div></div>    <div class="modal-footer"><button href="#" class="btn btn-primary note-image-btn disabled" disabled="">Insert Image</button></div>  </div></div></div><div class="modal" aria-hidden="false" tabindex="-1"><div class="modal-dialog">  <div class="modal-content">    <div class="modal-header">      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>      <h4 class="modal-title">Insert Video</h4>    </div>    <div class="modal-body"><div class="form-group row-fluid"><label>Video URL? <small class="text-muted">(YouTube, Vimeo, Vine, Instagram, DailyMotion or Youku)</small></label><input class="note-video-url form-control span12" type="text"></div></div>    <div class="modal-footer"><button href="#" class="btn btn-primary note-video-btn disabled" disabled="">Insert Video</button></div>  </div></div></div><div class="modal" aria-hidden="false" tabindex="-1"><div class="modal-dialog">  <div class="modal-content">    <div class="modal-header">      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>      <h4 class="modal-title">Help</h4>    </div>    <div class="modal-body" style="max-height: 300px; overflow: scroll;"><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>ENTER</kbd></label><span>Insert Paragraph</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+Z</kbd></label><span>Undoes the last command</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+SHIFT+Z</kbd></label><span>Redoes the last command</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>TAB</kbd></label><span>Tab</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>SHIFT+TAB</kbd></label><span>Untab</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+B</kbd></label><span>Set a bold style</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+I</kbd></label><span>Set a italic style</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+U</kbd></label><span>Set a underline style</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+SHIFT+S</kbd></label><span>Set a strikethrough style</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+BACKSLASH</kbd></label><span>Clean a style</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+SHIFT+L</kbd></label><span>Set left align</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+SHIFT+E</kbd></label><span>Set center align</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+SHIFT+R</kbd></label><span>Set right align</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+SHIFT+J</kbd></label><span>Set full align</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+SHIFT+NUM7</kbd></label><span>Toggle unordered list</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+SHIFT+NUM8</kbd></label><span>Toggle ordered list</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+LEFTBRACKET</kbd></label><span>Outdent on current paragraph</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+RIGHTBRACKET</kbd></label><span>Indent on current paragraph</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+NUM0</kbd></label><span>Change current block's format as a paragraph(P tag)</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+NUM1</kbd></label><span>Change current block's format as H1</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+NUM2</kbd></label><span>Change current block's format as H2</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+NUM3</kbd></label><span>Change current block's format as H3</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+NUM4</kbd></label><span>Change current block's format as H4</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+NUM5</kbd></label><span>Change current block's format as H5</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+NUM6</kbd></label><span>Change current block's format as H6</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+ENTER</kbd></label><span>Insert horizontal rule</span><div class="help-list-item"></div><label style="width: 180px; margin-right: 10px;"><kbd>CMD+K</kbd></label><span>Show Link Dialog</span></div>    <div class="modal-footer"><p class="text-center"><a href="http://summernote.org/" target="_blank">Summernote 0.8.2</a> · <a href="https://github.com/summernote/summernote" target="_blank">Project</a> · <a href="https://github.com/summernote/summernote/issues" target="_blank">Issues</a></p></div>  </div></div></div><div class="modal" aria-hidden="false" tabindex="-1"><div class="modal-dialog">  <div class="modal-content">    <div class="modal-header">      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>      <h4 class="modal-title">Image Attributes</h4>    </div>    <div class="modal-body"><div class="form-group"><label for="note-image-attributes-title" class="control-label col-xs-2">Title</label><div class="input-group col-xs-10"><input type="text" id="note-image-attributes-title" class="note-image-attributes-title form-control"></div></div><div class="form-group"><label for="note-image-attributes-src" class="control-label col-xs-2">Source</label><div class="input-group col-xs-10"><input type="text" id="note-image-attributes-src" class="note-image-attributes-src form-control"></div></div><div class="form-group note-group-select-from-files"><label class="control-label col-xs-2"></label><div class="input-group col-xs-10"><input class="note-image-input form-control" type="file" name="file" accept="image/*"><small class="help-block">Selecting an image will replace existing image with an Inlined Image.</small></div></div><div class="form-group"><label for="note-image-attributes-alt" class="control-label col-xs-2">Alt</label><div class="input-group col-xs-10"><input type="text" id="note-image-attributes-alt" class="note-image-attributes-alt form-control"></div></div><h4>Link Attributes</h4><hr><div class="form-group"><label for="note-image-attributes-link-href" class="control-label col-xs-2">URL</label><div class="input-group col-xs-10"><input type="text" id="note-image-attributes-link-href" class="note-image-attributes-href form-control"></div></div><div class="form-group"><label for="note-image-attributes-link-target" class="control-label col-xs-2">Target</label><div class="input-group col-xs-10"><select id="note-image-attributes-link-target" class="note-image-attributes-target form-control"><option value="_self">Self</option><option value="_blank">Blank</option><option value="_top">Top</option><option value="_parent">Parent</option></select></div></div></div>    <div class="modal-footer"><button href="#" class="btn btn-primary note-image-attributes-btn">OK</button></div>  </div></div></div></div>
+                       </div>
+                  </div>
+                  <div class="form-group required">
+                    <label class="col-sm-2 control-label" for="input-meta-title2">Meta Tag Title</label>
+                    <div class="col-sm-10">
+                      <input type="text" name="information_description[2][meta_title]" value="Sobre Nosotros" placeholder="Meta Tag Title" id="input-meta-title2" class="form-control">
+                       </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label" for="input-meta-description2">Meta Tag Description</label>
+                    <div class="col-sm-10">
+                      <textarea name="information_description[2][meta_description]" rows="5" placeholder="Meta Tag Description" id="input-meta-description2" class="form-control"></textarea>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label" for="input-meta-keyword2">Meta Tag Keywords</label>
+                    <div class="col-sm-10">
+                      <textarea name="information_description[2][meta_keyword]" rows="5" placeholder="Meta Tag Keywords" id="input-meta-keyword2" class="form-control"></textarea>
+                    </div>
+                  </div>
+                </div>
+                </div>
+            </div>
+            <div class="tab-pane" id="tab-data">
+              <div class="form-group">
+                <label class="col-sm-2 control-label">Stores</label>
+                <div class="col-sm-10">
+                  <div class="well well-sm" style="height: 150px; overflow: auto;">                     <div class="checkbox">
+                      <label>                         <input type="checkbox" name="information_store[]" value="0" checked="checked">
+                        Default
+                        </label>
+                    </div>
+                    </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-2 control-label" for="input-bottom"><span data-toggle="tooltip" title="" data-original-title="Display in the bottom footer.">Bottom</span></label>
+                <div class="col-sm-10">
+                  <div class="checkbox">
+                    <label>                      <input type="checkbox" name="bottom" value="1" checked="checked" id="input-bottom">
+                                            &nbsp;</label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-2 control-label" for="input-status">Status</label>
+                <div class="col-sm-10">
+                  <select name="status" id="input-status" class="form-control">
+                                        <option value="1" selected="selected">Enabled</option>
+                    <option value="0">Disabled</option>
+                                      </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-2 control-label" for="input-sort-order">Sort Order</label>
+                <div class="col-sm-10">
+                  <input type="text" name="sort_order" value="1" placeholder="Sort Order" id="input-sort-order" class="form-control">
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="tab-seo">
+              <div class="alert alert-info"><i class="fa fa-info-circle"></i> Do not use spaces, instead replace spaces with - and make sure the SEO URL is globally unique.</div>
+              <div class="table-responsive">
+                <table class="table table-bordered table-hover">
+                  <thead>
+                    <tr>
+                      <td class="text-left">Stores</td>
+                      <td class="text-left">Keyword</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                                    <tr>
+                    <td class="text-left">Default</td>
+                    <td class="text-left">                      <div class="input-group"><span class="input-group-addon"><img src="./Information_files/en-gb.png" title="English"></span>
+                        <input type="text" name="information_seo_url[0][1]" value="about_us" placeholder="Keyword" class="form-control">
+                      </div>
+                       
+                                            <div class="input-group"><span class="input-group-addon"><img src="./Information_files/es-ES.png" title="Español"></span>
+                        <input type="text" name="information_seo_url[0][2]" value="Sobre Nosotros" placeholder="Keyword" class="form-control">
+                      </div>
+                       
+                      </td>
+                  </tr>
+                                    </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="tab-pane" id="tab-design">
+              <div class="table-responsive">
+                <table class="table table-bordered table-hover">
+                  <thead>
+                    <tr>
+                      <td class="text-left">Stores</td>
+                      <td class="text-left">Layout Override</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                  
+                                    <tr>
+                    <td class="text-left">Default</td>
+                    <td class="text-left"><select name="information_layout[0]" class="form-control">
+                        <option value=""></option>
+                                                                        <option value="6">Account</option>
+                                                                                                <option value="10">Affiliate</option>
+                                                                                                <option value="3">Category</option>
+                                                                                                <option value="7">Checkout</option>
+                                                                                                <option value="12">Compare</option>
+                                                                                                <option value="8">Contact</option>
+                                                                                                <option value="4">Default</option>
+                                                                                                <option value="1">Home</option>
+                                                                                                <option value="11">Information</option>
+                                                                                                <option value="5">Manufacturer</option>
+                                                                                                <option value="2">Product</option>
+                                                                                                <option value="13">Search</option>
+                                                                                                <option value="9">Sitemap</option>
+                                                                      </select></td>
+                  </tr>
+                                      </tbody>
+                  
+                </table>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <link href="./Information_files/codemirror.css" rel="stylesheet">
+  <link href="./Information_files/monokai.css" rel="stylesheet">
+  <script type="text/javascript" src="./Information_files/codemirror.js"></script> 
+  <script type="text/javascript" src="./Information_files/xml.js"></script> 
+  <script type="text/javascript" src="./Information_files/formatting.js"></script> 
+  <script type="text/javascript" src="./Information_files/summernote.js"></script>
+  <link href="./Information_files/summernote.css" rel="stylesheet">
+  <script type="text/javascript" src="./Information_files/summernote-image-attributes.js"></script> 
+  <script type="text/javascript" src="./Information_files/opencart.js"></script> 
+  <script type="text/javascript"><!--
+$('#language a:first').tab('show');
+//--></script></div>
+<footer id="footer"><a href="http://www.jackielingerie.com/">Jackie Lingerie</a> ©2020 All Rights Reserved.<br>Version 3.0.3.3</footer></div>
+
+ 
+<div class="note-popover popover in note-image-popover bottom" style="display: none;">  <div class="arrow"></div>  <div class="popover-content note-children-container"><div class="note-btn-group btn-group note-custom"><button type="button" class="note-btn btn btn-default btn-sm" tabindex="-1" title="" data-original-title="Image Attributes"><i class="note-icon-pencil"></i></button></div><div class="note-btn-group btn-group note-imagesize"><button type="button" class="note-btn btn btn-default btn-sm" tabindex="-1" title="" data-original-title="Resize Full"><span class="note-fontsize-10">100%</span></button><button type="button" class="note-btn btn btn-default btn-sm" tabindex="-1" title="" data-original-title="Resize Half"><span class="note-fontsize-10">50%</span></button><button type="button" class="note-btn btn btn-default btn-sm" tabindex="-1" title="" data-original-title="Resize Quarter"><span class="note-fontsize-10">25%</span></button></div><div class="note-btn-group btn-group note-float"><button type="button" class="note-btn btn btn-default btn-sm" tabindex="-1" title="" data-original-title="Float Left"><i class="note-icon-align-left"></i></button><button type="button" class="note-btn btn btn-default btn-sm" tabindex="-1" title="" data-original-title="Float Right"><i class="note-icon-align-right"></i></button><button type="button" class="note-btn btn btn-default btn-sm" tabindex="-1" title="" data-original-title="Float None"><i class="note-icon-align-justify"></i></button></div><div class="note-btn-group btn-group note-remove"><button type="button" class="note-btn btn btn-default btn-sm" tabindex="-1" title="" data-original-title="Remove Image"><i class="note-icon-trash"></i></button></div></div></div><div class="note-popover popover in note-image-popover bottom">  <div class="arrow"></div>  <div class="popover-content note-children-container"><div class="note-btn-group btn-group note-custom"><button type="button" class="note-btn btn btn-default btn-sm" tabindex="-1" title="" data-original-title="Image Attributes"><i class="note-icon-pencil"></i></button></div><div class="note-btn-group btn-group note-imagesize"><button type="button" class="note-btn btn btn-default btn-sm" tabindex="-1" title="" data-original-title="Resize Full"><span class="note-fontsize-10">100%</span></button><button type="button" class="note-btn btn btn-default btn-sm" tabindex="-1" title="" data-original-title="Resize Half"><span class="note-fontsize-10">50%</span></button><button type="button" class="note-btn btn btn-default btn-sm" tabindex="-1" title="" data-original-title="Resize Quarter"><span class="note-fontsize-10">25%</span></button></div><div class="note-btn-group btn-group note-float"><button type="button" class="note-btn btn btn-default btn-sm" tabindex="-1" title="" data-original-title="Float Left"><i class="note-icon-align-left"></i></button><button type="button" class="note-btn btn btn-default btn-sm" tabindex="-1" title="" data-original-title="Float Right"><i class="note-icon-align-right"></i></button><button type="button" class="note-btn btn btn-default btn-sm" tabindex="-1" title="" data-original-title="Float None"><i class="note-icon-align-justify"></i></button></div><div class="note-btn-group btn-group note-remove"><button type="button" class="note-btn btn btn-default btn-sm" tabindex="-1" title="" data-original-title="Remove Image"><i class="note-icon-trash"></i></button></div></div></div></body></html>

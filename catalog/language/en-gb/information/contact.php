@@ -5,7 +5,7 @@ $_['heading_title']  = 'Contact Us';
 // Text
 $_['text_location']  = 'Our Location';
 $_['text_store']     = 'Our Stores';
-$_['text_contact']   = 'Contact Form';
+$_['text_contact']   = 'Send us a message';
 $_['text_address']   = 'Address';
 $_['text_telephone'] = 'Telephone';
 $_['text_fax']       = 'Fax';
@@ -16,7 +16,7 @@ $_['text_success']   = '<p>Your enquiry has been successfully sent to the store 
 // Entry
 $_['entry_name']     = 'Your Name';
 $_['entry_email']    = 'E-Mail Address';
-$_['entry_enquiry']  = 'Enquiry';
+$_['entry_enquiry']  = 'Message';
 
 // Email
 $_['email_subject']  = 'Enquiry %s';

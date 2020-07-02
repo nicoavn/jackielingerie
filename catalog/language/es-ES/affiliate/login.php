@@ -1,7 +1,7 @@
 <?php
 $_['heading_title'] 	=  'Programa de afiliación';
 $_['text_account'] 	=  'Cuenta';
-$_['text_login'] 	=  'Iniciar sesión';
+$_['text_login'] 	=  'Login';
 $_['text_description'] 	=  '<p> El programa de afiliados de %s es gratis y permite a los miembros ganar ingresos al colocar un enlace a los enlaces en su sitio web que anuncian los productos específicos en él. Cualquier venta hecha a los clientes que han hecho clic en esos enlaces ganará la comisión del afiliado. La tasa de comisión estándar es actualmente %s. </p> <p> Para obtener más información, visite nuestra página de preguntas frecuentes o consulte nuestros términos de afiliación & amp; Condiciones. </p>';
 $_['text_new_affiliate'] 	=  'Nuevo afiliado';
 $_['text_register_account'] 	=  '<p> Actualmente no soy afiliado. </p> <p> Haga clic en Continuar para crear una nueva cuenta de afiliado. Tenga en cuenta que no está conectado de ninguna manera con su cuenta de cliente. </p>';
