@@ -175,58 +175,7 @@
                 {% endif %} </option>
                 {% endfor %}
               </select>
-              <div>
-                <p class="pop-up-button">Ver guía de tallas</p>
-                <div class="pop-up">
-                  <span>x</span>
-                  <br><p></p><p class="h1-popup">Tabla Conversión Tallas Internacional</p> 
-                      <div id= "table-popup" class="contenedor">
-                      <table>
-                        <tbody><tr>
-                          <th>EU</th>
-                          <th>BRA</th>
-                          <th>USA/UK</th>
-                        </tr>
-                        <tr>
-                          <td>80</td>
-                          <td>MS (P)</td>
-                          <td>32-34</td>
-                        </tr>
-                        <tr>
-                          <td>85-90</td>
-                          <td>M (M)</td>
-                          <td>34-36</td>
-                        </tr>
-                        <tr>
-                          <td>90-95</td>
-                          <td>L (G)</td>
-                          <td>36-38</td>
-                        </tr>
-                        <tr>
-                          <td>95-100</td>
-                          <td>XL (GG)</td>
-                          <td>38-40</td>
-                        </tr>
-                        <tr>
-                          <td>110-115</td>
-                          <td>XXL (GGG)</td>
-                          <td>40-42</td>
-                        </tr>
-                      </tbody></table>
-                       
-                      <div><br></div>
-                      <p class="h4-popup"><b><font color="#000000">Observación</font></b></p>
-                      <div class="h4-popup">La mayoría de las tangas y braguitas son ajustables pensado en mujeres que tengan pecho y sean de contorno delgado.&nbsp;</div>
-                      <div class="h4-popup"><br></div>
-                        </div>
 
-                  <!--<div class="pop-up-text">
-                    <h1>Heading 1</h1>
-                    <p>Some sample pop-up text.</p>
-                    <img src="https://images.unsplash.com/photo-1474244707578-17999c7d3fc4"/>
-                  </div>-->
-                </div>
-             </div><br>
               </div>
             {% endif %}
             {% if option.type == 'radio' %}
@@ -325,6 +274,59 @@
               <div class="help-block" id="recurring-description"></div>
             </div>
             {% endif %}
+            <div>
+                <p class="pop-up-button">Ver guía de tallas</p>
+                <div class="pop-up">
+                  <span>x</span>
+                  <br><p></p><p class="h1-popup">Tabla Conversión Tallas Internacional</p> 
+                      <div id= "table-popup" class="contenedor">
+                      <table>
+                        <tbody><tr>
+                          <th>EU</th>
+                          <th>BRA</th>
+                          <th>USA/UK</th>
+                        </tr>
+                        <tr>
+                          <td>80</td>
+                          <td>S (P)</td>
+                          <td>32-34</td>
+                        </tr>
+                        <tr>
+                          <td>85-90</td>
+                          <td>M (M)</td>
+                          <td>34-36</td>
+                        </tr>
+                        <tr>
+                          <td>90-95</td>
+                          <td>L (G)</td>
+                          <td>36-38</td>
+                        </tr>
+                        <tr>
+                          <td>95-100</td>
+                          <td>XL (GG)</td>
+                          <td>38-40</td>
+                        </tr>
+                        <tr>
+                          <td>110-115</td>
+                          <td>XXL (GGG)</td>
+                          <td>40-42</td>
+                        </tr>
+                      </tbody></table>
+                       
+                      <div><br></div>
+                      <p class="h4-popup"><b><font color="#000000">Observación</font></b></p>
+                      <div class="h4-popup">La mayoría de las tangas y braguitas son ajustables pensado en mujeres que tengan pecho y sean de contorno delgado.&nbsp;</div>
+                      <div class="h4-popup"><br></div>
+                        </div>
+
+                  <!--<div class="pop-up-text">
+                    <h1>Heading 1</h1>
+                    <p>Some sample pop-up text.</p>
+                    <img src="https://images.unsplash.com/photo-1474244707578-17999c7d3fc4"/>
+                  </div>-->
+                </div>
+             </div><br>
+
             <div class="form-group">
               <label class="control-label" for="input-quantity">{{ entry_qty }}</label>
               <input type="text" name="quantity" value="{{ minimum }}" size="2" id="input-quantity" class="form-control" />
@@ -467,7 +469,7 @@ $('#button-cart').on('click', function() {
 			if (json['success']) {
 				$('.breadcrumb').after('<div class="alert alert-success alert-dismissible">' + json['success'] + '<button type="button" class="close" data-dismiss="alert">&times;</button></div>');
 
-				$('#cart > button').html('<span id="cart-total"><i class=""></i> ' + json['total'] + '</span>');
+				$('#cart > button').html('<span id="cart-total"><i class="fa fa-shopping-cart"></i> ' + json['total'] + '</span>');
 
 				$('html, body').animate({ scrollTop: 0 }, 'slow');
 
