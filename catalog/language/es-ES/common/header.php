@@ -11,5 +11,5 @@ $_['text_transaction'] 	=  'Transacción';
 $_['text_download'] 	=  'Descargas';
 $_['text_logout'] 	=  'Cerrar sesión';
 $_['text_checkout'] 	=  'Pagar';
-$_['text_search'] 	=  'Buscar';
+$_['text_search'] 	=  '¿Qué buscas?';
 $_['text_all'] 	=  'Mostrar todo';

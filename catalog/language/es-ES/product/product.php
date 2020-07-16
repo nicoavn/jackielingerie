@@ -1,5 +1,5 @@
 <?php
-$_['text_search'] 	=  'Buscar';
+$_['text_search'] 	=  '¿Qué buscas?';
 $_['text_brand'] 	=  'Marca';
 $_['text_manufacturer'] 	=  'Marca:';
 $_['text_model'] 	=  'Código de producto:';

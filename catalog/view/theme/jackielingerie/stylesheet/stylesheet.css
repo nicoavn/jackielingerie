@@ -335,7 +335,7 @@ h5.title-footer{
 }
 #cart > .btn {
 	font-size: 12px;
-	line-height: 14px;
+	line-height: 30px;
 	color: #888;
 	padding: inherit;
 }
@@ -1527,7 +1527,7 @@ display:none;
 
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 834px){
 .navbar-nav > li{
 	right: 0%; 
 
@@ -1551,7 +1551,18 @@ padding-right: 0px;
     margin-top: -40px;
 	}
 
-#cart .fa-shopping-cart	{
+
+
+.text-center .img-thumbnail {
+	
+    max-width: none;
+	}
+
+
+}
+
+@media screen and (max-width: 767px){
+	#cart .fa-shopping-cart	{
 	font-size: 25px;
 	color: #444;
 	}
@@ -1560,13 +1571,19 @@ padding-right: 0px;
 	color: #8C2F52;
 	}
 
-.text-center .img-thumbnail {
 	
-    max-width: none;
+
+
+	#sr-mobil .fa-search{
+		font-size: 22px;
+		color: #444;
 	}
 
-
-
+	#sr-mobil .search-mobil{
+		margin: -32px 0px 0px -26px;
+		font-size: 22px;
+		color: #444;
+	}
 }
 
  #accordion .panel-default > .panel-heading {
@@ -1829,7 +1846,7 @@ cursor: pointer;
 
 
 /*Ocultar Iconos de Login, corrito, moneda.. */
-@media handheld, only screen and (max-width: 767px) {
+@media handheld, only screen and (max-width: 440px) {
 	.icon-hide {
 	display:none;
 	}
@@ -1840,39 +1857,48 @@ cursor: pointer;
 
 }
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 767px) {
 	.icon-hide {
 	display:none;
 	}
 	.checkout-hide{
 	display:none;
 	}
+
+
 }
 /*End Ocultar Iconos de Login, corrito, moneda.. */
 
 
 
 /*ocultar icono de carrito en mobil*/
-@media handheld, only screen and (max-width: 767px) {
+@media handheld, only screen and (max-width: 440px) {
 	#top {
 	display:none;
 	}
+
+
 
 }
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 767px) {
 	#top {
 	display:none;
 	}
+
+
 }
  /* End de ocultar icono de carrito en mobil*/
 
 
 /*ocultar icono de carrito en desktop */
-@media  screen and (min-width: 767px) {
+@media  screen and (min-width: 768px) {
 	.cart-right {
 	display:none;
 	}
+
+
+
 }
 
 
@@ -1888,8 +1914,40 @@ cursor: pointer;
 }
 
 
+@media (min-width: 440px) {
+#product-category .breadcrumb {
+    margin: 26px 0 100px 0;
+    padding: 8px 0;
+    border: 1px solid transparent;
+    color: transparent;
+}
+
+/* CSS de ipad customizar */
+#product .form-control{
+	width: 45%;
+
+}
+
+#product .btn-block{
+	    width: 45%;
+}
+
+#product .pop-up-button{
+	width: 100%;
+}
+
+}
+
 /* Button menu animado */
 @media (max-width: 767px) {
+
+#product-category .breadcrumb{
+		margin: 0px 0 20px 0;
+		padding: 8px 0;
+		border: 1px solid transparent;
+		color: transparent;
+	}
+
 
 .btn-menu-w {
 	width: 26px;
@@ -2025,5 +2083,10 @@ opacity: 1;
 #product-category .col-xs-6 {
 	width: 50%;
 }
+
+
+
+
+
 
 

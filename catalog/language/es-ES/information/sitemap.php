@@ -9,6 +9,6 @@ $_['text_history'] 	=  'Historial de pedidos';
 $_['text_download'] 	=  'Descargas';
 $_['text_cart'] 	=  'Carrito de compras';
 $_['text_checkout'] 	=  'Completar la orden';
-$_['text_search'] 	=  'Buscar';
+$_['text_search'] 	=  '¿Qué buscas?';
 $_['text_information'] 	=  'Información';
 $_['text_contact'] 	=  'Contáctenos';

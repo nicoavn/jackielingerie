@@ -92,7 +92,7 @@ Searching 337 files for "text_contact"
     7  $_['text_telephone'] 	=  'Teléfono';
 
 /Applications/XAMPP/xamppfiles/htdocs/jackielingerie/catalog/language/es-ES/information/sitemap.php:
-   12  $_['text_search'] 	=  'Buscar';
+   12  $_['text_search'] 	=  '¿Qué buscas?';
    13  $_['text_information'] 	=  'Información';
    14: $_['text_contact'] 	=  'Contáctenos';
    15  
