@@ -3,7 +3,7 @@ $_['heading_title'] 	=  'Registrar Cuenta';
 $_['text_account'] 	=  'Cuenta';
 $_['text_register'] 	=  'Registro';
 $_['text_account_already'] 	=  'Si ya tiene una cuenta con nosotros, inicie sesión en la <a href="%s"> página de inicio de sesión </a>.';
-$_['text_your_details'] 	=  'tus detalles personales';
+$_['text_your_details'] 	=  'Tus detalles personales';
 $_['text_newsletter'] 	=  'Hoja informativa';
 $_['text_your_password'] 	=  'Tu contraseña';
 $_['text_agree'] 	=  'He leído y acepto el <a href="%s" class="agree"> <b> %s </ b> </a>';

@@ -4,7 +4,7 @@ $_['text_account'] 	=  'Cuenta';
 $_['text_register'] 	=  'Registro de afiliados';
 $_['text_account_already'] 	=  'Si ya tiene una cuenta con nosotros, inicie sesión en la <a href="%s"> página de inicio de sesión </a>.';
 $_['text_signup'] 	=  'Para crear una cuenta de afiliado, rellene el siguiente formulario para asegurarse de completar todos los campos obligatorios:';
-$_['text_your_details'] 	=  'tus detalles personales';
+$_['text_your_details'] 	=  'Tus detalles personales';
 $_['text_your_address'] 	=  'Detalles de su dirección';
 $_['text_your_affiliate'] 	=  'Su información de afiliado';
 $_['text_your_password'] 	=  'Tu contraseña';

@@ -2,7 +2,7 @@
 $_['heading_title'] 	=  'Información de mi cuenta';
 $_['text_account'] 	=  'Cuenta';
 $_['text_edit'] 	=  'editar informacion';
-$_['text_your_details'] 	=  'tus detalles personales';
+$_['text_your_details'] 	=  'Tus detalles personales';
 $_['text_success'] 	=  'Éxito: su cuenta se ha actualizado correctamente.';
 $_['entry_firstname'] 	=  'Nombre de pila';
 $_['entry_lastname'] 	=  'Apellido';
