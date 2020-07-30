@@ -1,0 +1,81 @@
+<footer>
+  <div class="container">
+    <div id= "left" class="row"> 
+      <div>
+        <div class="logo-footer"><a href="{{ home }}"><img src="image/JL-Home-logo.png" class="img-responsive" />
+        </div>
+      </div>
+      <div><h5 class="title-footer">{{ text_Customer }}</h5></div>
+      {% if informations %}
+      <div class="col-sm-3">
+        <ul class="list-unstyled">
+         {% for information in informations %}
+          <li><a href="{{ information.href }}">{{ information.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+      <div class="col-sm-3">
+        <h5>{{ text_enter }}</h5>
+        <ul class="list-unstyled">
+          <li><a href="{{ contact }}">{{ text_contact }}</a></li>
+          <li><a href="{{ return }}">{{ text_return }}</a></li>
+          <li><a href="{{ sitemap }}">{{ text_sitemap }}</a></li>
+          <li><a href="{{ account }}">{{ text_account }}</a></li>
+          {% if logged %}
+            <li><a href="{{ logout }}">{{ text_logout }}</a></li>
+          {% endif %}
+          <h5>{{ text_enter }}</h5>
+        </ul>
+      </div>
+      <div class="col-sm-3">
+       <h5>{{ text_extra }}</h5>
+        <ul class="list-unstyled">
+          <!--<li><a href="{{ manufacturer }}">{{ text_manufacturer }}</a></li>-->
+          <li>
+            
+            <div id="fa-size-sn">
+              <a target="_blank" data-platform="facebook" href="#" title="Facebook"><span class="fa fa-facebook"> &nbsp; </span></a>
+              <a target="_blank" data-platform="instagram" href="https://www.instagram.com/jackie_lingerie77" title="Instagram"><span class="fa fa-instagram"> &nbsp; </span></a>
+              <a target="_blank" data-platform="twitter" href="#" title="Twitter"><span class="fa fa-twitter"> &nbsp; </span></a>
+            </div>
+
+          </li>
+          <li><h4>{{ text_assistance }}</h4><!--<a href="{{ voucher }}">{{ text_voucher }}</a>--></li>
+          <!--<li><a href="{{ affiliate }}">{{ text_affiliate }}</a></li>-->
+          <li><a target="_blank" href="https://api.whatsapp.com/send?phone=34 674821127" title="whatsapp">
+            <div id= "fa-size"><span class="fa fa-whatsapp"> &nbsp; 34 674821127</span></div>
+          </a></li>
+          <li id="fa-size-mail"><a href="mailto:espjack@hotmail.com" title="mailto">
+            <div><span class="fa fa-envelope"> &nbsp; espjack@hotmail.com</span></div></a></li>
+          <!--<li><a href="{{ special }}">{{ text_special }}</a></li>-->
+           <h5>{{ text_enter }}</h5>
+        </ul>
+      </div>
+      <div  class="col-sm-3">
+        <h5>{{ text_date }}</h5>
+        <ul id= "date" class="list-unstyled">
+          <li><h5>{{ text_weekday }}</h5></li>
+          <li><h5>{{ text_saturdays }}</h5></li>
+          <li><h5>{{ txt_holidays }}</h5></li>
+          
+
+          <!--<li><a href="{{ account }}">{{ text_account }}</a></li>
+          <li><a href="{{ order }}">{{ text_order }}</a></li>
+          <li><a href="{{ wishlist }}">{{ text_wishlist }}</a></li>
+          <li><a href="{{ newsletter }}">{{ text_newsletter }}</a></li>-->
+        </ul>
+      </div>
+    </div>
+    <!--<hr>-->
+    <p class="powered-center">{{ powered }}</p>
+  </div>
+</footer>
+{% for script in scripts %}
+<script src="{{ script }}" type="text/javascript"></script>
+{% endfor %}
+<!--
+OpenCart is open source software and you are free to remove the powered by OpenCart if you want, but its generally accepted practise to make a small donation.
+Please donate via PayPal to donate@opencart.com
+//-->
+</body></html>

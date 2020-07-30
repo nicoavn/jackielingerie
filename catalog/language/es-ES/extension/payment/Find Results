@@ -1,0 +1,55 @@
+Searching 338 files for "text_logout"
+
+/Applications/XAMPP/xamppfiles/htdocs/jackielingerie/catalog/language/en-gb/account/Find Results:
+   40      6  $_['text_register']    = 'Register';
+   41      7: $_['text_login']       = 'Login';
+   42:     8  $_['text_logout']      = 'Logout';
+   43      9  $_['text_forgotten']   = 'Forgotten Password';
+   44  
+   ..
+  110      6  $_['text_register']    = 'Register';
+  111      7: $_['text_login']       = 'Login';
+  112:     8  $_['text_logout']      = 'Logout';
+  113      9  $_['text_forgotten']   = 'Forgotten Password';
+  114  
+
+/Applications/XAMPP/xamppfiles/htdocs/jackielingerie/catalog/language/en-gb/account/logout.php:
+    6  $_['text_message']  = '<p>You have been logged off your account. It is now safe to leave the computer.</p><p>Your shopping cart has been saved, the items inside it will be restored whenever you log back into your account.</p>';
+    7  $_['text_account']  = 'Account';
+    8: $_['text_logout']   = 'Logout';
+
+/Applications/XAMPP/xamppfiles/htdocs/jackielingerie/catalog/language/en-gb/common/header.php:
+   11  $_['text_transaction']   = 'Transactions';
+   12  $_['text_download']      = 'Downloads';
+   13: $_['text_logout']        = 'Logout';
+   14  $_['text_checkout']      = 'Checkout';
+   15  $_['text_search']        = 'Search';
+
+/Applications/XAMPP/xamppfiles/htdocs/jackielingerie/catalog/language/en-gb/extension/module/account.php:
+    6  $_['text_register']    = 'Register';
+    7  $_['text_login']       = 'Login';
+    8: $_['text_logout']      = 'Logout';
+    9  $_['text_forgotten']   = 'Forgotten Password';
+   10  $_['text_account']     = 'My Account';
+
+/Applications/XAMPP/xamppfiles/htdocs/jackielingerie/catalog/language/es-ES/account/logout.php:
+    3  $_['text_message'] 	=  '<p> Se ha desconectado su cuenta. Ahora es seguro dejar el ordenador. </p> <p> Su cesta de la compra se ha guardado, los elementos dentro de ella se restaurarán cada vez que vuelva a acceder a su cuenta. </p>';
+    4  $_['text_account'] 	=  'Cuenta';
+    5: $_['text_logout'] 	=  'Cerrar sesión';
+    6  
+
+/Applications/XAMPP/xamppfiles/htdocs/jackielingerie/catalog/language/es-ES/common/header.php:
+   10  $_['text_transaction'] 	=  'Transacción';
+   11  $_['text_download'] 	=  'Descargas';
+   12: $_['text_logout'] 	=  'Cerrar sesión';
+   13  $_['text_checkout'] 	=  'Pagar';
+   14  $_['text_search'] 	=  '¿Qué buscas?';
+
+/Applications/XAMPP/xamppfiles/htdocs/jackielingerie/catalog/language/es-ES/extension/module/account.php:
+    6  $_['text_register']    = 'Registrarse';
+    7  $_['text_login']       = 'Login';
+    8: $_['text_logout']      = 'Logout';
+    9  $_['text_forgotten']   = 'Contraseña olvidada';
+   10  $_['text_account']     = 'Mi Cuenta';
+
+8 matches across 7 files

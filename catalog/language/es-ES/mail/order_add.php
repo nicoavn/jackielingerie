@@ -1,6 +1,7 @@
 <?php
 $_['text_subject'] 	=  ' %s - Orden %s';
-$_['text_greeting'] 	=  'Gracias por su interés en los productos de %s. Su pedido ha sido recibido y se procesará una vez que se haya confirmado el pago.';
+$_['text_greeting'] 	=  '¡Gracias por comprar en %s!
+ Su pedido ha sido recibido y se procesará una vez que se haya confirmado el pago.';
 $_['text_link'] 	=  'Para ver su pedido haga clic en el siguiente enlace:';
 $_['text_order_detail'] 	=  'Detalles de la orden';
 $_['text_instruction'] 	=  'Instrucciones';

@@ -1,5 +1,5 @@
 <?php
-$_['heading_title'] 	=  'Registrar Cuenta';
+$_['heading_title'] 	=  'Crear una cuenta';
 $_['text_account'] 	=  'Cuenta';
 $_['text_register'] 	=  'Registro';
 $_['text_account_already'] 	=  'Si ya tiene una cuenta con nosotros, inicie sesión en la <a href="%s"> página de inicio de sesión </a>.';

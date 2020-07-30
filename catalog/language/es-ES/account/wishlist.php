@@ -8,7 +8,7 @@ $_['text_success'] 	=  'Éxito: ha añadido <a href="%s"> %s </a> a su <a href="
 $_['text_remove'] 	=  'Éxito: ¡Has modificado tu lista de deseos!';
 $_['text_empty'] 	=  'Tu lista de deseos Esta vacía.';
 $_['column_image'] 	=  'Imagen';
-$_['column_name'] 	=  'nombre del producto';
+$_['column_name'] 	=  'Nombre del producto';
 $_['column_model'] 	=  'Modelo';
 $_['column_stock'] 	=  'Valores';
 $_['column_price'] 	=  'Precio unitario';

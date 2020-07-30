@@ -21,3 +21,4 @@ $_['txt_holidays']   	= 'Cerrado durante los días festivos nacionales españole
 $_['text_Customer'] 	=  'Asistencia al Cliente y Servicios';
 $_['text_enter'] 		=  '<br> ';
 $_['text_powered'] 		=  '%s &copy;%s Derechos reservados. Desarrollado por <a href="https://www.instagram.com/methedesigner/" target="_blank">me the designer</a>';
+$_['text_logout'] 	=  'Cerrar sesión';

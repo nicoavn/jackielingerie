@@ -75,7 +75,7 @@ Searching 336 files for "text_login"
     3  $_['text_account'] 	=  'Cuenta';
     4: $_['text_login'] 	=  'Login';
     5  $_['text_new_customer'] 	=  'Nuevo cliente';
-    6  $_['text_register'] 	=  'Registrar Cuenta';
+    6  $_['text_register'] 	=  'Crear una cuenta';
 
 /Applications/XAMPP/xamppfiles/htdocs/jackielingerie/catalog/language/es-ES/account/wishlist.php:
     4  $_['text_instock'] 	=  'En stock';
