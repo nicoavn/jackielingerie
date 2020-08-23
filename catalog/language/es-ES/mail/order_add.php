@@ -1,12 +1,12 @@
 <?php
 $_['text_subject'] 	=  ' %s - Orden %s';
-$_['text_greeting'] 	=  '¡Gracias por comprar en %s!
+$_['text_greeting'] 	=  '<p class= bold>¡Gracias por comprar en %s!</p> <br>
  Su pedido ha sido recibido y se procesará una vez que se haya confirmado el pago.';
 $_['text_link'] 	=  'Para ver su pedido haga clic en el siguiente enlace:';
 $_['text_order_detail'] 	=  'Detalles de la orden';
 $_['text_instruction'] 	=  'Instrucciones';
-$_['text_order_id'] 	=  'Solicitar ID:';
-$_['text_date_added'] 	=  'Fecha Agregada:';
+$_['text_order_id'] 	=  'ID de Solicitud:';
+$_['text_date_added'] 	=  'Fecha:';
 $_['text_order_status'] 	=  'Estado del pedido:';
 $_['text_payment_method'] 	=  'Método de pago:';
 $_['text_shipping_method'] 	=  'Método de envío:';

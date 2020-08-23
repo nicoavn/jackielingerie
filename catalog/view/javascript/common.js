@@ -110,26 +110,6 @@ $(document).ready(function() {
 	});
 
 
-	// Opacity de imagen de color
-	//$('input').click(function() {
- 	//$(this).siblings('.img-thumbnail').css("opacity", "35%");
- //});
-
-
-	// Opacity de imagen de color
-/*
-	$('input').on('click', function() {
-    if ($(this).siblings('.img-thumbnail').css('opacity') == 1) {
-        $(this).siblings('.img-thumbnail').css('opacity', 0);
-    }
-    else {
-        $(this).siblings('.img-thumbnail').css('opacity',1);
-    }
-});*/
-	//end color
-
-
-
 	// Product Grid
 	$('#grid-view').click(function() {
 		// What a shame bootstrap does not take into account dynamically loaded columns

@@ -75,7 +75,7 @@ Searching 337 files for "text_contact"
     3  $_['text_service'] 		=  'Customer Service';
     4  $_['text_extra'] 		=  'Conéctate';
     5: $_['text_contact'] 		=  'Contáctenos';
-    6  $_['text_return'] 		=  'Devoluciones y Cambios';
+    6  $_['text_return'] 		=  'Cambios';
     7  $_['text_sitemap'] 		=  'Mapa del sitio';
 
 /Applications/XAMPP/xamppfiles/htdocs/jackielingerie/catalog/language/es-ES/extension/module/information.php:

@@ -2085,4 +2085,8 @@ opacity: 1;
 	width: 50%;
 }
 
+p.bold {
+	font-weight: bold;
+
+}
 

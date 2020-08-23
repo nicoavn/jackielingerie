@@ -21,6 +21,6 @@ $_['text_saturdays']   	= 'Saturdays <br>From 10:00 to 16:00';
 $_['txt_holidays']   	= 'Closed on public holidays Spanish nationals';
 $_['text_Customer'] 	=  'Customer Assistance and Services';
 $_['text_enter'] 	=  '<br> ';
-$_['text_powered']      = '%s &copy;%s All rights reserved. Powered By <a href="https://www.instagram.com/methedesigner/" target="_blank">me the designer</a>';
+$_['text_powered']      = '%s &copy;%s All rights reserved. Powered By <a href="https://www.webstore.com.do/" target="_blank">WebStore</a>';
 $_['text_logout']      = 'Logout';
 

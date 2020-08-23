@@ -1,6 +1,6 @@
 <?php
 $_['heading_title'] 	=  'Tus puntos de recompensa';
-$_['column_date_added'] 	=  'Fecha Agregada';
+$_['column_date_added'] 	=  'Fecha';
 $_['column_description'] 	=  'Descripción';
 $_['column_points'] 	=  'Puntos';
 $_['text_account'] 	=  'Cuenta';

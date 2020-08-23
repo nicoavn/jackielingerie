@@ -1,0 +1,303 @@
+{#
+  /**
+  * NOTA SOBRE LA LICENCIA DE USO DEL SOFTWARE
+  * 
+  * El uso de este software estÃ¡ sujeto a las Condiciones de uso de software que
+  * se incluyen en el paquete en el documento "Aviso Legal.pdf". TambiÃ©n puede
+  * obtener una copia en la siguiente url:
+  * http://www.redsys.es/wps/portal/redsys/publica/areadeserviciosweb/descargaDeDocumentacionYEjecutables
+  * 
+  * Redsys es titular de todos los derechos de propiedad intelectual e industrial
+  * del software.
+  * 
+  * Quedan expresamente prohibidas la reproducciÃ³n, la distribuciÃ³n y la
+  * comunicaciÃ³n pÃºblica, incluida su modalidad de puesta a disposiciÃ³n con fines
+  * distintos a los descritos en las Condiciones de uso.
+  * 
+  * Redsys se reserva la posibilidad de ejercer las acciones legales que le
+  * correspondan para hacer valer sus derechos frente a cualquier infracciÃ³n de
+  * los derechos de propiedad intelectual y/o industrial.
+  * 
+  * Redsys Servicios de Procesamiento, S.L., CIF B85955367
+  */
+  #}
+  {{ header }}{{ column_left }}
+  <div id="content">
+    <div class="page-header">
+      <div class="container-fluid">
+        <div class="pull-right">
+          <button type="submit" form="form-bizum" data-toggle="tooltip" title="{{ button_save }}" class="btn btn-primary"><i class="fa fa-save"></i></button>
+          <a href="{{ cancel }}" data-toggle="tooltip" title="{{ button_cancel }}" class="btn btn-default"><i class="fa fa-reply"></i></a></div>
+        <h1>{{ heading_title }}</h1>
+        <ul class="breadcrumb">
+          {% for breadcrumb in breadcrumbs %}
+          <li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+    <div class="container-fluid">
+      {% if error_warning %}
+      <div class="alert alert-danger"><i class="fa fa-exclamation-circle"></i> {{ error_warning }}
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+      </div>
+      {% endif %}
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <img src="view/image/extension/payment/Bizum.png" alt="" height="65" width="142"/>
+        </div>
+        <div class="panel-body">
+          <form action="{{ action }}" method="post" enctype="multipart/form-data" id="form-bizum" class="form-horizontal">
+            <div class="form-group">
+              <label class="col-sm-2 control-label">{{ entry_entorno }}</label>
+              <div class="col-sm-10">
+                <select name="bizum_entorno">
+                  {% if bizum_entorno == 'Real' %}
+                  <option value="Real" selected="selected">{{ text_real }}</option>
+                  {% else %}
+                  <option value="Real">{{ text_real }}</option>
+                  {% endif %}
+                  {% if bizum_entorno == 'Sis-d' %}
+                  <option value="Sis-d" selected="selected">{{ text_sisd }}</option>
+                  {% else %}
+                  <option value="Sis-d">{{ text_sisd }}</option>
+                  {% endif %}
+                  {% if bizum_entorno == 'Sis-i' %}
+                  <option value="Sis-i" selected="selected">{{ text_sisi }}</option>
+                  {% else %}
+                  <option value="Sis-i">{{ text_sisi }}</option>
+                  {% endif %}
+          {% if bizum_entorno == 'Sis-t' %}
+                  <option value="Sis-t" selected="selected">{{ text_sist }}</option>
+                  {% else %}
+                  <option value="Sis-t">{{ text_sist }}</option>
+                  {% endif %}
+                </select>
+              </div>
+            </div>
+        
+        <div class="form-group required">
+              <label class="col-sm-2 control-label">{{ entry_nombre }}</label>
+              <div class="col-sm-10">
+                <input type="text" name="bizum_nombre" value="{{ bizum_nombre }}" class="form-control" />
+              </div>
+            </div>
+        
+        <div class="form-group required">
+              <label class="col-sm-2 control-label">{{ entry_fuc }}</label>
+              <div class="col-sm-10">
+                <input type="text" name="bizum_fuc" value="{{ bizum_fuc }}" class="form-control" />
+              </div>
+            </div>
+        
+        <div class="form-group required">
+              <label class="col-sm-2 control-label" >{{ entry_clave256 }}</label>
+              <div class="col-sm-10">
+                <input type="text" name="bizum_clave256" value="{{ bizum_clave256 }}" class="form-control" />
+              </div>
+            </div>
+        
+        <div class="form-group required">
+              <label class="col-sm-2 control-label" >{{ entry_term }}</label>
+              <div class="col-sm-10">
+                <input type="text" name="bizum_term" value="{{ bizum_term }}" class="form-control" />
+              </div>
+            </div>
+        
+        <div class="form-group">
+              <label class="col-sm-2 control-label">{{ entry_moneda }}</label>
+              <div class="col-sm-10">
+          <select name="bizum_moneda">
+                  {% if bizum_moneda == 'EURO' %}
+                  <option value="EURO" selected="selected">EURO</option>
+                  {% else %}
+                  <option value="EURO">EURO</option>
+                  {% endif %}
+                  {% if bizum_moneda == 'DOLAR' %}
+                  <option value="DOLAR" selected="selected">DOLAR</option>
+                  {% else %}
+                  <option value="DOLAR">DOLAR</option>
+                  {% endif %}
+                </select>
+              </div>
+            </div>
+        
+        <div class="form-group required">
+              <label class="col-sm-2 control-label" >{{ entry_trans }}</label>
+              <div class="col-sm-10">
+                <input type="text" name="bizum_trans" value="0" class="form-control" />
+              </div>
+            </div>
+        
+        <div class="form-group">
+              <label class="col-sm-2 control-label">{{ entry_log }}</label>
+              <div class="col-sm-10">
+         <select name="bizum_log">
+                  {% if bizum_log == 'Si' %}
+                  <option value="Si" selected="selected">Si</option>
+                  {% else %}
+                  <option value="Si">Si</option>
+                  {% endif %}
+                  {% if bizum_log == 'No' %}
+                  <option value="No" selected="selected">No</option>
+                  {% else %}
+                  <option value="No">No</option>
+                  {% endif %}
+                </select>
+              </div>
+            </div>
+        
+        <div class="form-group">
+              <label class="col-sm-2 control-label">{{ entry_error_pedido }}</label>
+              <div class="col-sm-10">
+         <select name="bizum_error_pedido">
+                  {% if bizum_error_pedido == 'Si' %}
+                  <option value="Si" selected="selected">Si</option>
+                  {% else %}
+                  <option value="Si">Si</option>
+                  {% endif %}
+                  {% if bizum_error_pedido == 'No' %}
+                  <option value="No" selected="selected">No</option>
+                  {% else %}
+                  <option value="No">No</option>
+                  {% endif %}
+                </select>
+              </div>
+            </div>
+        
+        <div class="form-group">
+              <label class="col-sm-2 control-label">{{ entry_notif }}</label>
+              <div class="col-sm-10">
+         <select name="bizum_notif">
+                  {% if bizum_notif == 'Si' %}
+                  <option value="Si" selected="selected">Si</option>
+                  {% else %}
+                  <option value="Si">Si</option>
+                  {% endif %}
+                  {% if bizum_notif == 'No' %}
+                  <option value="No" selected="selected">No</option>
+                  {% else %}
+                  <option value="No">No</option>
+                  {% endif %}
+                </select>
+              </div>
+            </div>
+        
+             
+        <div class="form-group">
+              <label class="col-sm-2 control-label">{{ entry_error }}</label>
+              <div class="col-sm-10">
+          <select name="bizum_error">
+                  {% if bizum_error == 'Si' %}
+                  <option value="Si" selected="selected">Si</option>
+                  {% else %}
+                  <option value="Si">Si</option>
+                  {% endif %}
+                  {% if bizum_error == 'No' %}
+                  <option value="No" selected="selected">No</option>
+                  {% else %}
+                  <option value="No">No</option>
+                  {% endif %}
+                </select>
+              </div>
+            </div>
+        
+        <div class="form-group">
+              <label class="col-sm-2 control-label">{{ entry_idiomas }}</label>
+              <div class="col-sm-10">
+          <select name="bizum_idiomas">
+                  {% if bizum_idiomas == 'Si' %}
+                  <option value="Si" selected="selected">Si</option>
+                  {% else %}
+                  <option value="Si">Si</option>
+                  {% endif %}
+                  {% if bizum_idiomas == 'No' %}
+                  <option value="No" selected="selected">No</option>
+                  {% else %}
+                  <option value="No">No</option>
+                  {% endif %}
+                </select>
+              </div>
+            </div>
+  
+        <div class="form-group">
+        <label class="col-sm-2 control-label">{{ entry_completo }}</label>
+        <div class="col-sm-10">
+          <select name="bizum_estado_completo" class="form-control">
+          {% for order_status in order_statuses %}
+          {% if order_status.order_status_id == bizum_estado_completo %}
+          <option value="{{ order_status.order_status_id }}" selected="selected">{{ order_status.name }}</option>
+          {% else %}
+          <option value="{{ order_status.order_status_id }}">{{ order_status.name }}</option>
+          {% endif %}
+          {% endfor %}
+          </select>
+        </div>
+        </div>
+  
+        <div class="form-group">
+        <label class="col-sm-2 control-label">{{ entry_cancelado }}</label>
+        <div class="col-sm-10">
+          <select name="bizum_estado_cancelado" class="form-control">
+          {% for order_status in order_statuses %}
+          {% if order_status.order_status_id == bizum_estado_cancelado %}
+          <option value="{{ order_status.order_status_id }}" selected="selected">{{ order_status.name }}</option>
+          {% else %}
+          <option value="{{ order_status.order_status_id }}">{{ order_status.name }}</option>
+          {% endif %}
+          {% endfor %}
+          </select>
+        </div>
+        </div>
+        
+        <<div class="form-group">
+              <label class="col-sm-2 control-label" for="input-status">{{ entry_status }}</label>
+              <div class="col-sm-10">
+                <select name="payment_bizum_status" id="input-status" class="form-control">
+                  {% if payment_bizum_status %}
+                  <option value="1" selected="selected">{{ text_enabled }}</option>
+                  <option value="0">{{ text_disabled }}</option>
+                  {% else %}
+                  <option value="1">{{ text_enabled }}</option>
+                  <option value="0" selected="selected">{{ text_disabled }}</option>
+                  {% endif %}
+                </select>
+              </div>
+            </div>
+        
+        <div class="form-group">
+              <label class="col-sm-2 control-label" for="input-sort-order">{{ entry_sort_order }}</label>
+              <div class="col-sm-10">
+                <input type="text" name="bizum_sort_order" value="{{ bizum_sort_order }}" class="form-control" />
+              </div>
+            </div>
+        
+        <div class="form-group">
+              <label class="col-sm-2 control-label">{{ entry_total }}</label>
+              <div class="col-sm-10">
+                <input type="text" name="bizum_total" value="{{ bizum_total }}" class="form-control" />
+              </div>
+            </div>
+        
+            <div class="form-group">
+              <label class="col-sm-2 control-label" for="input-geo-zone">{{ entry_geo_zone }}</label>
+              <div class="col-sm-10">
+                <select name="bizum_geo_zone_id" id="input-geo-zone" class="form-control">
+                  <option value="0">{{ text_all_zones }}</option>
+                  {% for geo_zone in geo_zones %}
+                  {% if geo_zone.geo_zone_id == bizum_geo_zone_id %}
+                  <option value="{{ geo_zone.geo_zone_id }}" selected="selected">{{ geo_zone.name }}</option>
+                  {% else %}
+                  <option value="{{ geo_zone.geo_zone_id }}">{{ geo_zone.name }}</option>
+                  {% endif %}
+                  {% endfor %}
+                </select>
+              </div>
+            </div>
+  
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{ footer }} 
